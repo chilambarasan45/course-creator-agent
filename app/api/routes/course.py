@@ -2,7 +2,7 @@ from fastapi import APIRouter, UploadFile, File, HTTPException
 from typing import List
 import os
 
-from app.models.schemas import CourseRequest
+from app.models.schemas import CourseRequest, CourseResponse
 from app.agents.adk_orchestrator import run_adk_course_generation
 from app.rag.ingestion import ingest_document
 from app.db.database import save_course, get_course
@@ -10,15 +10,17 @@ from app.db.database import save_course, get_course
 router = APIRouter()
 
 
-@router.post("/generate-course")
+@router.post("/generate-course", response_model=CourseResponse)
 async def generate_course(request: CourseRequest):
-    result = await run_adk_course_generation(request.topic, request.level, request.generate_quiz)
+    result = await run_adk_course_generation(
+        request.topic, request.level, request.generate_quiz
+    )
     course_id = save_course(request.topic, request.level, result)
     result["course_id"] = course_id
     return result
 
 
-@router.get("/course/{course_id}")
+@router.get("/course/{course_id}", response_model=CourseResponse)
 def fetch_course(course_id: int):
     course = get_course(course_id)
     if not course:

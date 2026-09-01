@@ -1,15 +1,12 @@
 from google.adk.agents import LlmAgent
 from app.agents.adk_curriculum_agent import MODEL
+from app.agents.prompts import QUIZ_AGENT_PROMPT
 
-quiz_agent = LlmAgent(
-    name="QuizAgent",
-    model=MODEL,
-    instruction="""
-    You are a Quiz Agent. Using the lesson content in 'content_result',
-    create 3 multiple-choice questions per module to test understanding.
-    Return ONLY a JSON array in this format:
-    [{"question": "...", "options": ["A","B","C","D"], "correct_answer": "..."}]
-    """,
-    description="Generates quiz questions from lesson content",
-    output_key="quiz_result"
-)
+def get_quiz_agent():
+    return LlmAgent(
+        name="QuizAgent",
+        model=MODEL,
+        instruction=QUIZ_AGENT_PROMPT,
+        description="Generates quiz questions from lesson content",
+        output_key="quiz_result"
+    )

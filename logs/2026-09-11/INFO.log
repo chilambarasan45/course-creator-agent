@@ -1,0 +1,46 @@
+INFO     | 2026-09-11 12:57:16 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Introduction to Data Science using Python', level='beginner', quiz=True
+INFO     | 2026-09-11 12:57:49 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='Introduction to Data Science using Python'
+INFO     | 2026-09-11 13:08:34 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Introduction to Data Science using Python', level='beginner', quiz=False
+INFO     | 2026-09-11 13:08:56 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='Introduction to Data Science using Python'
+INFO     | 2026-09-11 13:42:49 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Introduction to Data Science using Python', level='beginner', quiz=False
+INFO     | 2026-09-11 13:43:32 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='Introduction to Data Science using Python'
+INFO     | 2026-09-11 14:00:54 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='introduction to data science using python', level='beginner', quiz=False
+INFO     | 2026-09-11 14:01:23 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='introduction to data science using python'
+INFO     | 2026-09-11 14:02:00 | app.agents.qa_service:answer_question:19 | Question: explain the cleaning process of data
+INFO     | 2026-09-11 14:02:00 | app.agents.qa_service:answer_question:20 | Retrieved 6 chunks:
+INFO     | 2026-09-11 14:02:00 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0318 text_preview='files. In a text file, data is encoded as a text using ASCII or Unicode formatti'
+INFO     | 2026-09-11 14:02:00 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0313 text_preview='format; some are easy to read by a human, like text files. However, all files ar'
+INFO     | 2026-09-11 14:02:00 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0305 text_preview='80\nFigure 14-2\n14.2. Unsupervised Learning \nIn unsupervised learning, input data'
+INFO     | 2026-09-11 14:02:00 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0294 text_preview='predict future output based on past observations of inputs. In data science, one'
+INFO     | 2026-09-11 14:02:00 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0164 text_preview='Learning is needed because you cannot anticipate all possible \nsituations that c'
+INFO     | 2026-09-11 14:02:00 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0161 text_preview='https://en.wikipedia.org/wiki/List_of_Unicode_characters \n9. https://beginnersbo'
+INFO     | 2026-09-11 14:02:22 | app.agents.qa_service:answer_question:19 | Question: cleaning messy data
+INFO     | 2026-09-11 14:02:22 | app.agents.qa_service:answer_question:20 | Retrieved 6 chunks:
+INFO     | 2026-09-11 14:02:22 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0315 text_preview='format; some are easy to read by a human, like text files. However, all files ar'
+INFO     | 2026-09-11 14:02:22 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0315 text_preview='files. In a text file, data is encoded as a text using ASCII or Unicode formatti'
+INFO     | 2026-09-11 14:02:22 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0310 text_preview='80\nFigure 14-2\n14.2. Unsupervised Learning \nIn unsupervised learning, input data'
+INFO     | 2026-09-11 14:02:22 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0164 text_preview='https://en.wikipedia.org/wiki/List_of_Unicode_characters \n9. https://beginnersbo'
+INFO     | 2026-09-11 14:02:22 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0161 text_preview=' \nIntroduction to Data \nScience Using Python \nAfrand Agah, Ph.D. A Member of The'
+INFO     | 2026-09-11 14:02:22 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0161 text_preview='0.1 ] \n [-1. 0.01]] \nthe new scaled data \n[[-0.62725005  0.12561486] \n [-0.36589'
+INFO     | 2026-09-11 14:02:41 | app.agents.qa_service:answer_question:19 | Question: data science
+INFO     | 2026-09-11 14:02:41 | app.agents.qa_service:answer_question:20 | Retrieved 6 chunks:
+INFO     | 2026-09-11 14:02:41 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0325 text_preview='predict future output based on past observations of inputs. In data science, one'
+INFO     | 2026-09-11 14:02:41 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0320 text_preview=' \nIntroduction to Data \nScience Using Python \nAfrand Agah, Ph.D. A Member of The'
+INFO     | 2026-09-11 14:02:41 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0315 text_preview='https://en.wikipedia.org/wiki/List_of_Unicode_characters \n9. https://beginnersbo'
+INFO     | 2026-09-11 14:02:41 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0315 text_preview='Font Book (Version 10.0 (404)) [App].). About PA-ADOPT \nThe Pennsylvania Allianc'
+INFO     | 2026-09-11 14:02:41 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0306 text_preview='Learning is needed because you cannot anticipate all possible \nsituations that c'
+INFO     | 2026-09-11 14:02:41 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0154 text_preview='Variables\t\n \n11\n2.1.1. Boolean Variables\t\n \n13\n2.1.2. Random Variables\t\n \n15\n2.2'
+INFO     | 2026-09-11 14:22:31 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='introduction to data science using python', level='beginner', quiz=False
+INFO     | 2026-09-11 14:22:42 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='introduction to data science using python', level='beginner', quiz=False
+INFO     | 2026-09-11 14:29:46 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='introduction to data science using python', level='beginner', quiz=False
+INFO     | 2026-09-11 14:30:10 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='introduction to data science using python'
+INFO     | 2026-09-11 14:30:53 | app.agents.qa_service:answer_question:19 | Question: data visualization
+INFO     | 2026-09-11 14:30:53 | app.agents.qa_service:answer_question:20 | Retrieved 6 chunks:
+INFO     | 2026-09-11 14:30:53 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0299 text_preview='predict future output based on past observations of inputs. In data science, one'
+INFO     | 2026-09-11 14:30:53 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0164 text_preview='axis and y is the vertical axis. The plot () function creates a line that connec'
+INFO     | 2026-09-11 14:30:53 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0164 text_preview='https://en.wikipedia.org/wiki/List_of_Unicode_characters \n9. https://beginnersbo'
+INFO     | 2026-09-11 14:30:53 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0161 text_preview='57\n10. Plotting Graphs \nMatplotlib is a library in Python that you can utilize f'
+INFO     | 2026-09-11 14:30:53 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0161 text_preview='0.1 ] \n [-1. 0.01]] \nthe new scaled data \n[[-0.62725005  0.12561486] \n [-0.36589'
+INFO     | 2026-09-11 14:30:53 | app.agents.qa_service:answer_question:22 |   - source=introduction-to-data-science-using-python.pdf score=0.0159 text_preview='are line properties that you can use as built-in functions. Finally, to display '
+INFO     | 2026-09-11 14:31:53 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Python Packages', level='beginner', quiz=False
+INFO     | 2026-09-11 14:32:06 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='Python Packages'

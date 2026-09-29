@@ -1,0 +1,4 @@
+INFO     | 2026-09-03 11:59:15 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Python', level='beginner', quiz=False
+INFO     | 2026-09-03 12:01:02 | course_creator:run_adk_course_generation:122 | Course generation complete for topic='Python'
+INFO     | 2026-09-03 12:23:33 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Python', level='beginner', quiz=False
+INFO     | 2026-09-03 12:32:26 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='what is Debisa', level='beginner', quiz=False

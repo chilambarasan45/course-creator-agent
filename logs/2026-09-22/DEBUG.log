@@ -1,0 +1,1080 @@
+DEBUG    | 2026-09-22 13:44:00 | course_creator:run_adk_curriculum_for_document:170 | Event from PlanningAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "subtopics": [
+        "Linear Algebra Foundations",
+        "Optimization Techniques",
+        "Directed Graphical Models",
+        "Undirected Graphical Models",
+        "Factor Graphs and Message Passing",
+        "Inference and Learning Methods"
+    ],
+    "notes": "This course plan is calibrated to an advanced level based on the provided document covering mathematical and probabilistic machine learning methods (such as matrix calculus, graphical models, message passing, HMMs, sampling, and variational inference). Subtopics are ordered sequentially from mathematical prerequisites (linear algebra and optimization) to structural representations (graphical models and factor graphs), culminating in inference and learning algorithms. Ensure deep technical rigor, focusing on derivations, exact inference, and parameter estimation techniques."
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=157,
+  prompt_token_count=6213,
+  total_token_count=6370
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='PlanningAgent' actions=EventActions(skip_summarization=None, state_delta={'plan_result': '{\n    "subtopics": [\n        "Linear Algebra Foundations",\n        "Optimization Techniques",\n        "Directed Graphical Models",\n        "Undirected Graphical Models",\n        "Factor Graphs and Message Passing",\n        "Inference and Learning Methods"\n    ],\n    "notes": "This course plan is calibrated to an advanced level based on the provided document covering mathematical and probabilistic machine learning methods (such as matrix calculus, graphical models, message passing, HMMs, sampling, and variational inference). Subtopics are ordered sequentially from mathematical prerequisites (linear algebra and optimization) to structural representations (graphical models and factor graphs), culminating in inference and learning algorithms. Ensure deep technical rigor, focusing on derivations, exact inference, and parameter estimation techniques."\n}'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='2706a67f-2942-408a-9590-f3fb64905a40' timestamp=1790064837.7441003
+DEBUG    | 2026-09-22 13:44:01 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_title': 'Linear Algebra Foundations'
+        },
+        id='call_694753__thought__El4KXAFpFH0TW6hiEeo3beVk/JhmYUaTilbqJKqsiGAPxvBPZrwC5IdPGUr9XPktgmyjUz2lGh6E2UPkhsBThOBXjpHI9XTaVuAWKHe4hKtK9FSanOid4B8a380KB/zu',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12^\n\\\x01i\x14}\x13[\xa8b\x11\xea7m\xe5d\xfc\x98faF\x93\x8aV\xea$\xaa\xac\x88`\x0f\xc6\xf0Of\xbc\x02\xe4\x87O\x19J\xfd\\\xf9-\x82l\xa3S=\xa5\x1a\x1e\x84\xd9C\xe4\x86\xc0S\x84\xe0W\x8e\x91\xc8\xf5t\xdaV\xe0\x16(w\xb8\x84\xabJ\xf4T\x9a\x9c\xe8\x9d\xe0\x1f\x1a\xdf\xcd\n\x07\xfc\xee'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=22,
+  prompt_token_count=6034,
+  total_token_count=6056
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='34a6c31e-8a8b-493d-a5c1-7890ca7ed3e1' timestamp=1790064840.4637892
+DEBUG    | 2026-09-22 13:44:01 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_694753__thought__El4KXAFpFH0TW6hiEeo3beVk/JhmYUaTilbqJKqsiGAPxvBPZrwC5IdPGUr9XPktgmyjUz2lGh6E2UPkhsBThOBXjpHI9XTaVuAWKHe4hKtK9FSanOid4B8a380KB/zu',
+        name='search_reference_material',
+        response={
+          'error': """Invoking `search_reference_material()` failed as the following mandatory input parameters are not present:
+module_titles
+You could retry calling this tool, but it is IMPORTANT for you to provide all the mandatory parameters."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='7c21686b-0702-444a-bcc8-2d6824f5c665' timestamp=1790064841.8995135
+DEBUG    | 2026-09-22 13:44:02 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Linear Algebra Foundations',
+          ]
+        },
+        id='call_400931__thought__El4KXAFpFH0TwCWvFRbLQaXYxggge5oKfNvQO1lqMH13sRgFfeNwImnCuQUM7trhRe2g76YkuMvWPebKrfs6N6fnbFleV2TEzJJLiL62Kz44MDocFLzJvVLqGqjKFkrp',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12^\n\\\x01i\x14}\x13\xc0%\xaf\x15\x16\xcbA\xa5\xd8\xc6\x08 {\x9a\n|\xdb\xd0;Yj0}w\xb1\x18\x05}\xe3p"i\xc2\xb9\x05\x0c\xee\xda\xe1E\xed\xa0\xef\xa6$\xb8\xcb\xd6=\xe6\xca\xad\xfb:7\xa7\xe7lY^Wd\xc4\xcc\x92K\x88\xbe\xb6+>80:\x1c\x14\xbc\xc9\xbdR\xea\x1a\xa8\xca\x16J\xe9'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=22,
+  prompt_token_count=6116,
+  total_token_count=6138
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='9403baa0-4159-40bd-88d8-f0901f29ff41' timestamp=1790064841.9087777
+DEBUG    | 2026-09-22 13:44:03 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_400931__thought__El4KXAFpFH0TwCWvFRbLQaXYxggge5oKfNvQO1lqMH13sRgFfeNwImnCuQUM7trhRe2g76YkuMvWPebKrfs6N6fnbFleV2TEzJJLiL62Kz44MDocFLzJvVLqGqjKFkrp',
+        name='search_reference_material',
+        response={
+          'result': """[Linear Algebra Foundations]
+Pen & Paper
+Exercises in Machine Learning
+Michael U. Gutmann
+University of Edinburgh
+arXiv:2206.13446v1  [cs.LG]  27 Jun 2022
+This work is licensed under the Creative Commons Attribution 4.0 International License
+cb. To view a copy of this license, visit http://creativecommons.org/licenses/by/
+4.0/. Contents
+Preface
+vii
+1
+Linear Algebra
+1
+1.1
+Gram–Schmidt orthogonalisation . .
+
+improve the quality of the exercises and solutions. I am further grateful to both universities
+for providing the research and teaching environment. My hope is that the collection of exercises will grow with time. I intend to add new
+exercises in the future and welcome contributions from the community. Latex source code is
+available at https://github.com/michaelgutmann/ml-pen-and-paper-exercises. Please
+use GitHub’s issues to report mistakes or typos, and please get in touch if you would like
+to make larger contributions. Michael Gutmann
+Edinburgh, June 2022
+https://michaelgutmann.github.io
+Chapter 1
+Linear Algebra
+Exercises
+1.1
+Gram–Schmidt orthogonalisation . .
+
+. , uk. Solution. The base case of two vectors was proved above. Using induction, we
+assume that the claim holds for k vectors and we will prove that it then also holds
+for k + 1 vectors: Let v be a linear combination of a1, a2, . . . , ak+1, i.e. v = α1a1 +
+α2a2 + . . . + αkak + αk+1ak+1 for some real numbers α1, α2, . . . , αk+1. Using the
+induction assumption, v can be written as
+v = β1u1 + β2u2 + . . . + βkuk + αk+1ak+1,
+(S.1.18)
+4
+Linear Algebra
+for some real numbers β1, β2, . . . , βk Furthermore, using equation (S.1.13), v can be
+written as
+v = β1u1 + . . . + βkuk + αk+1uk+1 + αk+1
+u⊤
+1 ak+1
+u⊤
+1 u1
+u1
+(S.1.19)
++ . . . + αk+1
+u⊤
+k ak+1
+u⊤
+k uk
+uk. (S.1.20)
+With γi = βi + αk+1(u⊤
+i ak+1)/(u⊤
+i ui), v can thus be written as
+v = γ1u1 + γ2u2 + . . . + γkuk + αk+1uk+1,
+(S.1.21)
+
+i ak+1)/(u⊤
+i ui), v can thus be written as
+v = γ1u1 + γ2u2 + . . . + γkuk + αk+1uk+1,
+(S.1.21)
+which completes the proof. Overall, this means that the u1, u2, . . . , uk form an
+orthogonal basis for span(a1, . . . , ak), i.e. the set of all vectors that can be obtained
+by linearly combining the ai. (e) Consider the case where a1, a2, . . . , ak are linearly independent and ak+1 is a linear
+combination of a1, a2, . . . , ak. Show that uk+1, computed according to (1.3), is zero. Solution. Starting with (1.3), we have
+uk+1 = ak+1 −
+k
+X
+j=1
+u⊤
+j ak+1
+u⊤
+j uj
+uj. (S.1.22)
+By assumption, ak+1 is a linear combination of a1, a2, . . . , ak. By the previous ques-
+tion, it can thus also be written as a linear combination of the u1, . .
+
+. 2
+1.2
+Linear transforms . .
+
+. 2
+1.2
+Linear transforms
+. ."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='bdaf8595-52f4-41bb-b5ae-21ffa7f82ad3' timestamp=1790064843.7175057
+DEBUG    | 2026-09-22 13:44:05 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Optimization Techniques',
+          ]
+        },
+        id='call_687150__thought__El4KXAFpFH0TnmExWF7OtlFat9B10PHy1vqSn7UnQleixAxAEU1PGj2j+6ihHVb7WaUuEdKZHDAsJNreTQD0hpRqVuiJcxu5NcoPNRTfYiVBDPhnm+mWIv7pVYvgO7LG',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12^\n\\\x01i\x14}\x13\x9ea1X^\xce\xb6QZ\xb7\xd0u\xd0\xf1\xf2\xd6\xfa\x92\x9f\xb5\'BW\xa2\xc4\x0c@\x11MO\x1a=\xa3\xfb\xa8\xa1\x1dV\xfbY\xa5.\x11\xd2\x99\x1c0,$\xda\xdeM\x00\xf4\x86\x94jV\xe8\x89s\x1b\xb95\xca\x0f5\x14\xdfb%A\x0c\xf8g\x9b\xe9\x96"\xfe\xe9U\x8b\xe0;\xb2\xc6'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=21,
+  prompt_token_count=7097,
+  total_token_count=7118
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='e9fa573d-3c74-4133-ba1c-6075aa6cdbd7' timestamp=1790064843.7258945
+DEBUG    | 2026-09-22 13:44:05 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_687150__thought__El4KXAFpFH0TnmExWF7OtlFat9B10PHy1vqSn7UnQleixAxAEU1PGj2j+6ihHVb7WaUuEdKZHDAsJNreTQD0hpRqVuiJcxu5NcoPNRTfYiVBDPhnm+mWIv7pVYvgO7LG',
+        name='search_reference_material',
+        response={
+          'result': """[Optimization Techniques]
+. 11
+2
+Optimisation
+15
+2.1
+Gradient of vector-valued functions . .
+
+analysis. IEEE Transactions on Neural Networks, 10(3):626–634, 1999. URL https:
+//ieeexplore.ieee.org/document/761722. Aapo Hyvärinen. Estimation of non-normalized statistical models using score match-
+ing. Journal of Machine Learning Research, 6:695–709, 2005. URL http://jmlr.org/
+papers/volume6/hyvarinen05a/hyvarinen05a.pdf. Aapo Hyvärinen, Erkki Oja, and Juha Karhunen. Independent Component Analysis. John Wiley & Sons, 2001. URL https://www.cs.helsinki.fi/u/ahyvarin/papers/
+bookfinal_ICA.pdf. Jorge Nocedal and Stephen J. Wright. Numerical Optimization. Springer, 1999. Art B. Owen. Monte Carlo theory, methods and examples. 2013. URL https://artowen. su.domains/mc/. Christian Robert and George Casella. Introducing Monte Carlo Methods with R. Springer,
+
+as
+v1,k = log p(v1|k) + log p(k)
+k = 0, . . . , K −1
+(S.7.16)
+vi,k =
+max
+m∈0,...,K−1 log φi(m, k) + vi−1,m
+k = 0, . . . , K −1,
+i = 2, . . . , t,
+(S.7.17)
+At the end of the algorithm, we thus have a t × K matrix V with elements vi,k. The maximisation can be performed by computing the temporary matrix A (via broadcast-
+ing) where the (m, k)-th element is log φi(m, k) + vi−1,m. Maximisation then corresponds
+to determining the maximal value in each column. To support the backtracking, when we compute Vi(hi) by maximising over hi−1, we com-
+pute at the same time the look-up table
+γ∗
+i (hi) = argmax
+hi−1
+log φi(hi−1, hi) + Vi−1(hi−1)
+(S.7.18)
+When hi takes on the values 0, . . . , K −1, this can be written as
+γ∗
+i,k =
+argmax
+m∈0,...,K−1
+log φi(m, k) + vi−1,m
+(S.7.19)
+
+is, hopefully, suﬃcient for the reader to follow the solutions and understand the techniques
+used. The exercises, however, are not a replacement of a textbook or course on machine
+learning. I assume that the reader has already seen the relevant theory and concepts and
+would now like to deepen their understanding through solving exercises. While coding and computer simulations are extremely important in machine learning,
+the exercises in the book can (mostly) be solved with pen and paper. The focus on pen-
+and-paper exercises reduced length and simpliﬁed the presentation. Moreover, it allows the
+reader to strengthen their mathematical skills. However, the exercises are ideally paired
+
+2
+√
+2π exp(1/(2b2))b−2
+(S.9.53)
+=
+2
+√
+2π exp(1/(2b2))(1 −b−2)
+(S.9.54)
+M′′(b) = −b−3
+2
+√
+2π exp(1/(2b2))(1 −b−2) + 2b−3
+2
+√
+2π exp(1/(2b2))
+(S.9.55)
+(S.9.56)
+Setting the ﬁrst derivative to zero gives
+2
+√
+2π exp(1/(2b2)) =
+2
+√
+2π exp(1/(2b2))b−2
+(S.9.57)
+1 = b−2
+(S.9.58)
+Hence the optimal b = 1. The second derivative at b = 1 is
+M′′(1) = 2
+2
+√
+2π exp(1/2)
+(S.9.59)
+179
+which is positive so that the b = 1 is a minimum. The smallest value of M thus is
+M(1) =
+2b
+√
+2π exp(1/(2b2))
+
+b=1
+(S.9.60)
+=
+2
+√
+2π exp(1/2)
+(S.9.61)
+=
+r
+2e
+π
+(S.9.62)
+where e = exp(1). The maximal acceptance probability thus is
+1
+minb M(b) =
+r π
+2e
+(S.9.63)
+≈0.76
+(S.9.64)
+This means for each sample x generated from q(x; 1), there is chance of 0.76 that
+
+. . . . . . . . . . . . . . . . . . . 199
+Bibliography
+203
+Preface
+We may have all heard the saying “use it or lose it”. We experience it when we feel rusty in
+a foreign language or sports that we have not practised in a while. Practice is important
+to maintain skills but it is also key when learning new ones. This is a reason why many
+textbooks and courses feature exercises. However, the solutions to the exercises feel often
+overly brief, or are sometimes not available at all. Rather than an opportunity to practice
+the new skills, the exercises then become a source of frustration and are ignored. This book contains a collection of exercises with detailed solutions. The level of detail
+is, hopefully, suﬃcient for the reader to follow the solutions and understand the techniques"""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='48c9c715-67b8-4a4b-8f7a-d211a0277d9f' timestamp=1790064845.424935
+DEBUG    | 2026-09-22 13:44:07 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Directed Graphical Models',
+          ]
+        },
+        id='call_4423__thought__El4KXAFpFH0TNDl5aWF7BM9s2Aa1JWjOv69zAr+BsG0B6uF2hRW/69v+vd5tJwryo6NfhHVamHlOLzGTmRgB9BtzufMI13q93jv2LZ/BLY3/q1a2bpd6Kzw1hIV0GTC4',
+        name='search_reference_material'
+      ),
+      thought_signature=b"\x12^\n\\\x01i\x14}\x1349yia{\x04\xcfl\xd8\x06\xb5%h\xce\xbf\xafs\x02\xbf\x81\xb0m\x01\xea\xe1v\x85\x15\xbf\xeb\xdb\xfe\xbd\xdem'\n\xf2\xa3\xa3_\x84uZ\x98yN/1\x93\x99\x18\x01\xf4\x1bs\xb9\xf3\x08\xd7z\xbd\xde;\xf6-\x9f\xc1-\x8d\xff\xabV\xb6n\x97z+<5\x84\x85t\x190\xb8"
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=22,
+  prompt_token_count=8500,
+  total_token_count=8522
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='bf0e4d54-cf69-42b5-9d14-2b2f3cd9bbe4' timestamp=1790064845.4331887
+DEBUG    | 2026-09-22 13:44:07 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_4423__thought__El4KXAFpFH0TNDl5aWF7BM9s2Aa1JWjOv69zAr+BsG0B6uF2hRW/69v+vd5tJwryo6NfhHVamHlOLzGTmRgB9BtzufMI13q93jv2LZ/BLY3/q1a2bpd6Kzw1hIV0GTC4',
+        name='search_reference_material',
+        response={
+          'result': """[Directed Graphical Models]
+. 41
+3.10 Independencies in directed graphical models . .
+
+. 75
+5.9
+Limits of directed and undirected graphical models . .
+
+. 26
+3
+Directed Graphical Models
+27
+3.1
+Directed graph concepts . .
+
+. 75
+5.9
+Limits of directed and undirected graphical models . .
+
+. 43
+3.11 Independencies in directed graphical models . .
+
+. 41
+3.10 Independencies in directed graphical models . ."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='60c75bb7-5925-4d4a-bc86-8da72c6e9766' timestamp=1790064847.2307243
+DEBUG    | 2026-09-22 13:44:10 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Undirected Graphical Models',
+          ]
+        },
+        id='call_689994__thought__El4KXAFpFH0TSpp1xJ/YL3x7nfGwaerRqSrcc84XjXAYzqFKptavB0m+nJZ3NMii/j/loESWY9ZaoYrEaDwfqUwfIXl364dLWDy3uHYq3H2fja6qoR/QF9YI4MqEQwgb',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12^\n\\\x01i\x14}\x13J\x9au\xc4\x9f\xd8/|{\x9d\xf1\xb0i\xea\xd1\xa9*\xdcs\xce\x17\x8dp\x18\xce\xa1J\xa6\xd6\xaf\x07I\xbe\x9c\x96w4\xc8\xa2\xfe?\xe5\xa0D\x96c\xd6Z\xa1\x8a\xc4h<\x1f\xa9L\x1f!yw\xeb\x87KX<\xb7\xb8v*\xdc}\x9f\x8d\xae\xaa\xa1\x1f\xd0\x17\xd6\x08\xe0\xca\x84C\x08\x1b'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=23,
+  prompt_token_count=8658,
+  total_token_count=8681
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='2331cd17-0d5e-4841-822b-88667d42d16a' timestamp=1790064847.2377994
+DEBUG    | 2026-09-22 13:44:10 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_689994__thought__El4KXAFpFH0TSpp1xJ/YL3x7nfGwaerRqSrcc84XjXAYzqFKptavB0m+nJZ3NMii/j/loESWY9ZaoYrEaDwfqUwfIXl364dLWDy3uHYq3H2fja6qoR/QF9YI4MqEQwgb',
+        name='search_reference_material',
+        response={
+          'result': """[Undirected Graphical Models]
+. 75
+5.9
+Limits of directed and undirected graphical models . .
+
+. 48
+4.2
+Factorisation and independencies for undirected graphical models . .
+
+. 49
+4.3
+Factorisation and independencies for undirected graphical models . .
+
+. 75
+5.9
+Limits of directed and undirected graphical models . .
+
+. 41
+3.10 Independencies in directed graphical models . .
+
+. 41
+3.10 Independencies in directed graphical models . ."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='1ebecfb7-47f8-4b06-95f6-c9522713bda9' timestamp=1790064850.8391502
+DEBUG    | 2026-09-22 13:44:12 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Factor Graphs and Message Passing',
+          ]
+        },
+        id='call_40495__thought__El4KXAFpFH0TWljdJAwni/dOKM/ocxPFCcXJfkt5lX6aP+D5sUcXqIdJZ7Pwfm4tAYQPw8CKXsDgj1dcLOR/YMLkx9l5qA4lTo7Kpj7xS7+FZv3r3VdXXKrYWHrsOSBl',
+        name='search_reference_material'
+      ),
+      thought_signature=b"\x12^\n\\\x01i\x14}\x13ZX\xdd$\x0c'\x8b\xf7N(\xcf\xe8s\x13\xc5\t\xc5\xc9~Ky\x95~\x9a?\xe0\xf9\xb1G\x17\xa8\x87Ig\xb3\xf0~n-\x01\x84\x0f\xc3\xc0\x8a^\xc0\xe0\x8fW\\,\xe4\x7f`\xc2\xe4\xc7\xd9y\xa8\x0e%N\x8e\xca\xa6>\xf1K\xbf\x85f\xfd\xeb\xddWW\\\xaa\xd8Xz\xec9 e"
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=24,
+  prompt_token_count=8818,
+  total_token_count=8842
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='ddfe7b46-13f2-401a-85d0-367ad366860a' timestamp=1790064850.8463871
+DEBUG    | 2026-09-22 13:44:12 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_40495__thought__El4KXAFpFH0TWljdJAwni/dOKM/ocxPFCcXJfkt5lX6aP+D5sUcXqIdJZ7Pwfm4tAYQPw8CKXsDgj1dcLOR/YMLkx9l5qA4lTo7Kpj7xS7+FZv3r3VdXXKrYWHrsOSBl',
+        name='search_reference_material',
+        response={
+          'result': """[Factor Graphs and Message Passing]
+. 76
+6
+Factor Graphs and Message Passing
+81
+6.1
+Conversion to factor graphs . .
+
+. 93
+6.5
+Choice of elimination order in factor graphs . .
+
+. 93
+6.5
+Choice of elimination order in factor graphs . .
+
+. 100
+6.6
+Choice of elimination order in factor graphs . .
+
+. 107
+82
+Factor Graphs and Message Passing
+6.1
+Conversion to factor graphs
+(a) Draw an undirected graph and an undirected factor graph for p(x1, x2, x3) = p(x1)p(x2)p(x3|x1, x2)
+Solution. x1
+x2
+x3
+x1
+x2
+p(x3|x1 x2)
+x3
+p(x1)
+p(x2)
+(b) Draw an undirected factor graph for the directed graphical model deﬁned by the
+graph below. y1
+y2
+y3
+y4
+x1
+x2
+x3
+x4
+Solution. The graph speciﬁes probabilistic models that factorise as
+p(x1, . . . , x4, y1, . . . , y4) = p(x1)p(y1|x1)
+4
+Y
+i=2
+p(yi|xi)p(xi|xi−1)
+It is the graph for a hidden Markov model. The corresponding factor graph is shown
+below. y1
+p(y1|x1)
+y2
+p(y2|x2)
+y3
+p(y3|x3)
+y4
+p(y4|x4)
+p(x1)
+x1
+p(x2|x1)
+x2
+p(x3|x2)
+x3
+p(x4|x3)
+x4
+(c) Draw the moralised graph and an undirected factor graph for directed graphical
+
+. 82
+6.2
+Sum-product message passing . ."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='c1d61314-02ea-4960-8fca-cc464f20b596' timestamp=1790064852.406073
+DEBUG    | 2026-09-22 13:44:13 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Inference and Learning Methods',
+          ]
+        },
+        id='call_704152__thought__El4KXAFpFH0TEhPJdTDBC3x1z7wttRSZGbRWLMLmEGxaFucD2hOProISuEMr2B9+rtWzmoxJzmQm9H4V91L8qZfNWKaNgyeSXOEyf/lXEo1sV6LD4fzuzgjv+LNEsTx+',
+        name='search_reference_material'
+      ),
+      thought_signature=b"\x12^\n\\\x01i\x14}\x13\x12\x13\xc9u0\xc1\x0b|u\xcf\xbc-\xb5\x14\x99\x19\xb4V,\xc2\xe6\x10lZ\x16\xe7\x03\xda\x13\x8f\xae\x82\x12\xb8C+\xd8\x1f~\xae\xd5\xb3\x9a\x8cI\xced&\xf4~\x15\xf7R\xfc\xa9\x97\xcdX\xa6\x8d\x83'\x92\\\xe12\x7f\xf9W\x12\x8dlW\xa2\xc3\xe1\xfc\xee\xce\x08\xef\xf8\xb3D\xb1<~"
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=24,
+  prompt_token_count=9329,
+  total_token_count=9353
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='dedbcc57-7ed3-4dcf-a9da-0767dbe462bb' timestamp=1790064852.4130456
+DEBUG    | 2026-09-22 13:44:13 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_704152__thought__El4KXAFpFH0TEhPJdTDBC3x1z7wttRSZGbRWLMLmEGxaFucD2hOProISuEMr2B9+rtWzmoxJzmQm9H4V91L8qZfNWKaNgyeSXOEyf/lXEo1sV6LD4fzuzgjv+LNEsTx+',
+        name='search_reference_material',
+        response={
+          'result': """[Inference and Learning Methods]
+. 151
+8.8
+Learning parameters of a directed graphical model
+. .
+
+. 187
+10 Variational Inference
+191
+10.1 Mean ﬁeld variational inference I . .
+
+. 151
+8.8
+Learning parameters of a directed graphical model . .
+
+. 180
+9.8
+Basic Markov chain Monte Carlo inference . .
+
+. 146
+8.5
+Bayesian inference for the Bernoulli model . .
+
+reader to strengthen their mathematical skills. However, the exercises are ideally paired
+with computer exercises to further deepen the understanding. The exercises collected here are mostly a union of exercises that I developed for the
+courses “Unsupervised Machine Learning” at the University of Helsinki and “Probabilistic
+Modelling and Reasoning” at the University of Edinburgh. The exercises do not com-
+prehensively cover all of machine learning but focus strongly on unsupervised methods,
+inference and learning. I am grateful to my students for providing feedback and asking questions. Both helped to
+improve the quality of the exercises and solutions. I am further grateful to both universities"""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='7edc3c6a-26bb-4ce3-af30-a253fb5b7726' timestamp=1790064853.8104005
+DEBUG    | 2026-09-22 13:44:16 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "Linear Algebra Foundations": "Covers foundational linear algebra topics useful for machine learning, including Gram-Schmidt orthogonalization (constructing orthogonal vectors u1 = a1 and u2 = a2 - ((u1^T a2)/(u1^T u1))u1, and generalizing to k vectors to form an orthogonal basis for the span of a set of linearly independent vectors), linear transformations, eigenvalue decompositions, trace and determinants, eigenvalue decomposition for symmetric matrices, and the power method.",
+    "Optimization Techniques": "Focuses on mathematical optimization concepts for machine learning objectives, including gradients of vector-valued functions, Newton's method for finding roots or extrema, gradients of matrix-valued functions, gradients of log-determinants, and descent directions for matrix-valued functions.",
+    "Directed Graphical Models": "Covers probabilistic directed graphical models (Bayesian networks), including directed graph concepts, canonical connections, ordered and local Markov properties, d-separation, alternative characterizations of conditional independencies, hidden Markov models, and specific case studies like the chest clinic example.",
+    "Undirected Graphical Models": "Examines Markov random fields and undirected graphical models, covering Gibbs distributions visualised via undirected graphs, factorisation properties, independencies, factorisation from Markov blankets, pairwise potentials, and restricted Boltzmann machines (RBMs).",
+    "Factor Graphs and Message Passing": "Deals with factor graphs and exact/approximate inference algorithms, including converting directed/undirected graphs into factor graphs, sum-product message passing, max-sum message passing (and associated backtracking tables), and the choice of variable elimination order.",
+    "Inference and Learning Methods": "Covers parameter estimation, probabilistic inference, sampling, and variational techniques. Topics include maximum likelihood estimation (MLE) for Gaussians and fully observed discrete directed models, Bayesian inference for Bernoulli models and Gaussians, factor analysis, independent component analysis (ICA), score matching for exponential families, Monte Carlo methods (importance sampling, inverse transform sampling, rejection sampling, MCMC, Metropolis-Hastings convergence), and variational inference (mean-field variational approximations)."
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=434,
+  prompt_token_count=9613,
+  total_token_count=10047
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={'research_result': '{\n    "Linear Algebra Foundations": "Covers foundational linear algebra topics useful for machine learning, including Gram-Schmidt orthogonalization (constructing orthogonal vectors u1 = a1 and u2 = a2 - ((u1^T a2)/(u1^T u1))u1, and generalizing to k vectors to form an orthogonal basis for the span of a set of linearly independent vectors), linear transformations, eigenvalue decompositions, trace and determinants, eigenvalue decomposition for symmetric matrices, and the power method.",\n    "Optimization Techniques": "Focuses on mathematical optimization concepts for machine learning objectives, including gradients of vector-valued functions, Newton\'s method for finding roots or extrema, gradients of matrix-valued functions, gradients of log-determinants, and descent directions for matrix-valued functions.",\n    "Directed Graphical Models": "Covers probabilistic directed graphical models (Bayesian networks), including directed graph concepts, canonical connections, ordered and local Markov properties, d-separation, alternative characterizations of conditional independencies, hidden Markov models, and specific case studies like the chest clinic example.",\n    "Undirected Graphical Models": "Examines Markov random fields and undirected graphical models, covering Gibbs distributions visualised via undirected graphs, factorisation properties, independencies, factorisation from Markov blankets, pairwise potentials, and restricted Boltzmann machines (RBMs).",\n    "Factor Graphs and Message Passing": "Deals with factor graphs and exact/approximate inference algorithms, including converting directed/undirected graphs into factor graphs, sum-product message passing, max-sum message passing (and associated backtracking tables), and the choice of variable elimination order.",\n    "Inference and Learning Methods": "Covers parameter estimation, probabilistic inference, sampling, and variational techniques. Topics include maximum likelihood estimation (MLE) for Gaussians and fully observed discrete directed models, Bayesian inference for Bernoulli models and Gaussians, factor analysis, independent component analysis (ICA), score matching for exponential families, Monte Carlo methods (importance sampling, inverse transform sampling, rejection sampling, MCMC, Metropolis-Hastings convergence), and variational inference (mean-field variational approximations)."\n}'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='4810cc6c-51c4-44ff-8fc5-ae27ff8c0a8c' timestamp=1790064853.8191042
+DEBUG    | 2026-09-22 13:44:19 | course_creator:run_adk_curriculum_for_document:170 | Event from CurriculumAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""[
+    {
+        "title": "Linear Algebra Foundations",
+        "subtopics": [
+            "Gram-Schmidt Orthogonalization",
+            "Linear Transforms and Eigenvalue Decomposition",
+            "Trace, Determinants, and Symmetric Matrices",
+            "Power Method for Eigenvalues"
+        ]
+    },
+    {
+        "title": "Optimization Techniques",
+        "subtopics": [
+            "Gradients of Vector-Valued Functions",
+            "Newton's Method in Optimization",
+            "Gradients of Matrix-Valued Functions",
+            "Log-Determinant Gradients and Descent Directions"
+        ]
+    },
+    {
+        "title": "Directed Graphical Models",
+        "subtopics": [
+            "Directed Graph Concepts and Canonical Connections",
+            "Markov Properties and d-Separation",
+            "Chest Clinic Network Case Study",
+            "Hidden Markov Models and Independencies"
+        ]
+    },
+    {
+        "title": "Undirected Graphical Models",
+        "subtopics": [
+            "Gibbs Distributions and Factorisation",
+            "Markov Blankets and Factorisation Properties",
+            "Pairwise Potentials and Restricted Boltzmann Machines",
+            "Change of Measure in Graphical Models"
+        ]
+    },
+    {
+        "title": "Factor Graphs and Message Passing",
+        "subtopics": [
+            "Conversion to Factor Graphs",
+            "Sum-Product Message Passing",
+            "Max-Sum Message Passing and Backtracking",
+            "Choice of Elimination Order"
+        ]
+    },
+    {
+        "title": "Inference and Learning Methods",
+        "subtopics": [
+            "Maximum Likelihood and Bayesian Estimation",
+            "Factor Analysis and Independent Component Analysis",
+            "Monte Carlo Integration and MCMC Sampling",
+            "Mean-Field Variational Inference"
+        ]
+    }
+]"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=414,
+  prompt_token_count=11726,
+  total_token_count=12140
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-cc2eb589-abe0-4156-8eb0-722ce5d7dd47' author='CurriculumAgent' actions=EventActions(skip_summarization=None, state_delta={'curriculum_result': '[\n    {\n        "title": "Linear Algebra Foundations",\n        "subtopics": [\n            "Gram-Schmidt Orthogonalization",\n            "Linear Transforms and Eigenvalue Decomposition",\n            "Trace, Determinants, and Symmetric Matrices",\n            "Power Method for Eigenvalues"\n        ]\n    },\n    {\n        "title": "Optimization Techniques",\n        "subtopics": [\n            "Gradients of Vector-Valued Functions",\n            "Newton\'s Method in Optimization",\n            "Gradients of Matrix-Valued Functions",\n            "Log-Determinant Gradients and Descent Directions"\n        ]\n    },\n    {\n        "title": "Directed Graphical Models",\n        "subtopics": [\n            "Directed Graph Concepts and Canonical Connections",\n            "Markov Properties and d-Separation",\n            "Chest Clinic Network Case Study",\n            "Hidden Markov Models and Independencies"\n        ]\n    },\n    {\n        "title": "Undirected Graphical Models",\n        "subtopics": [\n            "Gibbs Distributions and Factorisation",\n            "Markov Blankets and Factorisation Properties",\n            "Pairwise Potentials and Restricted Boltzmann Machines",\n            "Change of Measure in Graphical Models"\n        ]\n    },\n    {\n        "title": "Factor Graphs and Message Passing",\n        "subtopics": [\n            "Conversion to Factor Graphs",\n            "Sum-Product Message Passing",\n            "Max-Sum Message Passing and Backtracking",\n            "Choice of Elimination Order"\n        ]\n    },\n    {\n        "title": "Inference and Learning Methods",\n        "subtopics": [\n            "Maximum Likelihood and Bayesian Estimation",\n            "Factor Analysis and Independent Component Analysis",\n            "Monte Carlo Integration and MCMC Sampling",\n            "Mean-Field Variational Inference"\n        ]\n    }\n]'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='29c46ff3-1352-485b-bf4a-9cc4567c7e18' timestamp=1790064856.9138966
+DEBUG    | 2026-09-22 13:44:24 | course_creator:run_adk_topic_pipeline:230 | Event from WebSearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Gram-Schmidt Orthogonalization',
+          ]
+        },
+        id='call_666081__thought__El4KXAFpFH0TbzypVJUoblC8pt/+p2tGzrMBIGu+FiHhfV0zwSXtuU3ZYp0Lx3o0D1VtgkTu4ztSkTraHNLtgPUM4NGTlvjueG9b94llb4wk+WXxks4sjqGuwMwE+fnM',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12^\n\\\x01i\x14}\x13o<\xa9T\x95(nP\xbc\xa6\xdf\xfe\xa7kF\xce\xb3\x01 k\xbe\x16!\xe1}]3\xc1%\xed\xb9M\xd9b\x9d\x0b\xc7z4\x0fUm\x82D\xee\xe3;R\x91:\xda\x1c\xd2\xed\x80\xf5\x0c\xe0\xd1\x93\x96\xf8\xeexo[\xf7\x89eo\x8c$\xf9e\xf1\x92\xce,\x8e\xa1\xae\xc0\xcc\x04\xf9\xf9\xcc'
+    ),
+    Part(
+      function_call=FunctionCall(
+        args={
+          'query': 'Gram-Schmidt Orthogonalization'
+        },
+        id='call_666082',
+        name='web_search'
+      )
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=46,
+  prompt_token_count=699,
+  total_token_count=745
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-854a13a6-b884-441f-961d-73877c6ac2fd' author='WebSearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='3b4290c7-ae2a-4f2e-ba1b-5fc5ad6c5c8c' timestamp=1790064863.2848349
+DEBUG    | 2026-09-22 13:44:25 | course_creator:run_adk_topic_pipeline:230 | Event from WebSearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_666081__thought__El4KXAFpFH0TbzypVJUoblC8pt/+p2tGzrMBIGu+FiHhfV0zwSXtuU3ZYp0Lx3o0D1VtgkTu4ztSkTraHNLtgPUM4NGTlvjueG9b94llb4wk+WXxks4sjqGuwMwE+fnM',
+        name='search_reference_material',
+        response={
+          'result': """[Gram-Schmidt Orthogonalization]
+Pen & Paper
+Exercises in Machine Learning
+Michael U. Gutmann
+University of Edinburgh
+arXiv:2206.13446v1  [cs.LG]  27 Jun 2022
+This work is licensed under the Creative Commons Attribution 4.0 International License
+cb. To view a copy of this license, visit http://creativecommons.org/licenses/by/
+4.0/. Contents
+Preface
+vii
+1
+Linear Algebra
+1
+1.1
+Gram–Schmidt orthogonalisation . .
+
+improve the quality of the exercises and solutions. I am further grateful to both universities
+for providing the research and teaching environment. My hope is that the collection of exercises will grow with time. I intend to add new
+exercises in the future and welcome contributions from the community. Latex source code is
+available at https://github.com/michaelgutmann/ml-pen-and-paper-exercises. Please
+use GitHub’s issues to report mistakes or typos, and please get in touch if you would like
+to make larger contributions. Michael Gutmann
+Edinburgh, June 2022
+https://michaelgutmann.github.io
+Chapter 1
+Linear Algebra
+Exercises
+1.1
+Gram–Schmidt orthogonalisation . .
+
+. 11
+2
+Linear Algebra
+1.1
+Gram–Schmidt orthogonalisation
+(a) Given two vectors a1 and a2 in Rn, show that
+u1 = a1
+(1.1)
+u2 = a2 −u⊤
+1 a2
+u⊤
+1 u1
+u1
+(1.2)
+are orthogonal to each other. Solution. Two vectors u1 and u2 of Rn are orthogonal if their inner product equals
+zero. Computing the inner product u⊤
+1 u2 gives
+u⊤
+1 u2 = u⊤
+1 (a2 −u⊤
+1 a2
+u⊤
+1 u1
+u1)
+(S.1.1)
+= u⊤
+1 a2 −u⊤
+1 a2
+u⊤
+1 u1
+u⊤
+1 u1
+(S.1.2)
+= u⊤
+1 a2 −u⊤
+1 a2
+(S.1.3)
+= 0. (S.1.4)
+Hence the vectors u1 and u2 are orthogonal. If a2 is a multiple of a1, the orthogonalisation procedure produces a zero vector for
+u2. To see this, let a2 = αa1 for some real number α. We then obtain
+u2 = a2 −u⊤
+1 a2
+u⊤
+1 u1
+u1
+(S.1.5)
+= αu1 −αu⊤
+1 u1
+u⊤
+1 u1
+u1
+(S.1.6)
+= αu1 −αu1
+(S.1.7)
+= 0. (S.1.8)
+
+combination of u1 and u2. Overall, this means that any vector in the span of {a1, a2}
+can be expressed in the orthogonal basis {u1, u2}. (c) Show by induction that for any k ≤n linearly independent vectors a1, . . . , ak, the
+vectors ui, i = 1, . . . k, are orthogonal, where
+ui = ai −
+i−1
+X
+j=1
+u⊤
+j ai
+u⊤
+j uj
+uj. (1.3)
+The calculation of the vectors ui is called Gram–Schmidt orthogonalisation. Solution. We have shown above that the claim holds for two vectors. This is the
+base case for the proof by induction. Assume now that the claim holds for k vectors. The induction step in the proof by induction then consists of showing that the claim
+also holds for k + 1 vectors. Assume that u1, u2, . . . , uk are orthogonal vectors. The linear independence assump-
+
+. , ad. 5
+1.2
+Linear transforms
+(a) Assume two vectors a1 and a2 are in R2. Together, they span a parallelogram. Use
+Exercise 1.1 to show that the squared area S2 of the parallelogram is given by
+S2 = (aT
+2 a2)(aT
+1 a1) −(aT
+2 a1)2
+(1.4)
+Solution. Let a1 and a2 be the vectors that span the parallelogram. From geometry
+we know that the area of parallelogram is base times height, which is equivalent to
+the length of the base vector times the length of the height vector. Denote this by
+S2 = ||a1||2||u2||2, where is a1 is the base vector and u2 is the height vector which is
+orthogonal to the base vector. Using the Gram–Schmidt process for the vectors a1
+and a2 in that order, we obtain the vector u2 as the second output. u2
+a1
+a2
+aT
+1 a2
+aT
+1 a1a1
+Therefore ||u2||2 equals
+||u2||2 = u⊤
+2 u2
+
+. , uk. This means
+that there are some βi so that
+ak+1 =
+k
+X
+i=1
+βiui
+(S.1.23)
+holds. Inserting this expansion into the equation above gives
+uk+1 =
+k
+X
+i=1
+βiui −
+k
+X
+j=1
+k
+X
+i=1
+βi
+u⊤
+j ui
+u⊤
+j uj
+uj
+(S.1.24)
+=
+k
+X
+i=1
+βiui −
+k
+X
+i=1
+βi
+u⊤
+i ui
+u⊤
+i ui
+ui
+(S.1.25)
+because u⊤
+j ui = 0 if i̸ = j. We thus obtain the desired result:
+uk+1 =
+k
+X
+i=1
+βiui −
+k
+X
+i=1
+βiui
+(S.1.26)
+= 0
+(S.1.27)
+This property of the Gram-Schmidt process in (1.3) can be used to check whether
+a list of vectors a1, a2, . . . , ad is linearly independent or not. If, for example, uk+1
+is zero, ak+1 is a linear combination of the a1, . . . , ak. Moreover, the result can be
+used to extract a sublist of linearly independent vectors: We would remove ak+1"""
+        }
+      )
+    ),
+    Part(
+      function_response=FunctionResponse(
+        id='call_666082',
+        name='web_search',
+        response={
+          'result': 'No web search results found.'
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-854a13a6-b884-441f-961d-73877c6ac2fd' author='WebSearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='e496d57b-ef8c-4ebb-af28-c0057be3b52f' timestamp=1790064864.5723865
+DEBUG    | 2026-09-22 13:44:28 | course_creator:run_adk_topic_pipeline:230 | Event from WebSearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "document_notes": "From the provided document (Exercises in Machine Learning by Michael U. Gutmann):\n- Gram-Schmidt orthogonalization is an algorithm to convert a set of linearly independent vectors into an orthogonal (and optionally orthonormal) set of vectors spanning the same subspace.\n- For two vectors a1 and a2 in R^n:\n  u1 = a1\n  u2 = a2 - ((u1^T * a2) / (u1^T * u1)) * u1\n- Showing u1 and u2 are orthogonal: computing the inner product u1^T * u2 yields zero.\n- Special case: If a2 is a multiple of a1 (linearly dependent), the orthogonalization procedure produces a zero vector for u2.\n- General formula for k vectors (by induction):\n  ui = ai - sum_{j=1}^{i-1} ((u_j^T * ai) / (u_j^T * u_j)) * u_j\n- Applications/Properties:\n  - Any vector in the span of {a1, a2} can be expressed in the orthogonal basis {u1, u2}.\n  - Can be used to check for linear independence: if an intermediate vector uk+1 becomes zero, then ak+1 is a linear combination of preceding vectors.\n  - Can be used to find the squared area of a parallelogram spanned by two vectors: S^2 = ||a1||^2 * ||u2||^2 = (a2^T * a2)(a1^T * a1) - (a2^T * a1)^2.",
+    "web_notes": "",
+    "used_web": false
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=376,
+  prompt_token_count=2246,
+  total_token_count=2622
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-854a13a6-b884-441f-961d-73877c6ac2fd' author='WebSearchAgent' actions=EventActions(skip_summarization=None, state_delta={'web_research_result': '{\n    "document_notes": "From the provided document (Exercises in Machine Learning by Michael U. Gutmann):\\n- Gram-Schmidt orthogonalization is an algorithm to convert a set of linearly independent vectors into an orthogonal (and optionally orthonormal) set of vectors spanning the same subspace.\\n- For two vectors a1 and a2 in R^n:\\n  u1 = a1\\n  u2 = a2 - ((u1^T * a2) / (u1^T * u1)) * u1\\n- Showing u1 and u2 are orthogonal: computing the inner product u1^T * u2 yields zero.\\n- Special case: If a2 is a multiple of a1 (linearly dependent), the orthogonalization procedure produces a zero vector for u2.\\n- General formula for k vectors (by induction):\\n  ui = ai - sum_{j=1}^{i-1} ((u_j^T * ai) / (u_j^T * u_j)) * u_j\\n- Applications/Properties:\\n  - Any vector in the span of {a1, a2} can be expressed in the orthogonal basis {u1, u2}.\\n  - Can be used to check for linear independence: if an intermediate vector uk+1 becomes zero, then ak+1 is a linear combination of preceding vectors.\\n  - Can be used to find the squared area of a parallelogram spanned by two vectors: S^2 = ||a1||^2 * ||u2||^2 = (a2^T * a2)(a1^T * a1) - (a2^T * a1)^2.",\n    "web_notes": "",\n    "used_web": false\n}'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='2a915f19-1680-48e2-8eaa-30fcbc580e42' timestamp=1790064865.6942842
+DEBUG    | 2026-09-22 13:44:30 | course_creator:run_adk_topic_pipeline:230 | Event from ContentWriterAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""- **Definition/core idea**: Gram-Schmidt orthogonalization is an algorithm that converts a set of linearly independent vectors into an orthogonal set of vectors spanning the same subspace.
+- **Key points**:
+  - For two vectors $a_1$ and $a_2$, the orthogonal vectors are given by $u_1 = a_1$ and $u_2 = a_2 - \frac{u_1^\top a_2}{u_1^\top u_1} u_1$.
+  - If a vector $a_2$ is a multiple of $a_1$, the procedure produces a zero vector for $u_2$, demonstrating linear dependence.
+  - The general formula for $k$ vectors computes each new vector $u_i$ by subtracting its projections onto all preceding orthogonal vectors $u_j$.
+  - This process can be used to check whether a list of vectors is linearly independent by detecting if any resulting vector becomes zero.
+- **Example**: Given two vectors $a_1$ and $a_2$ in $\mathbb{R}^n$, their inner product $u_1^\top u_2$ evaluates to zero, confirming that $u_1$ and $u_2$ are orthogonal to each other."""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=267,
+  prompt_token_count=3089,
+  total_token_count=3356
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-854a13a6-b884-441f-961d-73877c6ac2fd' author='ContentWriterAgent' actions=EventActions(skip_summarization=None, state_delta={'content_result': '- **Definition/core idea**: Gram-Schmidt orthogonalization is an algorithm that converts a set of linearly independent vectors into an orthogonal set of vectors spanning the same subspace.\n- **Key points**:\n  - For two vectors $a_1$ and $a_2$, the orthogonal vectors are given by $u_1 = a_1$ and $u_2 = a_2 - \\frac{u_1^\\top a_2}{u_1^\\top u_1} u_1$.\n  - If a vector $a_2$ is a multiple of $a_1$, the procedure produces a zero vector for $u_2$, demonstrating linear dependence.\n  - The general formula for $k$ vectors computes each new vector $u_i$ by subtracting its projections onto all preceding orthogonal vectors $u_j$.\n  - This process can be used to check whether a list of vectors is linearly independent by detecting if any resulting vector becomes zero.\n- **Example**: Given two vectors $a_1$ and $a_2$ in $\\mathbb{R}^n$, their inner product $u_1^\\top u_2$ evaluates to zero, confirming that $u_1$ and $u_2$ are orthogonal to each other.'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='e57d9da3-619b-4b7e-83ad-4247b3a40bd7' timestamp=1790064868.2202623
+DEBUG    | 2026-09-22 13:44:31 | course_creator:run_adk_topic_pipeline:230 | Event from ReviewerAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={},
+        id='call_6361__thought__El4KXAFpFH0TjDBHaBA3cB7AzKUzG/byJGEkEcRBuyo+nkhaZzR9cqG3ZbSkR7wOTTJFiZZsOYw2Y5EbV0cW/QayREb1dHe1FUGc7nSv2XUal3bRlnXu+lYsR0vwb06d',
+        name='exit_loop'
+      ),
+      thought_signature=b'\x12^\n\\\x01i\x14}\x13\x8c0Gh\x107p\x1e\xc0\xcc\xa53\x1b\xf6\xf2$a$\x11\xc4A\xbb*>\x9eHZg4}r\xa1\xb7e\xb4\xa4G\xbc\x0eM2E\x89\x96l9\x8c6c\x91\x1bWG\x16\xfd\x06\xb2DF\xf5tw\xb5\x15A\x9c\xeet\xaf\xd9u\x1a\x97v\xd1\x96u\xee\xfaV,GK\xf0oN\x9d'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=10,
+  prompt_token_count=3724,
+  total_token_count=3734
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-854a13a6-b884-441f-961d-73877c6ac2fd' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='ab39ba88-4a48-4029-905b-e12584ec7890' timestamp=1790064870.2584205
+DEBUG    | 2026-09-22 13:44:31 | course_creator:run_adk_topic_pipeline:230 | Event from ReviewerAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_6361__thought__El4KXAFpFH0TjDBHaBA3cB7AzKUzG/byJGEkEcRBuyo+nkhaZzR9cqG3ZbSkR7wOTTJFiZZsOYw2Y5EbV0cW/QayREb1dHe1FUGc7nSv2XUal3bRlnXu+lYsR0vwb06d',
+        name='exit_loop',
+        response={
+          'status': 'loop exited'
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-854a13a6-b884-441f-961d-73877c6ac2fd' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=True, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='cbf2edc1-3823-4bad-a244-98a47aebba77' timestamp=1790064871.2514277
+DEBUG    | 2026-09-22 13:44:32 | course_creator:run_adk_topic_pipeline:230 | Event from ReviewerAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code='MODEL_RETURNED_NO_CONTENT' error_message='The model returned no content (finish_reason=STOP with empty parts).' interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=0,
+  prompt_token_count=3749,
+  total_token_count=3749
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-854a13a6-b884-441f-961d-73877c6ac2fd' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='fc6af7ca-f98d-41b7-9e8c-cb49697aac03' timestamp=1790064871.2578638
+DEBUG    | 2026-09-22 13:44:34 | course_creator:run_adk_topic_pipeline:230 | Event from QuizAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""[
+    {
+        "question": "When applying the Gram-Schmidt process to two vectors $a_1$ and $a_2$ where $a_2$ is a scalar multiple of $a_1$, what is the resulting vector $u_2$?",
+        "options": [
+            "A zero vector",
+            "A vector identical to $a_1$",
+            "An orthogonal vector of unit length",
+            "The sum of $a_1$ and $a_2$"
+        ],
+        "correct_answer": "A zero vector"
+    },
+    {
+        "question": "In the general Gram-Schmidt orthogonalization formula for $k$ vectors, how is each new vector $u_i$ computed from the original vector $a_i$?",
+        "options": [
+            "By adding $a_i$ to all preceding orthogonal vectors $u_j$",
+            "By subtracting its projections onto all preceding orthogonal vectors $u_j$",
+            "By dividing $a_i$ by the inner product of $a_1$ and itself",
+            "By projecting $a_i$ onto the standard basis vectors"
+        ],
+        "correct_answer": "By subtracting its projections onto all preceding orthogonal vectors $u_j$"
+    },
+    {
+        "question": "How can the Gram-Schmidt orthogonalization process be utilized to test whether a list of vectors $a_1, a_2, \dots, a_d$ is linearly independent?",
+        "options": [
+            "If all resulting vectors $u_i$ have a length of one",
+            "If the inner product of any two input vectors equals zero",
+            "If any resulting vector $u_{k+1}$ becomes a zero vector",
+            "If the sum of all input vectors equals the final output vector"
+        ],
+        "correct_answer": "If any resulting vector $u_{k+1}$ becomes a zero vector"
+    }
+]"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=436,
+  prompt_token_count=3813,
+  total_token_count=4249
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-854a13a6-b884-441f-961d-73877c6ac2fd' author='QuizAgent' actions=EventActions(skip_summarization=None, state_delta={'quiz_result': '[\n    {\n        "question": "When applying the Gram-Schmidt process to two vectors $a_1$ and $a_2$ where $a_2$ is a scalar multiple of $a_1$, what is the resulting vector $u_2$?",\n        "options": [\n            "A zero vector",\n            "A vector identical to $a_1$",\n            "An orthogonal vector of unit length",\n            "The sum of $a_1$ and $a_2$"\n        ],\n        "correct_answer": "A zero vector"\n    },\n    {\n        "question": "In the general Gram-Schmidt orthogonalization formula for $k$ vectors, how is each new vector $u_i$ computed from the original vector $a_i$?",\n        "options": [\n            "By adding $a_i$ to all preceding orthogonal vectors $u_j$",\n            "By subtracting its projections onto all preceding orthogonal vectors $u_j$",\n            "By dividing $a_i$ by the inner product of $a_1$ and itself",\n            "By projecting $a_i$ onto the standard basis vectors"\n        ],\n        "correct_answer": "By subtracting its projections onto all preceding orthogonal vectors $u_j$"\n    },\n    {\n        "question": "How can the Gram-Schmidt orthogonalization process be utilized to test whether a list of vectors $a_1, a_2, \\dots, a_d$ is linearly independent?",\n        "options": [\n            "If all resulting vectors $u_i$ have a length of one",\n            "If the inner product of any two input vectors equals zero",\n            "If any resulting vector $u_{k+1}$ becomes a zero vector",\n            "If the sum of all input vectors equals the final output vector"\n        ],\n        "correct_answer": "If any resulting vector $u_{k+1}$ becomes a zero vector"\n    }\n]'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='bc9dea10-67a0-4608-aa4b-993c76d4280b' timestamp=1790064872.3440838

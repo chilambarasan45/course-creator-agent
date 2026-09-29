@@ -1,0 +1,4 @@
+INFO     | 2026-09-22 13:43:47 | course_creator:run_adk_curriculum_for_document:135 | Starting curriculum generation for document='machine learning.pdf'
+INFO     | 2026-09-22 13:44:19 | course_creator:run_adk_curriculum_for_document:179 | Curriculum generation complete for document='machine learning.pdf'
+INFO     | 2026-09-22 13:44:23 | course_creator:run_adk_topic_pipeline:190 | Starting topic content generation: document='machine learning.pdf', topic='Gram-Schmidt Orthogonalization'
+INFO     | 2026-09-22 13:44:34 | course_creator:run_adk_topic_pipeline:239 | Topic content generation complete for topic='Gram-Schmidt Orthogonalization'

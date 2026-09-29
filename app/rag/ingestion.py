@@ -40,3 +40,4 @@ def ingest_folder(folder_path: str):
         if filename.endswith(".pdf") or filename.endswith(".txt"):
             file_path = os.path.join(folder_path, filename)
             ingest_document(file_path)
+

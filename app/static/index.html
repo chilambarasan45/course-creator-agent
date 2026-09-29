@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document Topics</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.2/marked.min.js"></script>
+<style>
+  :root{
+    --paper:#F7F7F4;
+    --ink:#1B2A4A;
+    --text:#2B2E33;
+    --muted:#5B6B7C;
+    --gold:#9C6B1A;
+    --rule:#DCD9D0;
+    --error:#8A2C2C;
+    --ok:#1E5B24;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--text);
+    font-family:-apple-system,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5;
+  }
+  header{
+    padding:20px 24px;
+    border-bottom:1px solid var(--rule);
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  header h1{
+    font-family:Georgia,"Iowan Old Style",serif;
+    font-size:22px;
+    color:var(--ink);
+    margin:0 0 4px;
+  }
+  header p{font-size:13px; color:var(--muted); margin:0;}
+  .header-actions{display:flex; gap:8px; flex-wrap:wrap;}
+  .btn{
+    font-family:inherit;
+    font-size:13px;
+    padding:6px 12px;
+    border:1px solid var(--rule);
+    border-radius:4px;
+    background:var(--paper);
+    color:var(--text);
+    cursor:pointer;
+  }
+  .btn:hover{background:#EFEDE6;}
+  .btn.primary{
+    background:var(--ink);
+    color:#fff;
+    border-color:var(--ink);
+  }
+  .btn.primary:hover{opacity:.9;}
+  .btn:disabled{opacity:.5; cursor:default;}
+
+  main{
+    max-width:680px;
+    margin:0 auto;
+    padding:40px 24px 80px;
+  }
+  .state{color:var(--muted); font-size:15px; padding:40px 0;}
+  .state.err{color:var(--error);}
+  .toast{
+    font-size:13px;
+    color:var(--ok);
+    padding:8px 0;
+  }
+
+  .doc-list, .saved-list{list-style:none; margin:0; padding:0;}
+  .doc-item, .saved-item{border-top:1px solid var(--rule);}
+  .doc-item:first-child, .saved-item:first-child{border-top:none;}
+  .doc-btn, .saved-btn{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:16px 4px;
+    cursor:pointer;
+    background:none;
+    border:none;
+    width:100%;
+    text-align:left;
+    font-family:inherit;
+    font-size:16px;
+    color:var(--ink);
+  }
+  .doc-btn:hover, .saved-btn:hover{text-decoration:underline;}
+  .saved-meta{font-size:12px; color:var(--muted); display:block; margin-top:2px;}
+
+  .topic{padding:0; border-top:1px solid var(--rule); margin-bottom:8px;}
+  .topic:first-of-type{border-top:none;}
+  .topic-head{
+    font-family:Georgia,"Iowan Old Style",serif;
+    font-size:20px;
+    color:var(--ink);
+    padding:20px 4px 6px;
+  }
+  .topic-num{
+    font-family:Georgia,serif;
+    font-size:13px;
+    color:var(--gold);
+    display:block;
+    margin-bottom:2px;
+  }
+  .subtopic-list{list-style:none; margin:0 0 20px; padding:0;}
+  .subtopic-item{border-top:1px solid var(--rule);}
+  .subtopic-item:first-child{border-top:none;}
+  .subtopic-head{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 4px 14px 20px;
+    cursor:pointer;
+    background:none;
+    border:none;
+    width:100%;
+    text-align:left;
+    font-family:inherit;
+    font-size:15px;
+    color:var(--text);
+  }
+  .subtopic-head:hover{text-decoration:underline;}
+  .subtopic-chevron{color:var(--muted); font-size:12px; transition:transform .15s;}
+  .subtopic-item.open .subtopic-chevron{transform:rotate(90deg);}
+  .subtopic-body{font-size:15px; padding:0 4px 24px 20px; display:none;}
+  .subtopic-item.open .subtopic-body{display:block;}
+  .subtopic-body p{margin:0 0 10px;}
+  .subtopic-body strong{color:var(--ink);}
+  .subtopic-body code{
+    background:#EFEDE6;
+    padding:1px 5px;
+    border-radius:3px;
+    font-size:13px;
+  }
+  .subtopic-body ul, .subtopic-body ol{padding-left:20px; margin:0 0 10px;}
+  .subtopic-body li{margin-bottom:4px;}
+  .subtopic-loading{color:var(--muted); font-style:italic; padding:0 4px 20px 20px; font-size:14px;}
+
+  .review-note{
+    margin-top:16px;
+    padding:12px 14px;
+    background:#FBF3EA;
+    border:1px solid #E8D3B5;
+    border-radius:6px;
+    font-size:12px;
+    color:#7A4E12;
+  }
+  .review-note b{display:block; margin-bottom:4px; color:#5C3A0D;}
+
+  .subtopic-quiz{margin-top:18px;}
+  .subtopic-quiz h3{font-family:Georgia,serif; font-size:15px; color:var(--ink); margin-bottom:10px;}
+  .q{padding:12px 14px; background:#fff; border:1px solid var(--rule); border-radius:6px; margin-bottom:10px; font-size:13px;}
+  .q-text{margin-bottom:8px; font-weight:500; color:var(--ink);}
+  .q-options{list-style:none; padding:0; margin:0;}
+  .q-options li{padding:7px 9px; margin-bottom:5px; background:var(--paper); border-radius:4px; font-size:12px;}
+  .q-options li.correct{background:#E7F3E8; color:#1E5B24; font-weight:600;}
+
+  #chat-toggle{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:var(--ink);
+    color:#fff;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,.25);
+    z-index:20;
+    display:none;
+  }
+  #chat-toggle.show{display:block;}
+  #chat-panel{
+    position:fixed;
+    right:24px;
+    bottom:88px;
+    width:340px;
+    max-height:70vh;
+    background:#fff;
+    border:1px solid var(--rule);
+    border-radius:10px;
+    box-shadow:0 6px 24px rgba(0,0,0,.18);
+    display:none;
+    flex-direction:column;
+    overflow:hidden;
+    z-index:20;
+  }
+  #chat-panel.open{display:flex;}
+  .chat-head{
+    padding:12px 14px;
+    border-bottom:1px solid var(--rule);
+    font-size:13px;
+    color:var(--muted);
+    font-family:Georgia,serif;
+  }
+  .chat-head b{color:var(--ink); display:block; font-size:15px; margin-bottom:2px;}
+  #chat-log{
+    flex:1;
+    overflow-y:auto;
+    padding:12px 14px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .msg{font-size:13px; line-height:1.45;}
+  .msg.q{color:var(--ink); font-weight:600;}
+  .msg.a{color:var(--text); background:var(--paper); padding:8px 10px; border-radius:6px;}
+  .msg.a.empty{color:var(--muted); font-style:italic;}
+  .chat-input-row{
+    display:flex;
+    gap:6px;
+    padding:10px;
+    border-top:1px solid var(--rule);
+  }
+  .chat-input-row input{
+    flex:1;
+    font-family:inherit;
+    font-size:13px;
+    padding:7px 9px;
+    border:1px solid var(--rule);
+    border-radius:4px;
+  }
+  .chat-input-row button{
+    font-family:inherit;
+    font-size:13px;
+    padding:7px 12px;
+    border:none;
+    border-radius:4px;
+    background:var(--ink);
+    color:#fff;
+    cursor:pointer;
+  }
+  .chat-input-row button:disabled{opacity:.5;}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1 id="page-title">Select a Document</h1>
+    <p id="page-sub">Choose a document to view its topics and subtopics.</p>
+  </div>
+  <div class="header-actions" id="header-actions"></div>
+</header>
+
+<main id="app">
+  <div class="state">Loading documents…</div>
+</main>
+
+<button id="chat-toggle" title="Ask the uploaded document">?</button>
+<div id="chat-panel">
+  <div class="chat-head"><b>Ask the document</b>Answers come only from the selected document — no guessing.</div>
+  <div id="chat-log"></div>
+  <div class="chat-input-row">
+    <input id="chat-input" type="text" placeholder="Ask a question…" />
+    <button id="chat-send">Ask</button>
+  </div>
+</div>
+
+<script>
+const app = document.getElementById('app');
+const headerActions = document.getElementById('header-actions');
+const API_BASE = ''; // same origin as this page
+
+let selectedFile = null;
+let currentTopics = []; // [{title, subtopics: [str, ...]}]
+let currentView = 'doclist'; // 'doclist' | 'topics' | 'savedlist' | 'savedcourse'
+
+function setState(html, isErr){
+  app.innerHTML = `<div class="state${isErr ? ' err' : ''}">${html}</div>`;
+}
+
+function setHeader(title, sub, actionsHtml){
+  document.getElementById('page-title').textContent = title;
+  document.getElementById('page-sub').textContent = sub;
+  headerActions.innerHTML = actionsHtml || '';
+  document.getElementById('chat-toggle').classList.toggle('show', currentView === 'topics');
+}
+
+// ---------- Document list ----------
+async function loadDocumentList(){
+  currentView = 'doclist';
+  setHeader('Select a Document', 'Choose a document to view its topics and subtopics.',
+    `<button class="btn" onclick="loadSavedCoursesList()">📚 View Saved Courses</button>`
+  );
+  setState('Loading documents…');
+  try{
+    const res = await fetch(`${API_BASE}/documents`);
+    if(!res.ok){
+      const errBody = await res.text();
+      setState(`Request failed (${res.status}). ${errBody}`, true);
+      return;
+    }
+    const files = await res.json();
+    renderDocumentList(files);
+  }catch(err){
+    setState(`Could not reach the API. ${err.message}`, true);
+  }
+}
+
+function renderDocumentList(files){
+  if(!files || !files.length){
+    setState('No documents uploaded yet. Upload one via /ingest.', true);
+    return;
+  }
+  const items = files.map(f => `
+    <li class="doc-item">
+      <button class="doc-btn" onclick="selectDocument('${f.replace(/'/g,"\\'")}')">📄 ${f}</button>
+    </li>
+  `).join('');
+  app.innerHTML = `<ul class="doc-list">${items}</ul>`;
+}
+
+function showDocList(){
+  selectedFile = null;
+  currentTopics = [];
+  loadDocumentList();
+}
+
+// ---------- Curriculum / topics for a document ----------
+async function selectDocument(filename){
+  selectedFile = filename;
+  currentView = 'topics';
+  setHeader(filename, 'Generating curriculum from this document…',
+    `<button class="btn" onclick="showDocList()">Change document</button>`
+  );
+  setState('Running planning, research and curriculum agents — this can take a minute…');
+
+  try{
+    const res = await fetch(`${API_BASE}/document/${encodeURIComponent(filename)}/curriculum`);
+    if(!res.ok){
+      const errBody = await res.text();
+      setState(`Request failed (${res.status}). ${errBody}`, true);
+      return;
+    }
+    const data = await res.json();
+    currentTopics = data.curriculum || [];
+    setHeader(filename, `${currentTopics.length} topics found — click a subtopic to load its notes and quiz.`,
+      `<button class="btn" onclick="showDocList()">Change document</button>
+       <button class="btn primary" id="save-course-btn" onclick="saveCourse()">💾 Save Course</button>`
+    );
+    renderTopics();
+  }catch(err){
+    setState(`Could not reach the API. ${err.message}`, true);
+  }
+}
+
+function renderTopics(){
+  if(!currentTopics.length){
+    setState('No topics found for this document.', true);
+    return;
+  }
+  const html = currentTopics.map((topic, ti) => {
+    const subtopics = topic.subtopics || [];
+    const subHtml = subtopics.map((sub, si) => {
+      const id = `t${ti}s${si}`;
+      const label = `${ti + 1}.${si + 1} ${sub}`;
+      return `
+        <li class="subtopic-item" id="${id}" data-title="${sub.replace(/"/g,'&quot;')}">
+          <button class="subtopic-head" onclick="toggleSubtopic('${id}')">
+            <span class="subtopic-chevron">▸</span>
+            <span>${label}</span>
+          </button>
+          <div class="subtopic-body" id="${id}-body"></div>
+        </li>
+      `;
+    }).join('');
+    return `
+      <section class="topic">
+        <div class="topic-head">
+          <span class="topic-num">Topic ${ti + 1}</span>
+          ${topic.title}
+        </div>
+        <ul class="subtopic-list">${subHtml}</ul>
+      </section>
+    `;
+  }).join('');
+  app.innerHTML = html;
+}
+
+function renderQuiz(quiz){
+  if(!quiz || !quiz.length) return '';
+  return `
+    <div class="subtopic-quiz">
+      <h3>Quiz</h3>
+      ${quiz.map((q, i) => {
+        const options = (q.options || []).map(opt =>
+          `<li${opt === q.correct_answer ? ' class="correct"' : ''}>${opt}</li>`
+        ).join('');
+        return `
+          <div class="q">
+            <div class="q-text"><b>${i + 1}.</b> ${q.question}</div>
+            <ul class="q-options">${options}</ul>
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+}
+
+async function toggleSubtopic(id){
+  const item = document.getElementById(id);
+  const body = document.getElementById(`${id}-body`);
+  const isOpen = item.classList.contains('open');
+
+  if(isOpen){
+    item.classList.remove('open');
+    return;
+  }
+  item.classList.add('open');
+  if(body.dataset.loaded === 'true') return;
+
+  const subTitle = item.dataset.title;
+  body.innerHTML = `<div class="subtopic-loading">Writing notes, reviewing, and generating a quiz…</div>`;
+
+  try{
+    const res = await fetch(`${API_BASE}/document/${encodeURIComponent(selectedFile)}/topic`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({module_title: subTitle, filename: selectedFile})
+    });
+
+    if(!res.ok){
+      const errBody = await res.text();
+      body.innerHTML = `<div class="subtopic-loading">Failed to generate (${res.status}). ${errBody}</div>`;
+      return;
+    }
+
+    const data = await res.json();
+    const reviewHtml = data.review
+      ? `<div class="review-note"><b>Reviewer note</b>${data.review}</div>`
+      : '';
+
+    body.innerHTML = marked.parse(data.content || '_No content returned._') + reviewHtml + renderQuiz(data.quiz);
+    body.dataset.loaded = 'true';
+  }catch(err){
+    body.innerHTML = `<div class="subtopic-loading">Could not reach the API. ${err.message}</div>`;
+  }
+}
+
+// ---------- Save course ----------
+async function saveCourse(){
+  const btn = document.getElementById('save-course-btn');
+  btn.disabled = true;
+  btn.textContent = 'Saving…';
+  try{
+    const res = await fetch(`${API_BASE}/document/${encodeURIComponent(selectedFile)}/save-course`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({curriculum: currentTopics})
+    });
+    if(!res.ok){
+      const errBody = await res.text();
+      btn.textContent = 'Save failed';
+      console.error(errBody);
+      return;
+    }
+    btn.textContent = '✓ Saved';
+  }catch(err){
+    btn.textContent = 'Save failed';
+  }finally{
+    setTimeout(() => { btn.disabled = false; btn.textContent = '💾 Save Course'; }, 2000);
+  }
+}
+
+// ---------- Saved courses list ----------
+async function loadSavedCoursesList(){
+  currentView = 'savedlist';
+  setHeader('Saved Courses', 'Previously saved courses — click one to view.',
+    `<button class="btn" onclick="loadDocumentList()">Back</button>`
+  );
+  setState('Loading saved courses…');
+  try{
+    const res = await fetch(`${API_BASE}/courses`);
+    if(!res.ok){
+      const errBody = await res.text();
+      setState(`Request failed (${res.status}). ${errBody}`, true);
+      return;
+    }
+    const courses = await res.json();
+    renderSavedCoursesList(courses);
+  }catch(err){
+    setState(`Could not reach the API. ${err.message}`, true);
+  }
+}
+
+function renderSavedCoursesList(courses){
+  if(!courses || !courses.length){
+    setState('No saved courses yet. Generate a course and click "Save Course".', true);
+    return;
+  }
+  const items = courses.map(c => `
+    <li class="saved-item">
+      <button class="saved-btn" onclick="viewSavedCourse(${c.id})">
+        📘 ${c.filename}
+        <span class="saved-meta">Saved course #${c.id}</span>
+      </button>
+    </li>
+  `).join('');
+  app.innerHTML = `<ul class="saved-list">${items}</ul>`;
+}
+
+async function viewSavedCourse(courseId){
+  currentView = 'savedcourse';
+  setHeader('Saved Course', 'Loading…',
+    `<button class="btn" onclick="loadSavedCoursesList()">Back to Saved Courses</button>`
+  );
+  setState('Loading saved course…');
+  try{
+    const res = await fetch(`${API_BASE}/courses/${courseId}`);
+    if(!res.ok){
+      const errBody = await res.text();
+      setState(`Request failed (${res.status}). ${errBody}`, true);
+      return;
+    }
+    const course = await res.json();
+    renderSavedCourse(course);
+  }catch(err){
+    setState(`Could not reach the API. ${err.message}`, true);
+  }
+}
+
+function renderSavedCourse(course){
+  const curriculum = course.curriculum || [];
+  setHeader(course.filename || 'Saved Course', `${curriculum.length} topics`,
+    `<button class="btn" onclick="loadSavedCoursesList()">Back to Saved Courses</button>`
+  );
+
+  if(!curriculum.length){
+    setState('This saved course has no topics.', true);
+    return;
+  }
+
+  let counter = 0;
+  const html = curriculum.map((topic, ti) => {
+    const subHtml = (topic.subtopics || []).map((sub) => {
+      const id = `saved${counter++}`;
+      const hasContent = sub.content && sub.content.trim().length > 0;
+      const bodyHtml = hasContent
+        ? marked.parse(sub.content) + renderQuiz(sub.quiz)
+        : `<p class="subtopic-loading">Not generated yet — open this subtopic from the live document view first.</p>`;
+      return `
+        <li class="subtopic-item" id="${id}">
+          <button class="subtopic-head" onclick="toggleSavedSubtopic('${id}')">
+            <span class="subtopic-chevron">▸</span>
+            <span>${sub.title}</span>
+          </button>
+          <div class="subtopic-body" id="${id}-body">${bodyHtml}</div>
+        </li>
+      `;
+    }).join('');
+    return `
+      <section class="topic">
+        <div class="topic-head">
+          <span class="topic-num">Topic ${ti + 1}</span>
+          ${topic.title}
+        </div>
+        <ul class="subtopic-list">${subHtml}</ul>
+      </section>
+    `;
+  }).join('');
+
+  app.innerHTML = html;
+}
+
+function toggleSavedSubtopic(id){
+  document.getElementById(id).classList.toggle('open');
+}
+
+loadDocumentList();
+
+// --- chat widget ---
+const chatToggle = document.getElementById('chat-toggle');
+const chatPanel = document.getElementById('chat-panel');
+const chatLog = document.getElementById('chat-log');
+const chatInput = document.getElementById('chat-input');
+const chatSend = document.getElementById('chat-send');
+
+chatToggle.addEventListener('click', () => {
+  chatPanel.classList.toggle('open');
+  if(chatPanel.classList.contains('open')) chatInput.focus();
+});
+
+function addMsg(text, cls){
+  const div = document.createElement('div');
+  div.className = `msg ${cls}`;
+  div.textContent = text;
+  chatLog.appendChild(div);
+  chatLog.scrollTop = chatLog.scrollHeight;
+  return div;
+}
+
+async function askQuestion(){
+  const question = chatInput.value.trim();
+  if(!question) return;
+  if(!selectedFile){
+    addMsg('Select a document first.', 'a empty');
+    return;
+  }
+  addMsg(question, 'q');
+  chatInput.value = '';
+  chatSend.disabled = true;
+  const pending = addMsg('Thinking…', 'a empty');
+
+  try{
+    const res = await fetch(`${API_BASE}/ask`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({question, filename: selectedFile})
+    });
+    if(!res.ok){
+      pending.textContent = `Error (${res.status}). Try again.`;
+      pending.classList.add('empty');
+      return;
+    }
+    const data = await res.json();
+    pending.classList.remove('empty');
+    pending.textContent = data.answer;
+  }catch(err){
+    pending.textContent = `Could not reach the API. ${err.message}`;
+  }finally{
+    chatSend.disabled = false;
+  }
+}
+
+chatSend.addEventListener('click', askQuestion);
+chatInput.addEventListener('keydown', e => {
+  if(e.key === 'Enter') askQuestion();
+});
+</script>
+
+</body>
+</html>

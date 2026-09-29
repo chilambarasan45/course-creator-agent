@@ -1,0 +1,4 @@
+INFO     | 2026-09-14 20:13:47 | course_creator:run_adk_course_generation:74 | Starting course generation: topic='python packge', level='beginner', quiz=False
+INFO     | 2026-09-14 20:14:08 | course_creator:run_adk_course_generation:121 | Course generation complete for topic='python packge'
+INFO     | 2026-09-14 20:23:57 | course_creator:run_adk_course_generation:74 | Starting course generation: topic='python package', level='beginner', quiz=True
+INFO     | 2026-09-14 20:24:28 | course_creator:run_adk_course_generation:121 | Course generation complete for topic='python package'

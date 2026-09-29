@@ -39,13 +39,12 @@ def build_tfidf_scores(query: str, chunks: dict[str, str]) -> dict[str, float]:
 
     return scores
 
-
-def keyword_search(query: str, n_results: int = 5) -> list[dict]:
+def keyword_search(query: str, n_results: int = 5, source: str = None) -> list[dict]:
     collection = get_collection()
-    data = collection.get()
+    where = {"source": source} if source is not None else None
+    data = collection.get(where=where) if where else collection.get()
 
     chunks = {cid: text for cid, text in zip(data["ids"], data["documents"])}
-
     scores = build_tfidf_scores(query, chunks)
 
     ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)

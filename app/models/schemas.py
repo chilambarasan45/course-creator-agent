@@ -16,4 +16,17 @@ class CourseResponse(BaseModel):
     review: str
     quiz: list[dict] | None
 
-    
+class AskRequest(BaseModel):
+    question: str
+    filename: str
+
+class AskResponse(BaseModel):
+    answer: str
+
+class ModuleRequest(BaseModel):
+    module_title: str
+    filename: str
+
+class ModuleResponse(BaseModel):
+    content: str
+    quiz: list[dict]

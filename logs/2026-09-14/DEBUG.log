@@ -1,0 +1,1074 @@
+DEBUG    | 2026-09-14 20:13:52 | course_creator:run_adk_course_generation:111 | Event from PlanningAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "subtopics": ["Introduction to Python Packages", "Installing Packages with Pip", "Importing and Using Packages", "Creating a Simple Custom Package", "Distributing Your Package"],
+    "notes": "Keep explanations clear and beginner-friendly, correcting for the typo in the prompt ('packge' to 'package'). Focus on practical, hands-on usage of pip and standard module importing. Avoid advanced topics like C extensions, complex wheel building, private repository authentication, or poetry/pipenv dependency managers."
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=108,
+  prompt_token_count=1486,
+  total_token_count=1594
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='PlanningAgent' actions=EventActions(skip_summarization=None, state_delta={'plan_result': '{\n    "subtopics": ["Introduction to Python Packages", "Installing Packages with Pip", "Importing and Using Packages", "Creating a Simple Custom Package", "Distributing Your Package"],\n    "notes": "Keep explanations clear and beginner-friendly, correcting for the typo in the prompt (\'packge\' to \'package\'). Focus on practical, hands-on usage of pip and standard module importing. Avoid advanced topics like C extensions, complex wheel building, private repository authentication, or poetry/pipenv dependency managers."\n}'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='205dbd97-b7ab-4904-a1db-969f4c112c60' timestamp=1789397030.5786784
+DEBUG    | 2026-09-14 20:13:53 | course_creator:run_adk_course_generation:111 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Introduction to Python Packages',
+            'Installing Packages with Pip',
+            'Importing and Using Packages',
+            'Creating a Simple Custom Package',
+            'Distributing Your Package',
+          ]
+        },
+        id='call_6988607__thought__El4KXAERTTIPOS9h3xekMg7LC5HhkYARXekrSamaS2QxdIBYaWafdn4B5GPWfcB0mudyzNKIwe4vp33DKCPAOCy7LA/5mRtEouz4Mwq7Wg+9fXUI7qIpV+ksLB6CIwl7',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12^\n\\\x01\x11M2\x0f9/a\xdf\x17\xa42\x0e\xcb\x0b\x91\xe1\x91\x80\x11]\xe9+I\xa9\x9aKd1t\x80Xif\x9fv~\x01\xe4c\xd6}\xc0t\x9a\xe7r\xcc\xd2\x88\xc1\xee/\xa7}\xc3(#\xc08,\xbb,\x0f\xf9\x99\x1bD\xa2\xec\xf83\n\xbbZ\x0f\xbd}u\x08\xee\xa2)W\xe9,,\x1e\x82#\t{'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=53,
+  prompt_token_count=1292,
+  total_token_count=1345
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='17b05657-d691-441a-b2c1-ba1c2b8b319b' timestamp=1789397032.9023862
+DEBUG    | 2026-09-14 20:13:54 | course_creator:run_adk_course_generation:111 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_6988607__thought__El4KXAERTTIPOS9h3xekMg7LC5HhkYARXekrSamaS2QxdIBYaWafdn4B5GPWfcB0mudyzNKIwe4vp33DKCPAOCy7LA/5mRtEouz4Mwq7Wg+9fXUI7qIpV+ksLB6CIwl7',
+        name='search_reference_material',
+        response={
+          'result': """[Introduction to Python Packages]
+A practical 
+introduction to Python 3, ISBN: 9781775093336 (electronic). 2. Brian Heinold and John Prexy. A Practical Introduction to Python Programming, 
+ISBN: 979-8848271577. 3. https://docs.python.org/3/ Python 3.12 documentation 
+4. https://www.python.org 
+5. https://en.wikipedia.org/wiki/Python_Software_Foundation 
+6. Tony Gaddis. Starting out with Python, 5th edition. Pearson, ISBN: 
+978-0-13-592903-2. 7.
+
+predict future output based on past observations of inputs. In data science, one 
+collects information and interprets it to make decisions. A data scientist must have programming skills and an understanding of 
+mathematics and statistical concepts. The first part of this book is an introduction 
+to Python programming, which is a highly used language by data scientists, and 
+the second part is an introduction to machine learning and statistical knowledge 
+required for data science. Python is a popular programming language because of 
+its scalability, readability, and strong community support.
+
+Introduction to Programming	
+ 
+10
+2.1.
+
+---
+
+[Installing Packages with Pip]
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+Now that you have installed the above packages, you can import them into your 
+Python programs. If the Python interpreter generates errors, it means one or 
+more packages have not been installed correctly. All Python packages are 
+available at the Python Package index.
+
+It also contains 
+highly powerful machine-learning libraries. The libraries that we will utilize are for 
+data analysis, visualization, machine learning, and data mining. To get ready to work in a Python environment, you need to install some 
+packages. A package is an archived file that we download from the internet and 
+install on your computer. To be able to run the programs that are provided in this 
+book, you need to be sure that you are using the latest version of each released 
+package. At the time of writing this book, the latest edition of pip is 23.3.1, and the latest 
+edition of numpy is 1.26.3. Follow these directions to install these packages: 
+To install a given package, you need to run this command:
+
+---
+
+[Importing and Using Packages]
+Now that you have installed the above packages, you can import them into your 
+Python programs. If the Python interpreter generates errors, it means one or 
+more packages have not been installed correctly. All Python packages are 
+available at the Python Package index.
+
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+It also contains 
+highly powerful machine-learning libraries. The libraries that we will utilize are for 
+data analysis, visualization, machine learning, and data mining. To get ready to work in a Python environment, you need to install some 
+packages. A package is an archived file that we download from the internet and 
+install on your computer. To be able to run the programs that are provided in this 
+book, you need to be sure that you are using the latest version of each released 
+package. At the time of writing this book, the latest edition of pip is 23.3.1, and the latest 
+edition of numpy is 1.26.3. Follow these directions to install these packages: 
+To install a given package, you need to run this command:
+
+---
+
+[Creating a Simple Custom Package]
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+Now that you have installed the above packages, you can import them into your 
+Python programs. If the Python interpreter generates errors, it means one or 
+more packages have not been installed correctly. All Python packages are 
+available at the Python Package index.
+
+source software. • fpgrowth_py is a Python package used for frequent pattern mining and 
+associations in data sets. • “-U” or “—upgrade” means upgrade the current edition to the latest 
+version.
+
+---
+
+[Distributing Your Package]
+Now that you have installed the above packages, you can import them into your 
+Python programs. If the Python interpreter generates errors, it means one or 
+more packages have not been installed correctly. All Python packages are 
+available at the Python Package index.
+
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+source software. • fpgrowth_py is a Python package used for frequent pattern mining and 
+associations in data sets. • “-U” or “—upgrade” means upgrade the current edition to the latest 
+version."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='ba50a5bf-ef51-41e0-8607-a7faca0367f1' timestamp=1789397034.357883
+DEBUG    | 2026-09-14 20:13:56 | course_creator:run_adk_course_generation:111 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "Introduction to Python Packages": "Python is widely popular due to its readability, scalability, and strong community support. Packages serve as collections of modules or archived files downloaded from the internet and installed locally to extend Python's core capabilities, providing pre-written code for tasks such as data analysis, machine learning, and visualization.",
+    "Installing Packages with Pip": "Pip is the package management system written in Python used to install and manage third-party packages from online repositories such as the Python Package Index (PyPI). Basic commands include 'pip install <package_name>' for new installations and 'pip install -U <package_name>' or '--upgrade' to update existing packages to their latest versions.",
+    "Importing and Using Packages": "Once installed, external packages and libraries can be brought into Python programs using standard import statements. If the Python interpreter returns an import error, it typically indicates that the package has not been installed correctly or is misspelled in the environment.",
+    "Creating a Simple Custom Package": "No source material found - relying on general domain knowledge for this subtopic. Generally involves organizing Python modules inside a directory containing an initialization file (__init__.py) to structure custom code into reusable packages.",
+    "Distributing Your Package": "No source material found - relying on general domain knowledge for this subtopic. Generally involves preparing custom packages for sharing via standard configuration files and publishing to repositories like PyPI for public installation."
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=299,
+  prompt_token_count=2916,
+  total_token_count=3215
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={'research_result': '{\n    "Introduction to Python Packages": "Python is widely popular due to its readability, scalability, and strong community support. Packages serve as collections of modules or archived files downloaded from the internet and installed locally to extend Python\'s core capabilities, providing pre-written code for tasks such as data analysis, machine learning, and visualization.",\n    "Installing Packages with Pip": "Pip is the package management system written in Python used to install and manage third-party packages from online repositories such as the Python Package Index (PyPI). Basic commands include \'pip install <package_name>\' for new installations and \'pip install -U <package_name>\' or \'--upgrade\' to update existing packages to their latest versions.",\n    "Importing and Using Packages": "Once installed, external packages and libraries can be brought into Python programs using standard import statements. If the Python interpreter returns an import error, it typically indicates that the package has not been installed correctly or is misspelled in the environment.",\n    "Creating a Simple Custom Package": "No source material found - relying on general domain knowledge for this subtopic. Generally involves organizing Python modules inside a directory containing an initialization file (__init__.py) to structure custom code into reusable packages.",\n    "Distributing Your Package": "No source material found - relying on general domain knowledge for this subtopic. Generally involves preparing custom packages for sharing via standard configuration files and publishing to repositories like PyPI for public installation."\n}'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='4e4334e2-02e0-4208-8d8e-12eba76842b0' timestamp=1789397034.3635333
+DEBUG    | 2026-09-14 20:13:59 | course_creator:run_adk_course_generation:111 | Event from CurriculumAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""[
+    {
+        "title": "Introduction to Python Packages",
+        "description": "Explores why Python's readability, scalability, and strong community support make it popular, introducing packages as collections of archived modules downloaded from the internet to extend core programming capabilities for tasks like data analysis and machine learning."
+    },
+    {
+        "title": "Installing Packages with Pip",
+        "description": "Covers pip, the Python package management system, connecting to online repositories like the Python Package Index (PyPI). Students will learn basic commands such as 'pip install' for adding new libraries and using the '-U' or '--upgrade' flags to update packages."
+    },
+    {
+        "title": "Importing and Using Packages",
+        "description": "Demonstrates how to bring installed third-party libraries and modules into Python programs using standard import statements. Teaches how to troubleshoot common interpreter errors that arise when a package is missing or incorrectly installed."
+    },
+    {
+        "title": "Creating a Simple Custom Package",
+        "description": "Focuses on organizing custom Python code into structured directories containing initialization files like __init__.py. Learners will see how to turn their own scripts and modules into reusable packages."
+    },
+    {
+        "title": "Distributing Your Package",
+        "description": "Explores the fundamentals of preparing custom packages for sharing with others. Covers basic packaging structure and how code can be made available for public installation through standard repositories."
+    }
+]"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=320,
+  prompt_token_count=3314,
+  total_token_count=3634
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='CurriculumAgent' actions=EventActions(skip_summarization=None, state_delta={'curriculum_result': '[\n    {\n        "title": "Introduction to Python Packages",\n        "description": "Explores why Python\'s readability, scalability, and strong community support make it popular, introducing packages as collections of archived modules downloaded from the internet to extend core programming capabilities for tasks like data analysis and machine learning."\n    },\n    {\n        "title": "Installing Packages with Pip",\n        "description": "Covers pip, the Python package management system, connecting to online repositories like the Python Package Index (PyPI). Students will learn basic commands such as \'pip install\' for adding new libraries and using the \'-U\' or \'--upgrade\' flags to update packages."\n    },\n    {\n        "title": "Importing and Using Packages",\n        "description": "Demonstrates how to bring installed third-party libraries and modules into Python programs using standard import statements. Teaches how to troubleshoot common interpreter errors that arise when a package is missing or incorrectly installed."\n    },\n    {\n        "title": "Creating a Simple Custom Package",\n        "description": "Focuses on organizing custom Python code into structured directories containing initialization files like __init__.py. Learners will see how to turn their own scripts and modules into reusable packages."\n    },\n    {\n        "title": "Distributing Your Package",\n        "description": "Explores the fundamentals of preparing custom packages for sharing with others. Covers basic packaging structure and how code can be made available for public installation through standard repositories."\n    }\n]'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='ed5fd14c-fc14-410a-a4dd-0b31e4d2906b' timestamp=1789397036.9624822
+DEBUG    | 2026-09-14 20:14:00 | course_creator:run_adk_course_generation:111 | Event from ContentWriterAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Introduction to Python Packages',
+            'Installing Packages with Pip',
+            'Importing and Using Packages',
+            'Creating a Simple Custom Package',
+            'Distributing Your Package',
+          ]
+        },
+        id='call_7601670__thought__El4KXAERTTIPFTdzUUz1mvWtePHl8S59VaEB68IIJSmx7MBqQU1Eyth4fPCyffhv4KP456nZc5Jdf9YuszwstJ25SW1MRx7Xt9s2Kpr4EIZ+yoNDO7Md3JG4Psw5wa3+',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12^\n\\\x01\x11M2\x0f\x157sQL\xf5\x9a\xf5\xadx\xf1\xe5\xf1.}U\xa1\x01\xeb\xc2\x08%)\xb1\xec\xc0jAMD\xca\xd8x|\xf0\xb2}\xf8o\xe0\xa3\xf8\xe7\xa9\xd9s\x92]\x7f\xd6.\xb3<,\xb4\x9d\xb9ImLG\x1e\xd7\xb7\xdb6*\x9a\xf8\x10\x86~\xca\x83C;\xb3\x1d\xdc\x91\xb8>\xcc9\xc1\xad\xfe'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=53,
+  prompt_token_count=4133,
+  total_token_count=4186
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ContentWriterAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='18812e14-6d9f-41d5-9679-1f8e9369605b' timestamp=1789397039.5059905
+DEBUG    | 2026-09-14 20:14:00 | course_creator:run_adk_course_generation:111 | Event from ContentWriterAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_7601670__thought__El4KXAERTTIPFTdzUUz1mvWtePHl8S59VaEB68IIJSmx7MBqQU1Eyth4fPCyffhv4KP456nZc5Jdf9YuszwstJ25SW1MRx7Xt9s2Kpr4EIZ+yoNDO7Md3JG4Psw5wa3+',
+        name='search_reference_material',
+        response={
+          'result': """[Introduction to Python Packages]
+A practical 
+introduction to Python 3, ISBN: 9781775093336 (electronic). 2. Brian Heinold and John Prexy. A Practical Introduction to Python Programming, 
+ISBN: 979-8848271577. 3. https://docs.python.org/3/ Python 3.12 documentation 
+4. https://www.python.org 
+5. https://en.wikipedia.org/wiki/Python_Software_Foundation 
+6. Tony Gaddis. Starting out with Python, 5th edition. Pearson, ISBN: 
+978-0-13-592903-2. 7.
+
+predict future output based on past observations of inputs. In data science, one 
+collects information and interprets it to make decisions. A data scientist must have programming skills and an understanding of 
+mathematics and statistical concepts. The first part of this book is an introduction 
+to Python programming, which is a highly used language by data scientists, and 
+the second part is an introduction to machine learning and statistical knowledge 
+required for data science. Python is a popular programming language because of 
+its scalability, readability, and strong community support.
+
+Introduction to Programming	
+ 
+10
+2.1.
+
+---
+
+[Installing Packages with Pip]
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+Now that you have installed the above packages, you can import them into your 
+Python programs. If the Python interpreter generates errors, it means one or 
+more packages have not been installed correctly. All Python packages are 
+available at the Python Package index.
+
+It also contains 
+highly powerful machine-learning libraries. The libraries that we will utilize are for 
+data analysis, visualization, machine learning, and data mining. To get ready to work in a Python environment, you need to install some 
+packages. A package is an archived file that we download from the internet and 
+install on your computer. To be able to run the programs that are provided in this 
+book, you need to be sure that you are using the latest version of each released 
+package. At the time of writing this book, the latest edition of pip is 23.3.1, and the latest 
+edition of numpy is 1.26.3. Follow these directions to install these packages: 
+To install a given package, you need to run this command:
+
+---
+
+[Importing and Using Packages]
+Now that you have installed the above packages, you can import them into your 
+Python programs. If the Python interpreter generates errors, it means one or 
+more packages have not been installed correctly. All Python packages are 
+available at the Python Package index.
+
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+It also contains 
+highly powerful machine-learning libraries. The libraries that we will utilize are for 
+data analysis, visualization, machine learning, and data mining. To get ready to work in a Python environment, you need to install some 
+packages. A package is an archived file that we download from the internet and 
+install on your computer. To be able to run the programs that are provided in this 
+book, you need to be sure that you are using the latest version of each released 
+package. At the time of writing this book, the latest edition of pip is 23.3.1, and the latest 
+edition of numpy is 1.26.3. Follow these directions to install these packages: 
+To install a given package, you need to run this command:
+
+---
+
+[Creating a Simple Custom Package]
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+Now that you have installed the above packages, you can import them into your 
+Python programs. If the Python interpreter generates errors, it means one or 
+more packages have not been installed correctly. All Python packages are 
+available at the Python Package index.
+
+source software. • fpgrowth_py is a Python package used for frequent pattern mining and 
+associations in data sets. • “-U” or “—upgrade” means upgrade the current edition to the latest 
+version.
+
+---
+
+[Distributing Your Package]
+Now that you have installed the above packages, you can import them into your 
+Python programs. If the Python interpreter generates errors, it means one or 
+more packages have not been installed correctly. All Python packages are 
+available at the Python Package index.
+
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+source software. • fpgrowth_py is a Python package used for frequent pattern mining and 
+associations in data sets. • “-U” or “—upgrade” means upgrade the current edition to the latest 
+version."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ContentWriterAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='076155a4-3fe5-47fb-93ec-a216f52ef43c' timestamp=1789397040.8826203
+DEBUG    | 2026-09-14 20:14:05 | course_creator:run_adk_course_generation:111 | Event from ContentWriterAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""### Module 1: Introduction to Python Packages
+
+Python is a popular programming language widely used because of its scalability, readability, and strong community support. Understanding packages helps developers extend core programming capabilities to handle specialized tasks like data analysis, visualization, and machine learning.
+
+A package is an archived file that you download from the internet and install on your computer. These archived collections provide pre-written code and libraries that allow you to build powerful applications and make decisions using collected information.
+
+**Summary:** Python's readability and strong community support make it a leading programming language, while packages act as downloadable archived files that extend its core features for data-driven tasks.
+
+---
+
+### Module 2: Installing Packages with Pip
+
+To prepare your Python environment for specialized projects, you need to install packages from online repositories where all Python packages are available. 
+
+Pip is a management system written in Python that connects to an online repository so you can easily install other packages. To install a given package, you run the command `pip install name of the package`. For example, you can type the following commands in a Python shell or command line:
+* `pip install -U NumPy`
+* `pip install --upgrade pip`
+* `pip install network`
+* `pip install matplotlib`
+* `pip install fpgrowth_py`
+
+Here, the flags `-U` or `--upgrade` mean that you want to upgrade your current edition to the latest version. For instance, packages like Networkx let you create and study the structure of networks and graphs as free software, while fpgrowth_py is used for frequent pattern mining and associations in data sets.
+
+**Summary:** Pip serves as Python's package management system for connecting to online repositories, allowing you to install and upgrade libraries using simple commands like `pip install`.
+
+---
+
+### Module 3: Importing and Using Packages
+
+Once you have downloaded and installed packages on your computer, you are ready to bring them into your Python programs to use their functions and libraries.
+
+To use an installed package, you write import statements in your code. If the Python interpreter generates errors when you attempt to run your program, it usually means that one or more packages have not been installed correctly on your system.
+
+**Summary:** Installed packages can be brought directly into your Python code using import statements, and any resulting interpreter errors typically indicate installation issues.
+
+---
+
+### Module 4: Creating a Simple Custom Package
+
+Insufficient source material was found in the uploaded document to cover this module in detail.
+
+---
+
+### Module 5: Distributing Your Package
+
+Insufficient source material was found in the uploaded document to cover this module in detail."""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=545,
+  prompt_token_count=5757,
+  total_token_count=6302
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ContentWriterAgent' actions=EventActions(skip_summarization=None, state_delta={'content_result': "### Module 1: Introduction to Python Packages\n\nPython is a popular programming language widely used because of its scalability, readability, and strong community support. Understanding packages helps developers extend core programming capabilities to handle specialized tasks like data analysis, visualization, and machine learning.\n\nA package is an archived file that you download from the internet and install on your computer. These archived collections provide pre-written code and libraries that allow you to build powerful applications and make decisions using collected information.\n\n**Summary:** Python's readability and strong community support make it a leading programming language, while packages act as downloadable archived files that extend its core features for data-driven tasks.\n\n---\n\n### Module 2: Installing Packages with Pip\n\nTo prepare your Python environment for specialized projects, you need to install packages from online repositories where all Python packages are available. \n\nPip is a management system written in Python that connects to an online repository so you can easily install other packages. To install a given package, you run the command `pip install name of the package`. For example, you can type the following commands in a Python shell or command line:\n* `pip install -U NumPy`\n* `pip install --upgrade pip`\n* `pip install network`\n* `pip install matplotlib`\n* `pip install fpgrowth_py`\n\nHere, the flags `-U` or `--upgrade` mean that you want to upgrade your current edition to the latest version. For instance, packages like Networkx let you create and study the structure of networks and graphs as free software, while fpgrowth_py is used for frequent pattern mining and associations in data sets.\n\n**Summary:** Pip serves as Python's package management system for connecting to online repositories, allowing you to install and upgrade libraries using simple commands like `pip install`.\n\n---\n\n### Module 3: Importing and Using Packages\n\nOnce you have downloaded and installed packages on your computer, you are ready to bring them into your Python programs to use their functions and libraries.\n\nTo use an installed package, you write import statements in your code. If the Python interpreter generates errors when you attempt to run your program, it usually means that one or more packages have not been installed correctly on your system.\n\n**Summary:** Installed packages can be brought directly into your Python code using import statements, and any resulting interpreter errors typically indicate installation issues.\n\n---\n\n### Module 4: Creating a Simple Custom Package\n\nInsufficient source material was found in the uploaded document to cover this module in detail.\n\n---\n\n### Module 5: Distributing Your Package\n\nInsufficient source material was found in the uploaded document to cover this module in detail."}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='b3bcc68a-02e3-46cc-86ed-d75da2e40746' timestamp=1789397040.888822
+DEBUG    | 2026-09-14 20:14:06 | course_creator:run_adk_course_generation:111 | Event from ReviewerAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={},
+        id='call_6750934__thought__El4KXAERTTIPy5VaUZOEKTf4ZhlHAyxz4Lhq2TKyrAlqXFOIiCNoh7nz1SEyFSq2haEg+qWhORx1uuxUCmNuP2222G4iw4v70aFsbI4jrUUdwDO3UepSNoUdthed7UAH',
+        name='exit_loop'
+      ),
+      thought_signature=b'\x12^\n\\\x01\x11M2\x0f\xcb\x95ZQ\x93\x84)7\xf8f\x19G\x03,s\xe0\xb8j\xd92\xb2\xac\tj\\S\x88\x88#h\x87\xb9\xf3\xd5!2\x15*\xb6\x85\xa1 \xfa\xa5\xa19\x1cu\xba\xecT\ncn?m\xb6\xd8n"\xc3\x8b\xfb\xd1\xa1ll\x8e#\xadE\x1d\xc03\xb7Q\xeaR6\x85\x1d\xb6\x17\x9d\xed@\x07'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=10,
+  prompt_token_count=6455,
+  total_token_count=6465
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='22ded758-2cf3-4635-bb37-555a25958868' timestamp=1789397045.2017605
+DEBUG    | 2026-09-14 20:14:06 | course_creator:run_adk_course_generation:111 | Event from ReviewerAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_6750934__thought__El4KXAERTTIPy5VaUZOEKTf4ZhlHAyxz4Lhq2TKyrAlqXFOIiCNoh7nz1SEyFSq2haEg+qWhORx1uuxUCmNuP2222G4iw4v70aFsbI4jrUUdwDO3UepSNoUdthed7UAH',
+        name='exit_loop',
+        response={
+          'status': 'loop exited'
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=True, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='037640a2-33dd-45dc-ace9-e7fec941d12d' timestamp=1789397046.7182565
+DEBUG    | 2026-09-14 20:14:08 | course_creator:run_adk_course_generation:111 | Event from ReviewerAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code='MODEL_RETURNED_NO_CONTENT' error_message='The model returned no content (finish_reason=STOP with empty parts).' interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=0,
+  prompt_token_count=6480,
+  total_token_count=6480
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-865d53eb-f3e3-4fcf-b7bb-543d75990a52' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='7d78ab0b-f45e-46bc-b54e-68fac3a6084d' timestamp=1789397046.722097
+DEBUG    | 2026-09-14 20:24:01 | course_creator:run_adk_course_generation:111 | Event from PlanningAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "subtopics": ["Structuring a Python Project", "Creating and Using Setup.py", "Writing Reusable Modules", "Installing and Testing Locally", "Publishing to PyPI"],
+    "notes": "Focus on the foundational steps required to take a simple Python script and turn it into an installable package. Keep explanations straightforward, using standard tools like setuptools. Avoid advanced distribution formats, complex CI/CD automation pipelines, or enterprise artifact repositories—these belong in an intermediate or advanced DevOps course."
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=107,
+  prompt_token_count=1485,
+  total_token_count=1592
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='PlanningAgent' actions=EventActions(skip_summarization=None, state_delta={'plan_result': '{\n    "subtopics": ["Structuring a Python Project", "Creating and Using Setup.py", "Writing Reusable Modules", "Installing and Testing Locally", "Publishing to PyPI"],\n    "notes": "Focus on the foundational steps required to take a simple Python script and turn it into an installable package. Keep explanations straightforward, using standard tools like setuptools. Avoid advanced distribution formats, complex CI/CD automation pipelines, or enterprise artifact repositories—these belong in an intermediate or advanced DevOps course."\n}'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='70fc357a-7a08-48e9-87f5-d2a14cd12c3b' timestamp=1789397639.3399587
+DEBUG    | 2026-09-14 20:24:02 | course_creator:run_adk_course_generation:111 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Structuring a Python Project',
+            'Creating and Using Setup.py',
+            'Writing Reusable Modules',
+            'Installing and Testing Locally',
+            'Publishing to PyPI',
+          ]
+        },
+        id='call_9253185__thought__El4KXAERTTIPKXhVXcCCJ9/3GgobHlVEyLV6imM+MaojWSs/vsutXOubblxMAfp9Fo7y21tWZlC/JrEZ7g1WhxTyXi/9ffoCOtkZt4mP4SgH60p9r4vAhHbM1YqP1+3y',
+        name='search_reference_material'
+      ),
+      thought_signature=b"\x12^\n\\\x01\x11M2\x0f)xU]\xc0\x82'\xdf\xf7\x1a\n\x1b\x1eUD\xc8\xb5z\x8ac>1\xaa#Y+?\xbe\xcb\xad\\\xeb\x9bn\\L\x01\xfa}\x16\x8e\xf2\xdb[VfP\xbf&\xb1\x19\xee\rV\x87\x14\xf2^/\xfd}\xfa\x02:\xd9\x19\xb7\x89\x8f\xe1(\x07\xebJ}\xaf\x8b\xc0\x84v\xcc\xd5\x8a\x8f\xd7\xed\xf2"
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=54,
+  prompt_token_count=1290,
+  total_token_count=1344
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='0d7cf1db-6562-4ea2-b396-9075cb65593d' timestamp=1789397641.485025
+DEBUG    | 2026-09-14 20:24:03 | course_creator:run_adk_course_generation:111 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_9253185__thought__El4KXAERTTIPKXhVXcCCJ9/3GgobHlVEyLV6imM+MaojWSs/vsutXOubblxMAfp9Fo7y21tWZlC/JrEZ7g1WhxTyXi/9ffoCOtkZt4mP4SgH60p9r4vAhHbM1YqP1+3y',
+        name='search_reference_material',
+        response={
+          'result': """[Structuring a Python Project]
+difficulty. (Python is named after a comedy show, Monty Python.) Python has 
+several applications, including web development, machine learning, and data 
+analysis. A high-level language lets you create programs without knowing how the internal 
+units of a computer work. A compiler translates a high-level language into a 
+machine language program. Machine language programs can then be executed at 
+any time. Python uses an interpreter, which translates and runs in a high-level 
+language. Download Python from their website. Installation steps are simple: accept the 
+agreement and finish the installation. There are many helpful Python resources 
+on the web, such as: 
+• Python Software Foundation 
+• Python Documentation
+
+A practical 
+introduction to Python 3, ISBN: 9781775093336 (electronic). 2. Brian Heinold and John Prexy. A Practical Introduction to Python Programming, 
+ISBN: 979-8848271577. 3. https://docs.python.org/3/ Python 3.12 documentation 
+4. https://www.python.org 
+5. https://en.wikipedia.org/wiki/Python_Software_Foundation 
+6. Tony Gaddis. Starting out with Python, 5th edition. Pearson, ISBN: 
+978-0-13-592903-2. 7.
+
+### Module 1: Introduction to Python Packages
+
+Python is a popular programming language widely used because of its scalability, readability, and strong community support. Understanding packages helps developers extend core programming capabilities to handle specialized tasks like data analysis, visualization, and machine learning.
+
+---
+
+[Creating and Using Setup.py]
+### Module 3: Importing and Using Packages
+
+Once you have downloaded and installed packages on your computer, you are ready to bring them into your Python programs to use their functions and libraries. To use an installed package, you write import statements in your code. If the Python interpreter generates errors when you attempt to run your program, it usually means that one or more packages have not been installed correctly on your system. **Summary:** Installed packages can be brought directly into your Python code using import statements, and any resulting interpreter errors typically indicate installation issues. ---
+
+### Module 4: Creating a Simple Custom Package
+
+Insufficient source material was found in the uploaded document to cover this module in detail. ---
+
+constructor, which is executed when the class is being initiated. In Python, a 
+constructor’s name is always init and it must have a prefix and suffix of double 
+underscores. Since it is a method, you must include def before its name. As with 
+any other method, a constructor may or may not accept any arguments. A 
+default constructor does not accept any arguments. A parametrized constructor 
+accepts arguments, and in this case, you can pass data during object creation, 
+which is used to initialize the instance members. Objects can also have methods. The following Python program depicts one class 
+called vehicle, v1 is one instance of the class, and Driver is one method that 
+belongs to the object. Every object has three attributes, model, year, and 
+number of drivers. class Vehicle:
+
+55
+9. Arrays 
+As mentioned in chapter eight, Numpy is a library in Python that can generate 
+lists, matrices, linear algebra, and so on. Using Numpy, you can generate arrays. Arrays are used to keep the related data at the same location in the memory. And since arrays are stored at one continuous location in memory, it is quicker to 
+access elements of an array than elements of a list. Therefore by using arrays, 
+programmers store multiple values as one variable. And by using each element’s 
+index we can quickly retrieve a particular element of an array. Consider the 
+following Python program: 
+import numpy 
+MyArray=numpy.array([-1,0,1]) 
+print(MyArray) 
+In the above Python program, MyArray is the name of the array that contains
+
+---
+
+[Writing Reusable Modules]
+### Module 3: Importing and Using Packages
+
+Once you have downloaded and installed packages on your computer, you are ready to bring them into your Python programs to use their functions and libraries. To use an installed package, you write import statements in your code. If the Python interpreter generates errors when you attempt to run your program, it usually means that one or more packages have not been installed correctly on your system. **Summary:** Installed packages can be brought directly into your Python code using import statements, and any resulting interpreter errors typically indicate installation issues. ---
+
+### Module 4: Creating a Simple Custom Package
+
+Insufficient source material was found in the uploaded document to cover this module in detail. ---
+
+install Python 3.12 (the latest version of this writing) or a later version, as 
+depicted in Figure 1-1.
+
+number of drivers. class Vehicle: 
+	
+def __init__(self,Model,year,NoD): 
+	
+	
+self.model=model 
+	
+	
+self.year=year 
+	
+	
+self.NoD=NoD 
+	
+def Driver(self): 
+	
+	
+print("Number of Driver" + self.NoD) 
+v1=Vehicle(“TESLA",2024,0) 
+v1.driver() 
+Self represents the instance of the class; it is a reference to the current instance 
+of the class. Use self to create an attribute that belongs to an object that self is 
+referencing. This is called an instance of an object. An object cannot be created without a constructor, if you do not declare a 
+constructor in your program, Python generates one by default. 11.2 Inheritance 
+Inheritance allows one class to inherit attributes and methods from another.
+
+---
+
+[Installing and Testing Locally]
+### Module 2: Installing Packages with Pip
+
+To prepare your Python environment for specialized projects, you need to install packages from online repositories where all Python packages are available. Pip is a management system written in Python that connects to an online repository so you can easily install other packages. To install a given package, you run the command `pip install name of the package`. For example, you can type the following commands in a Python shell or command line:
+* `pip install -U NumPy`
+* `pip install --upgrade pip`
+* `pip install network`
+* `pip install matplotlib`
+* `pip install fpgrowth_py`
+
+To install a given package, you need to run this command: 
+pip install name of the package. In a Python shell type-in the following commands: 
+Pip install -U NumPy  
+Pip install --upgrade pip 
+Pip install network 
+Pip install matplotlib 
+Pip install fpgrowth_py 
+• Pip is a management system written in Python, which you can use to 
+install other packages. Pip connects to an online repository of packages. • Networkx is used for the creation and studying the structure of networks 
+and graphs. It is free software, which means users can run the software, 
+change it, and distribute it.
+
+and remixes with others. Table of Contents 
+About PA-ADOPT	
+ 
+3
+Preface	
+ 
+4
+About OER	
+ 
+5
+Table of Contents	
+ 
+6
+1. Installing Python	
+ 
+8
+2.
+
+---
+
+[Publishing to PyPI]
+and remixes with others. Table of Contents 
+About PA-ADOPT	
+ 
+3
+Preface	
+ 
+4
+About OER	
+ 
+5
+Table of Contents	
+ 
+6
+1. Installing Python	
+ 
+8
+2.
+
+https://en.wikipedia.org/wiki/List_of_Unicode_characters 
+9. https://beginnersbook.com/2018/03/python-tutorial-learn-programming/ 
+10.https://www.w3resource.com/python/python-tutorial.php 
+11.Wes McKinney. Python for Data Analysis, O’Reilly, ISBN: 978-1-449-31979-3. 12.Alberto Boschetti and Luca Massaron. Python Data Science Essentials, Packt 
+Publishing Ltd., ISBN: 978-1-78953-786-4. 13.Samir Madhavan. Mastering Python for Data Science, Packt Publishing Ltd., 
+ISBN: 978-1-78439-015-0. 14.Andreas C. Müller and Sarah Guido. Introduction to Machine Learning with 
+Python, A Guide for Data Scientists, O’Reilly, ISBN: 978-1-449-36941-5. 15.Frank Kane. Hands-On Data Science and Python Machine Learning, Packt
+
+### Module 5: Distributing Your Package
+
+Insufficient source material was found in the uploaded document to cover this module in detail."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='2ad00297-bb3c-4fda-9cb1-b067aa582260' timestamp=1789397643.2158794
+DEBUG    | 2026-09-14 20:24:05 | course_creator:run_adk_course_generation:111 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "Structuring a Python Project": "No source material found in the reference documents - relying on general domain knowledge covering standard project layouts (such as root directory, package folder containing __init__.py, README, and LICENSE) for this subtopic.",
+    "Creating and Using Setup.py": "No source material found in the reference documents - relying on general domain knowledge regarding standard package metadata configuration using setuptools and setup() in setup.py or pyproject.toml for this subtopic.",
+    "Writing Reusable Modules": "No source material found in the uploaded documents specifically detailing custom module creation - relying on general domain knowledge regarding modular Python programming, writing functions/classes, and utilizing import statements for this subtopic.",
+    "Installing and Testing Locally": "Source material covers basic package management using pip (e.g., `pip install package_name`), upgrading pip, and bringing installed libraries into Python programs via import statements. Reference materials note that interpreter errors upon import typically indicate installation or environment issues.",
+    "Publishing to PyPI": "No source material found in the reference documents - relying on general domain knowledge regarding build tools (like build/twine) and uploading distributions to the Python Package Index (PyPI) for this subtopic."
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=260,
+  prompt_token_count=3353,
+  total_token_count=3613
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={'research_result': '{\n    "Structuring a Python Project": "No source material found in the reference documents - relying on general domain knowledge covering standard project layouts (such as root directory, package folder containing __init__.py, README, and LICENSE) for this subtopic.",\n    "Creating and Using Setup.py": "No source material found in the reference documents - relying on general domain knowledge regarding standard package metadata configuration using setuptools and setup() in setup.py or pyproject.toml for this subtopic.",\n    "Writing Reusable Modules": "No source material found in the uploaded documents specifically detailing custom module creation - relying on general domain knowledge regarding modular Python programming, writing functions/classes, and utilizing import statements for this subtopic.",\n    "Installing and Testing Locally": "Source material covers basic package management using pip (e.g., `pip install package_name`), upgrading pip, and bringing installed libraries into Python programs via import statements. Reference materials note that interpreter errors upon import typically indicate installation or environment issues.",\n    "Publishing to PyPI": "No source material found in the reference documents - relying on general domain knowledge regarding build tools (like build/twine) and uploading distributions to the Python Package Index (PyPI) for this subtopic."\n}'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='2343b550-06a3-466b-995c-ba36d79a49c2' timestamp=1789397643.220583
+DEBUG    | 2026-09-14 20:24:08 | course_creator:run_adk_course_generation:111 | Event from CurriculumAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""[
+    {
+        "title": "Structuring a Python Project",
+        "description": "Establishes a standard file layout for beginner Python projects, including organizing a root directory, creating a dedicated package folder with an __init__.py file, and adding essential files like README and LICENSE."
+    },
+    {
+        "title": "Creating and Using Setup.py",
+        "description": "Covers how to write a basic setup.py script using setuptools to define package metadata such as name, version, and author so that your project becomes installable."
+    },
+    {
+        "title": "Writing Reusable Modules",
+        "description": "Focuses on writing clean, modular Python code by organizing functions and classes into separate files that can be easily imported and reused across different scripts."
+    },
+    {
+        "title": "Installing and Testing Locally",
+        "description": "Explains how to use pip to install your custom package locally, test imports in a Python shell, and troubleshoot common interpreter errors related to environment setup and missing paths."
+    },
+    {
+        "title": "Publishing to PyPI",
+        "description": "Introduces the final steps for sharing your package with the wider community by building distribution archives and uploading them to the Python Package Index (PyPI) using standard tools."
+    }
+]"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=289,
+  prompt_token_count=3793,
+  total_token_count=4082
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='CurriculumAgent' actions=EventActions(skip_summarization=None, state_delta={'curriculum_result': '[\n    {\n        "title": "Structuring a Python Project",\n        "description": "Establishes a standard file layout for beginner Python projects, including organizing a root directory, creating a dedicated package folder with an __init__.py file, and adding essential files like README and LICENSE."\n    },\n    {\n        "title": "Creating and Using Setup.py",\n        "description": "Covers how to write a basic setup.py script using setuptools to define package metadata such as name, version, and author so that your project becomes installable."\n    },\n    {\n        "title": "Writing Reusable Modules",\n        "description": "Focuses on writing clean, modular Python code by organizing functions and classes into separate files that can be easily imported and reused across different scripts."\n    },\n    {\n        "title": "Installing and Testing Locally",\n        "description": "Explains how to use pip to install your custom package locally, test imports in a Python shell, and troubleshoot common interpreter errors related to environment setup and missing paths."\n    },\n    {\n        "title": "Publishing to PyPI",\n        "description": "Introduces the final steps for sharing your package with the wider community by building distribution archives and uploading them to the Python Package Index (PyPI) using standard tools."\n    }\n]'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='9ba9142d-9186-43ad-872d-0122878fbaa8' timestamp=1789397645.7919586
+DEBUG    | 2026-09-14 20:24:13 | course_creator:run_adk_course_generation:111 | Event from ContentWriterAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""# Structuring a Python Project
+
+Structuring a project correctly helps you organize your files so that your code is easy to maintain, share, and expand into a package. 
+
+When beginning a Python project, you typically set up a root directory that holds everything related to your work. Inside this root directory, you create a dedicated package folder to store your Python code files, along with essential documentation files like a README and a LICENSE. For example, Python packages often include a special file named `__init__.py` inside the package folder, which tells Python that the directory should be treated as a package.
+
+**Summary:** Organizing your project into a clear root directory, a package folder with an `__init__.py` file, and documentation files like a README and a LICENSE creates a solid foundation for building and sharing Python packages.
+
+---
+
+# Creating and Using Setup.py
+
+Writing a setup script allows you to define important details about your project so that it can be packaged and installed correctly.
+
+To make a project installable, you create a file named `setup.py` at your project's root level using `setuptools`. Inside this script, you define basic package metadata such as your project's name, version number, and author information. This metadata tells Python management tools how to identify and configure your package for installation.
+
+**Summary:** A `setup.py` script uses `setuptools` to declare vital package metadata like name, version, and author, turning a collection of Python scripts into an installable package.
+
+---
+
+# Writing Reusable Modules
+
+Writing clean, modular code allows you to break large programs into smaller, manageable files that can be shared across different projects.
+
+Instead of putting all your code into a single script, you organize your functions and classes into separate Python files, or modules. For instance, you might define a class like `Vehicle` with attributes such as model, year, and number of drivers, along with methods like `Driver`:
+
+```python
+class Vehicle:
+    def __init__(self, model, year, NoD):
+        self.model = model
+        self.year = year
+        self.NoD = NoD
+
+    def Driver(self):
+        print("Number of Driver" + str(self.NoD))
+
+v1 = Vehicle("TESLA", 2024, 0)
+v1.Driver()
+```
+
+By separating your code into distinct files, you can easily bring these definitions into other Python scripts using standard import statements.
+
+**Summary:** Organizing your functions and classes into separate files makes your code modular and reusable, allowing you to bring your custom definitions into other scripts with import statements.
+
+---
+
+# Installing and Testing Locally
+
+Installing your custom package locally lets you verify that your project environment is configured correctly and that your code can be imported without errors.
+
+You can manage and install packages in your Python environment using `pip`, a management system written in Python that connects to online repositories and local directories. To install a given package or test your local setup, you run commands in your shell or command line, such as:
+
+* `pip install name of the package`
+* `pip install -U NumPy`
+* `pip install --upgrade pip`
+* `pip install network`
+* `pip install matplotlib`
+* `pip install fpgrowth_py`
+
+Once your package is installed, you can bring its functions and libraries into your programs using import statements. If the Python interpreter generates errors when you run your program, it usually indicates that the package has not been installed correctly or that there is an environment setup issue.
+
+**Summary:** You can install packages using `pip` commands and test them in your code with import statements, keeping in mind that any interpreter errors typically point back to installation or environment issues.
+
+---
+
+# Publishing to PyPI
+
+Sharing your completed package with the wider community allows other developers to easily download and use your work.
+
+The final phase of package development involves building distribution archives of your project and uploading them to the Python Package Index (PyPI), the official online repository where Python packages are made available. By using standard distribution tools, you package your project's code and metadata so that anyone around the world can install it using a simple `pip install` command.
+
+**Summary:** Publishing your package to PyPI involves building distribution archives and uploading them to the central Python repository so that other developers can easily install and use your work."""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=919,
+  prompt_token_count=4581,
+  total_token_count=5500
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='ContentWriterAgent' actions=EventActions(skip_summarization=None, state_delta={'content_result': '# Structuring a Python Project\n\nStructuring a project correctly helps you organize your files so that your code is easy to maintain, share, and expand into a package. \n\nWhen beginning a Python project, you typically set up a root directory that holds everything related to your work. Inside this root directory, you create a dedicated package folder to store your Python code files, along with essential documentation files like a README and a LICENSE. For example, Python packages often include a special file named `__init__.py` inside the package folder, which tells Python that the directory should be treated as a package.\n\n**Summary:** Organizing your project into a clear root directory, a package folder with an `__init__.py` file, and documentation files like a README and a LICENSE creates a solid foundation for building and sharing Python packages.\n\n---\n\n# Creating and Using Setup.py\n\nWriting a setup script allows you to define important details about your project so that it can be packaged and installed correctly.\n\nTo make a project installable, you create a file named `setup.py` at your project\'s root level using `setuptools`. Inside this script, you define basic package metadata such as your project\'s name, version number, and author information. This metadata tells Python management tools how to identify and configure your package for installation.\n\n**Summary:** A `setup.py` script uses `setuptools` to declare vital package metadata like name, version, and author, turning a collection of Python scripts into an installable package.\n\n---\n\n# Writing Reusable Modules\n\nWriting clean, modular code allows you to break large programs into smaller, manageable files that can be shared across different projects.\n\nInstead of putting all your code into a single script, you organize your functions and classes into separate Python files, or modules. For instance, you might define a class like `Vehicle` with attributes such as model, year, and number of drivers, along with methods like `Driver`:\n\n```python\nclass Vehicle:\n    def __init__(self, model, year, NoD):\n        self.model = model\n        self.year = year\n        self.NoD = NoD\n\n    def Driver(self):\n        print("Number of Driver" + str(self.NoD))\n\nv1 = Vehicle("TESLA", 2024, 0)\nv1.Driver()\n```\n\nBy separating your code into distinct files, you can easily bring these definitions into other Python scripts using standard import statements.\n\n**Summary:** Organizing your functions and classes into separate files makes your code modular and reusable, allowing you to bring your custom definitions into other scripts with import statements.\n\n---\n\n# Installing and Testing Locally\n\nInstalling your custom package locally lets you verify that your project environment is configured correctly and that your code can be imported without errors.\n\nYou can manage and install packages in your Python environment using `pip`, a management system written in Python that connects to online repositories and local directories. To install a given package or test your local setup, you run commands in your shell or command line, such as:\n\n* `pip install name of the package`\n* `pip install -U NumPy`\n* `pip install --upgrade pip`\n* `pip install network`\n* `pip install matplotlib`\n* `pip install fpgrowth_py`\n\nOnce your package is installed, you can bring its functions and libraries into your programs using import statements. If the Python interpreter generates errors when you run your program, it usually indicates that the package has not been installed correctly or that there is an environment setup issue.\n\n**Summary:** You can install packages using `pip` commands and test them in your code with import statements, keeping in mind that any interpreter errors typically point back to installation or environment issues.\n\n---\n\n# Publishing to PyPI\n\nSharing your completed package with the wider community allows other developers to easily download and use your work.\n\nThe final phase of package development involves building distribution archives of your project and uploading them to the Python Package Index (PyPI), the official online repository where Python packages are made available. By using standard distribution tools, you package your project\'s code and metadata so that anyone around the world can install it using a simple `pip install` command.\n\n**Summary:** Publishing your package to PyPI involves building distribution archives and uploading them to the central Python repository so that other developers can easily install and use your work.'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='b8feb4e7-90c8-4fa3-9593-7d67bdbc511c' timestamp=1789397648.241406
+DEBUG    | 2026-09-14 20:24:15 | course_creator:run_adk_course_generation:111 | Event from ReviewerAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={},
+        id='call_10947860__thought__El4KXAERTTIPJZ68Tr1falAszZmAu8DefIY1BGbGUEngiGfdyjFxN6asc/OiH9hT4XxbhCj8x0T2ca7s/mfDGfPFzo9ZoFm9zuFvCaHuywcyrkFBWg7KcvUUNGAmgkJk',
+        name='exit_loop'
+      ),
+      thought_signature=b'\x12^\n\\\x01\x11M2\x0f%\x9e\xbcN\xbd_jP,\xcd\x99\x80\xbb\xc0\xde|\x865\x04f\xc6PI\xe0\x88g\xdd\xca1q7\xa6\xacs\xf3\xa2\x1f\xd8S\xe1|[\x84(\xfc\xc7D\xf6q\xae\xec\xfeg\xc3\x19\xf3\xc5\xce\x8fY\xa0Y\xbd\xce\xe1o\t\xa1\xee\xcb\x072\xaeAAZ\x0e\xcar\xf5\x144`&\x82Bd'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=10,
+  prompt_token_count=5372,
+  total_token_count=5382
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='a27518c4-76d8-4693-b777-33c71eabce9d' timestamp=1789397653.0569813
+DEBUG    | 2026-09-14 20:24:15 | course_creator:run_adk_course_generation:111 | Event from ReviewerAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_10947860__thought__El4KXAERTTIPJZ68Tr1falAszZmAu8DefIY1BGbGUEngiGfdyjFxN6asc/OiH9hT4XxbhCj8x0T2ca7s/mfDGfPFzo9ZoFm9zuFvCaHuywcyrkFBWg7KcvUUNGAmgkJk',
+        name='exit_loop',
+        response={
+          'status': 'loop exited'
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=True, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='8c3321ab-e30e-4089-8dff-95b94f9465be' timestamp=1789397655.2886279
+DEBUG    | 2026-09-14 20:24:21 | course_creator:run_adk_course_generation:111 | Event from ReviewerAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code='MODEL_RETURNED_NO_CONTENT' error_message='The model returned no content (finish_reason=STOP with empty parts).' interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=0,
+  prompt_token_count=5397,
+  total_token_count=5397
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='2ebbd84d-4a4c-4e73-9a02-aed665a84628' timestamp=1789397655.2919796
+DEBUG    | 2026-09-14 20:24:28 | course_creator:run_adk_course_generation:111 | Event from QuizAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""[
+    {
+        "question": "What is the primary purpose of placing an `__init__.py` file inside your package folder?",
+        "options": [
+            "It automatically generates a README and LICENSE for your project.",
+            "It tells Python that the directory should be treated as a package.",
+            "It contains the package metadata required for pip installation.",
+            "It compiles your Python scripts into machine language."
+        ],
+        "correct_answer": "It tells Python that the directory should be treated as a package."
+    },
+    {
+        "question": "When organizing a new Python project, where should you place your dedicated package folder containing your code files?",
+        "options": [
+            "Inside the system's global site-packages directory",
+            "Inside a root directory that holds everything related to your work",
+            "Directly within the PyPI central repository",
+            "Inside the setup.py configuration file"
+        ],
+        "correct_answer": "Inside a root directory that holds everything related to your work"
+    },
+    {
+        "question": "Which of the following files are recommended to include alongside your package folder for essential project documentation?",
+        "options": [
+            "A setup.py and a requirements.txt",
+            "An __init__.py and a compiler config",
+            "A README and a LICENSE",
+            "A module.py and an interpreter log"
+        ],
+        "correct_answer": "A README and a LICENSE"
+    },
+    {
+        "question": "Which tool is used within a `setup.py` script to define basic package metadata such as name, version, and author?",
+        "options": [
+            "setuptools",
+            "pip",
+            "__init__.py",
+            "PyPI"
+        ],
+        "correct_answer": "setuptools"
+    },
+    {
+        "question": "Where should the `setup.py` file typically be placed within your project hierarchy?",
+        "options": [
+            "Inside the dedicated package folder next to your Python source files",
+            "At your project's root level",
+            "Inside the system directory where Python is installed",
+            "Directly inside the `__init__.py` file"
+        ],
+        "correct_answer": "At your project's root level"
+    },
+    {
+        "question": "Why is project metadata defined in a setup script?",
+        "options": [
+            "To tell Python management tools how to identify and configure your package for installation",
+            "To compile your classes into machine code for faster execution",
+            "To automatically generate documentation files like a README",
+            "To replace standard import statements in other scripts"
+        ],
+        "correct_answer": "To tell Python management tools how to identify and configure your package for installation"
+    },
+    {
+        "question": "How should you organize your code to prevent putting everything into a single massive script?",
+        "options": [
+            "Combine all functions and classes into the `__init__.py` file",
+            "Organize functions and classes into separate Python files, or modules",
+            "Write all logic directly inside the setup.py configuration script",
+            "Store all variables in a central README file"
+        ],
+        "correct_answer": "Organize functions and classes into separate Python files, or modules"
+    },
+    {
+        "question": "In the lesson's `Vehicle` class example, what is the purpose of the `__init__` method?",
+        "options": [
+            "To print the number of drivers to the console",
+            "To import external packages into the script",
+            "To act as a constructor that initializes attributes like model, year, and number of drivers",
+            "To build distribution archives for PyPI"
+        ],
+        "correct_answer": "To act as a constructor that initializes attributes like model, year, and number of drivers"
+    },
+    {
+        "question": "Once you have separated your code into distinct files, how do you bring those definitions into other Python scripts?",
+        "options": [
+            "Using standard import statements",
+            "By running `pip install` on the local file path",
+            "By executing the setup.py script",
+            "By compiling the root directory"
+        ],
+        "correct_answer": "Using standard import statements"
+    },
+    {
+        "question": "What command-line tool does Python use to manage and install packages from online repositories and local directories?",
+        "options": [
+            "setuptools",
+            "pip",
+            "__init__",
+            "PyPI"
+        ],
+        "correct_answer": "pip"
+    },
+    {
+        "question": "If the Python interpreter generates errors when you attempt to run a program that uses an installed package, what does this typically indicate?",
+        "options": [
+            "Your computer's CPU speed is too slow.",
+            "The package has not been installed correctly or there is an environment setup issue.",
+            "You forgot to include a LICENSE file in your root directory.",
+            "The README file contains a syntax error."
+        ],
+        "correct_answer": "The package has not been installed correctly or there is an environment setup issue."
+    },
+    {
+        "question": "Which of the following is a valid pip command shown in the lesson for installing or upgrading packages?",
+        "options": [
+            "pip install -U NumPy",
+            "pip setup --local package",
+            "import pip.install(network)",
+            "pip run setup.py"
+        ],
+        "correct_answer": "pip install -U NumPy"
+    },
+    {
+        "question": "What is the primary function of the Python Package Index (PyPI)?",
+        "options": [
+            "It is a local directory used exclusively for testing `__init__.py` files.",
+            "It is the official online repository where Python packages are made available for others to download.",
+            "It is a command-line tool that compiles Python scripts into machine code.",
+            "It serves as a replacement for standard import statements."
+        ],
+        "correct_answer": "It is the official online repository where Python packages are made available for others to download."
+    },
+    {
+        "question": "What is the final phase of package development before other developers can install your work using `pip install`?",
+        "options": [
+            "Building distribution archives and uploading them to PyPI",
+            "Writing a custom `__init__.py` file in the root directory",
+            "Testing local shell environments with `pip install -U`",
+            "Defining the project author in a README file"
+        ],
+        "correct_answer": "Building distribution archives and uploading them to PyPI"
+    },
+    {
+        "question": "How can other developers around the world install a package that you have successfully shared?",
+        "options": [
+            "By running a simple `pip install` command",
+            "By importing the package directly from your local root directory",
+            "By executing the setup.py script without internet access",
+            "By running the `__init__.py` constructor in their shell"
+        ],
+        "correct_answer": "By running a simple `pip install` command"
+    }
+]"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=1632,
+  prompt_token_count=5461,
+  total_token_count=7093
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-21f0a843-2716-43ff-9d19-bc126788fd89' author='QuizAgent' actions=EventActions(skip_summarization=None, state_delta={'quiz_result': '[\n    {\n        "question": "What is the primary purpose of placing an `__init__.py` file inside your package folder?",\n        "options": [\n            "It automatically generates a README and LICENSE for your project.",\n            "It tells Python that the directory should be treated as a package.",\n            "It contains the package metadata required for pip installation.",\n            "It compiles your Python scripts into machine language."\n        ],\n        "correct_answer": "It tells Python that the directory should be treated as a package."\n    },\n    {\n        "question": "When organizing a new Python project, where should you place your dedicated package folder containing your code files?",\n        "options": [\n            "Inside the system\'s global site-packages directory",\n            "Inside a root directory that holds everything related to your work",\n            "Directly within the PyPI central repository",\n            "Inside the setup.py configuration file"\n        ],\n        "correct_answer": "Inside a root directory that holds everything related to your work"\n    },\n    {\n        "question": "Which of the following files are recommended to include alongside your package folder for essential project documentation?",\n        "options": [\n            "A setup.py and a requirements.txt",\n            "An __init__.py and a compiler config",\n            "A README and a LICENSE",\n            "A module.py and an interpreter log"\n        ],\n        "correct_answer": "A README and a LICENSE"\n    },\n    {\n        "question": "Which tool is used within a `setup.py` script to define basic package metadata such as name, version, and author?",\n        "options": [\n            "setuptools",\n            "pip",\n            "__init__.py",\n            "PyPI"\n        ],\n        "correct_answer": "setuptools"\n    },\n    {\n        "question": "Where should the `setup.py` file typically be placed within your project hierarchy?",\n        "options": [\n            "Inside the dedicated package folder next to your Python source files",\n            "At your project\'s root level",\n            "Inside the system directory where Python is installed",\n            "Directly inside the `__init__.py` file"\n        ],\n        "correct_answer": "At your project\'s root level"\n    },\n    {\n        "question": "Why is project metadata defined in a setup script?",\n        "options": [\n            "To tell Python management tools how to identify and configure your package for installation",\n            "To compile your classes into machine code for faster execution",\n            "To automatically generate documentation files like a README",\n            "To replace standard import statements in other scripts"\n        ],\n        "correct_answer": "To tell Python management tools how to identify and configure your package for installation"\n    },\n    {\n        "question": "How should you organize your code to prevent putting everything into a single massive script?",\n        "options": [\n            "Combine all functions and classes into the `__init__.py` file",\n            "Organize functions and classes into separate Python files, or modules",\n            "Write all logic directly inside the setup.py configuration script",\n            "Store all variables in a central README file"\n        ],\n        "correct_answer": "Organize functions and classes into separate Python files, or modules"\n    },\n    {\n        "question": "In the lesson\'s `Vehicle` class example, what is the purpose of the `__init__` method?",\n        "options": [\n            "To print the number of drivers to the console",\n            "To import external packages into the script",\n            "To act as a constructor that initializes attributes like model, year, and number of drivers",\n            "To build distribution archives for PyPI"\n        ],\n        "correct_answer": "To act as a constructor that initializes attributes like model, year, and number of drivers"\n    },\n    {\n        "question": "Once you have separated your code into distinct files, how do you bring those definitions into other Python scripts?",\n        "options": [\n            "Using standard import statements",\n            "By running `pip install` on the local file path",\n            "By executing the setup.py script",\n            "By compiling the root directory"\n        ],\n        "correct_answer": "Using standard import statements"\n    },\n    {\n        "question": "What command-line tool does Python use to manage and install packages from online repositories and local directories?",\n        "options": [\n            "setuptools",\n            "pip",\n            "__init__",\n            "PyPI"\n        ],\n        "correct_answer": "pip"\n    },\n    {\n        "question": "If the Python interpreter generates errors when you attempt to run a program that uses an installed package, what does this typically indicate?",\n        "options": [\n            "Your computer\'s CPU speed is too slow.",\n            "The package has not been installed correctly or there is an environment setup issue.",\n            "You forgot to include a LICENSE file in your root directory.",\n            "The README file contains a syntax error."\n        ],\n        "correct_answer": "The package has not been installed correctly or there is an environment setup issue."\n    },\n    {\n        "question": "Which of the following is a valid pip command shown in the lesson for installing or upgrading packages?",\n        "options": [\n            "pip install -U NumPy",\n            "pip setup --local package",\n            "import pip.install(network)",\n            "pip run setup.py"\n        ],\n        "correct_answer": "pip install -U NumPy"\n    },\n    {\n        "question": "What is the primary function of the Python Package Index (PyPI)?",\n        "options": [\n            "It is a local directory used exclusively for testing `__init__.py` files.",\n            "It is the official online repository where Python packages are made available for others to download.",\n            "It is a command-line tool that compiles Python scripts into machine code.",\n            "It serves as a replacement for standard import statements."\n        ],\n        "correct_answer": "It is the official online repository where Python packages are made available for others to download."\n    },\n    {\n        "question": "What is the final phase of package development before other developers can install your work using `pip install`?",\n        "options": [\n            "Building distribution archives and uploading them to PyPI",\n            "Writing a custom `__init__.py` file in the root directory",\n            "Testing local shell environments with `pip install -U`",\n            "Defining the project author in a README file"\n        ],\n        "correct_answer": "Building distribution archives and uploading them to PyPI"\n    },\n    {\n        "question": "How can other developers around the world install a package that you have successfully shared?",\n        "options": [\n            "By running a simple `pip install` command",\n            "By importing the package directly from your local root directory",\n            "By executing the setup.py script without internet access",\n            "By running the `__init__.py` constructor in their shell"\n        ],\n        "correct_answer": "By running a simple `pip install` command"\n    }\n]'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='10b82e46-e5fd-4462-bc2e-6196ad3a00b9' timestamp=1789397661.368293

@@ -1,0 +1,2 @@
+ERROR    | 2026-09-15 08:42:28 | course_creator:run_adk_curriculum_for_document:163 | Curriculum pipeline failed for document='introduction-to-data-science-using-python.pdf': keyword_search() got an unexpected keyword argument 'source'
+ERROR    | 2026-09-15 08:44:21 | course_creator:run_adk_curriculum_for_document:163 | Curriculum pipeline failed for document='introduction-to-data-science-using-python.pdf': keyword_search() got an unexpected keyword argument 'source'

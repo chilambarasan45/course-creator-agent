@@ -1,0 +1,8 @@
+ERROR    | 2026-09-09 16:56:49 | course_creator:_patched_acompletion_with_retry:58 | Non-retryable error: litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+ERROR    | 2026-09-09 16:56:49 | course_creator:run_adk_course_generation:116 | Pipeline failed for topic='what is Debisa': litellm.NotFoundError: GroqException - {"error":{"message":"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.","type":"invalid_request_error","code":"model_not_found"}}
+
+ERROR    | 2026-09-09 17:23:48 | course_creator:_patched_acompletion_with_retry:58 | Non-retryable error: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01km96rckne5n86bjr9z630wr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4202, Requested 3853. Please try again in 412.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+ERROR    | 2026-09-09 17:23:48 | course_creator:run_adk_course_generation:116 | Pipeline failed for topic='what is Debisa': litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01km96rckne5n86bjr9z630wr1` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4202, Requested 3853. Please try again in 412.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+

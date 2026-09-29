@@ -1,15 +1,16 @@
-from groq import Groq
-from app.core.config import GROQ_API_KEY
+import litellm
+from app.core.config import GEMINI_API_KEY
+import os
 
-client = Groq(api_key=GROQ_API_KEY)
+os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
 
 
 def ask_llm(prompt: str) -> str:
     """
-    Sends a prompt to the LLM (via Groq) and returns the text response.
+    Sends a prompt to Gemini and returns the text response.
     """
-    response = client.chat.completions.create(
-        model="openai/gpt-oss-120b",
+    response = litellm.completion(
+        model="gemini/gemini-3.5-flash-lite",
         max_tokens=1500,
         messages=[{"role": "user", "content": prompt}]
     )

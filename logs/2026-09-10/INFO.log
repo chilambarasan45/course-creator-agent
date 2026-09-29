@@ -1,0 +1,14 @@
+INFO     | 2026-09-10 11:51:35 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Debisa', level='beginner', quiz=False
+INFO     | 2026-09-10 12:12:25 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='DEBISA algorithm for big data instance selection using Apache Spark', level='beginner', quiz=False
+INFO     | 2026-09-10 12:46:39 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='DEBISA algorithm for big data instance selection using Apache Spark', level='beginner', quiz=False
+INFO     | 2026-09-10 13:20:47 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='DEBISA algorithm for big data instance selection using Apache Spark', level='beginner', quiz=False
+INFO     | 2026-09-10 13:30:55 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='DEBISA algorithm for big data instance selection using Apache Spark', level='beginner', quiz=False
+INFO     | 2026-09-10 13:33:13 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='DEBISA algorithm for big data instance selection using Apache Spark'
+INFO     | 2026-09-10 15:35:21 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='DEBISA algorithm for big data instance selection using Apache Spark', level='beginner', quiz=False
+INFO     | 2026-09-10 15:38:07 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='DEBISA algorithm for big data instance selection using Apache Spark'
+INFO     | 2026-09-10 16:28:23 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Introduction to Data Science using Python', level='beginner', quiz=False
+INFO     | 2026-09-10 16:28:48 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='Introduction to Data Science using Python'
+INFO     | 2026-09-10 16:38:55 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Introduction to Data Science using Python', level='beginner', quiz=False
+INFO     | 2026-09-10 16:39:17 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='Introduction to Data Science using Python'
+INFO     | 2026-09-10 16:39:42 | course_creator:run_adk_course_generation:76 | Starting course generation: topic='Introduction to Data Science using Python', level='beginner', quiz=True
+INFO     | 2026-09-10 16:40:07 | course_creator:run_adk_course_generation:123 | Course generation complete for topic='Introduction to Data Science using Python'

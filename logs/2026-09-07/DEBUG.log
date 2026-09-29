@@ -1,0 +1,182 @@
+DEBUG    | 2026-09-07 11:21:43 | course_creator:run_adk_course_generation:113 | Event from PlanningAgent: model_version='openai/gpt-oss-20b' content=Content(
+  parts=[
+    Part(
+      text="""We need to parse the input: topic is "what is Debisa". Likely Debisa refers to "DebiSa" maybe? Let's think: Debisa might be a software, platform, or maybe a term. Could be "DebiSA"?? Could be "DebiSa" stands for "Debian Server Administration"? Actually "DebiSa" might be "DebiSA" meaning "Debian Security Advisory". Let's think: Debisa could be "Debian Security Advisory" abbreviation: "Debian Security Advisory" is often abbreviated as "DSA". Actually DSA stands for "Debian Security Advisory". But "Debisa" might be a mis-typo for "DebiSA"? There is a "DebiSA" as the Debian Security Advisory system. The question "what is Debisa" could be referencing "DebiSA" or "Debisa"? Could also be "Debisa" as in "DebiSa" referencing "DebiSA" website. Let’s search memory: There is "DebiSA" which is "Debian Security Advisory" in Spanish maybe "DebiSA"? Actually the Debian Security Team issues "Debian Security Advisories" abbreviated as "DSA" not "Debisa". But there might be a "DebiSA" page: "Debian Security Advisories" website: https://security.debian.org/. The page might be titled "DebiSA"? The Spanish version "DebiSA" maybe? But "Debisa" could be an acronym for "Debian Information Security Advisory"? Not sure.
+
+Alternatively "Debisa" could be "Debisa", a brand of something? Let's search memory: Debisa is a brand of "Debisa" maybe "Debisa" is a Spanish company? Wait, I recall "Debisa" is a brand of "Debisa" maybe a manufacturer of "Debisa" product? Actually there is "Debisa" as "Debisa: the world of electronics" maybe?
+
+Better to consider that "Debisa" might be an acronym for "DebiSA" for "Debian Security Advisory" but with "Debisa" spelled incorrectly. But the user wrote "what is Debisa". It might be a request for an explanation of a term "Debisa" used in some context. Since we don't have internet, we need to rely on knowledge. Could "Debisa" be a platform for building dashboards? There's "DebiSA" as "Data Engine" or "DebiSA" as "DebiSA: a data platform for the South American region"? I'm not sure.
+
+Could "Debisa" refer to "DebiSA" a brand of "Debi SA" a Swedish company? Possibly "Debisa" could be "Debisa" in Spanish: "Debisa: software de facturación"? Actually there is "Debisa" maybe a software for "Debi SA" used for "debit and credit card transactions"? Let's recall: In the world of fintech, "Debi" is a company? There is "Debi" (debit card) maybe "Debisa" as a brand of "Debit Card"? Wait, "Debi" might be "Debi: debit card service provider in the UK." Not "Debisa".
+
+Alternatively, "Debisa" might be a company that sells "Debisa" - "Debisa" as a brand of "DebiSA" maybe "DebiSA" stands for "Debi SA" (S.A. stands for Sociedad Anónima). Could be "Debisa" as "Debi S.A." a Brazilian company? Could be "Debisa" in Spanish: "Debisa: a Spanish company that provides IT solutions for the education sector"? I'm not sure.
+
+Maybe "Debisa" is an acronym for "Data-Bi-SA"? Not sure.
+
+Alternatively, "Debisa" might be a misspelling of "Debias", which is the term for "debiased"? The user might ask "what is Debisa" but maybe they mean "Debias"? No.
+
+Let's parse again: "Topic: what is Debisa". So the topic is "what is Debisa". The level is "beginner". The course likely wants to explain what Debisa is. So we need to design subtopics: introduction, history, purpose, key features, use cases, getting started. But we need to determine what Debisa actually refers to. Let's search memory: "Debisa" might be a brand of "DebiSA" used for "Debian Security Advisories" but the user might not know the abbreviation. But if it's a beginner-level course, we might keep it simple: "Debisa: an online platform for managing personal finance"? Actually there is "DebiSA" maybe a platform for "Debt Management"? Wait, "Debisa" might be the Spanish phrase "Debisa" meaning "debit". In Spanish, "debit" is "débito". "Debisa" could be a combination "Debi" (debit) + "sa" (something). But I think it's likely "DebiSA" stands for "Debian Security Advisories". Because it's a known concept, but beginner-level course would cover it. However, "Debisa" spelled with lowercase "b" and "s" might be a mistake.
+
+Alternatively, "Debisa" might be "DebiSA" a company that provides "DebiSA" in the Spanish or French context. But the user didn't provide any additional context. The course planner must still produce a plan. We can assume "Debisa" refers to "DebiSA: a platform that helps users track their debts and finances". Let's search memory: "Debisa" might be a new fintech startup? I recall a Spanish company "Debisa"""",
+      thought=True
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'> error_code=<FinishReason.MAX_TOKENS: 'MAX_TOKENS'> error_message='Maximum tokens reached' interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=1200,
+  prompt_token_count=1492,
+  thoughts_token_count=1198,
+  total_token_count=2692
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-f642e6e1-e11f-40a8-ad0a-8990b967755c' author='PlanningAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='9821842b-fca0-462d-b7f3-6cbb236ee1d4' timestamp=1788760301.5618799
+DEBUG    | 2026-09-07 11:21:43 | course_creator:run_adk_course_generation:113 | Event from ResearchAgent: model_version='openai/gpt-oss-20b' content=Content(
+  parts=[
+    Part(
+      text='We need to produce a JSON with subtopics and notes. We need plan_result: subtopics list and notes depth/tone guidance. We don\'t have plan_result input. But user gave a topic: "what is Debisa, Level: beginner". So we need to imagine that Planning Agent gave plan_result. But we don\'t have it. Likely the subtopic is "Debisa" or "what is Debisa". We need to search for Debisa. Let\'s search.',
+      thought=True
+    ),
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_title': 'Debisa'
+        },
+        id='fc_3525f1c9-c7ce-4b89-8ddb-95d152841d0e',
+        name='search_reference_material'
+      )
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=123,
+  prompt_token_count=1054,
+  thoughts_token_count=97,
+  total_token_count=1177
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-f642e6e1-e11f-40a8-ad0a-8990b967755c' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='3bd8aa62-6d21-416e-936b-0fec78e741be' timestamp=1788760303.4560752
+DEBUG    | 2026-09-07 11:21:44 | course_creator:run_adk_course_generation:113 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='fc_3525f1c9-c7ce-4b89-8ddb-95d152841d0e',
+        name='search_reference_material',
+        response={
+          'result': """Based on the optimization strategies in Section 3.2, the proposed 
+DEBISA and the related pseudo code are described as Algorithm 1 and 
+the flow chart of DEBISA is shown in Fig. 4. Algorithm 1. DEBISA 
+4. Implementation of DEBISA on Apache Spark 
+We have open-source all the complete code to Github[21]. One can 
+download it to local computer and run it directly. There are three 
+modules for the implementation of DEBISA on Apache Spark. (1) Preprocessing module implements Step 1, Step 2 and Step 3 in 
+Algorithm 1 
+(2) Single EBISA module implements Step 4.1 to Step 4.3 in Algo­
+rithm 1. (3) The complete structure of DEBISA implements Step 4.4 in Al­
+gorithm 1, and combine all modules together to build the complete 
+DEBISA on Apache Spark. 4.1. Preprocessing module
+
+classification accuracy of DEBISA’s selection results is more than 90 % 
+on several big data sets. In addition, the experiment result on speedup, 
+scaleup and sizeup showed that DEBISA has excellent parallel expansion 
+performance, which means that DEBISA is suitable for cloud computing, 
+HPC and other shared computing environments. However, DEBISA still has the following two major limitations: (1) 
+Because DEBISA adopts a coarse-grained instance selection strategy, 
+although it improves efficiency, it may lose some low-proportion but 
+relatively important parts in the selection process when facing a data set 
+with significant unbalanced instance distribution. (2) DEBISA’s multiple 
+iteration selection strategy is not suitable for processing streaming data
+
+the following advantage: 
+Suppose the computation ability of each core is same, this strategy 
+can avoid data skewness problem, ensure the load balance and reduce 
+the costs of network transmission. Therefore, when the amount of data 
+grows in proportion to the number of cores, the size of data of each core 
+will not change and the increasing rate of extra time costs of framework 
+will also be very small. In summary, DEBISA can flexibly adapt to the instance selection 
+tasks of different sizes by adjusting the number of cores in the cluster. This feature means that DEBISA is very suitable for the Cloud 
+computing, HPC and other shared computing environments. 5.4.3. Sizeup 
+Sizeup is defined as follows: 
+sizeup(m) = TmDS
+TDS
+(5)"""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-f642e6e1-e11f-40a8-ad0a-8990b967755c' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='721922a0-b822-4b09-bda4-e497b6829063' timestamp=1788760304.3941796
+DEBUG    | 2026-09-07 11:21:45 | course_creator:run_adk_course_generation:113 | Event from ResearchAgent: model_version='openai/gpt-oss-20b' content=Content(
+  parts=[
+    Part(
+      text="""The user: "Topic: what is Debisa, Level: beginner"
+
+We need to produce JSON with subtopic names. However, the plan_result is not given. We only have the user request. The instructions say: "You will receive: plan_result: a JSON object from the Planning Agent containing subtopics and notes." But we are the second agent. But we don't have a plan_result. The user just provided a topic.
+
+Thus maybe we need to assume subtopics? We need to ask? But instruction says we must respond only with JSON of notes for each subtopic from plan_result.subtopics. But we don't have that. There's a mismatch.
+
+We need to handle gracefully. Possibly we need to clarify? The instructions say "You are the second agent in the pipeline." So likely the previous agent gave us a plan_result. But in this conversation we didn't get it. So we should request plan_result. The conversation: user: "Topic: what is Debisa, Level: beginner". There's no plan_result. So we cannot comply.
+
+Thus we need to politely ask for plan_result.""",
+      thought=True
+    ),
+    Part(
+      text='I need the `plan_result` JSON from the Planning Agent, which lists the specific subtopics that should be researched. Could you please provide that?'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=1024,
+  candidates_token_count=262,
+  prompt_token_count=1657,
+  thoughts_token_count=223,
+  total_token_count=1919
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-f642e6e1-e11f-40a8-ad0a-8990b967755c' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={'research_result': 'I need the `plan_result` JSON from the Planning Agent, which lists the specific subtopics that should be researched. Could you please provide that?'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='fd725a95-3900-47ee-941a-852903744c7e' timestamp=1788760304.3980963
+DEBUG    | 2026-09-07 11:21:45 | course_creator:run_adk_course_generation:113 | Event from CurriculumAgent: model_version='openai/gpt-oss-20b' content=Content(
+  parts=[
+    Part(
+      text='We need to respond. The user: "Topic: what is Debisa, Level: beginner". They have provided some context about research. The conversation shows that ResearchAgent returned results with some notes. There\'s also a request from ResearchAgent for plan_result JSON. They don\'t have plan_result yet. We as CurriculumAgent need plan_result to build modules. So we need to ask for plan_result. The guardrails: We should not add or remove subtopics; but we don\'t have plan_result. We need to request it. The user didn\'t supply plan_result. So we should ask. Also we need to confirm the plan. So produce a response asking for plan_result.',
+      thought=True
+    ),
+    Part(
+      text='I’m ready to create the course modules, but I need the `plan_result` JSON from the Planning Agent. Could you please provide it so I can see the ordered list of subtopics and the depth guidance?'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=187,
+  prompt_token_count=1736,
+  thoughts_token_count=135,
+  total_token_count=1923
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-f642e6e1-e11f-40a8-ad0a-8990b967755c' author='CurriculumAgent' actions=EventActions(skip_summarization=None, state_delta={'curriculum_result': 'I’m ready to create the course modules, but I need the `plan_result` JSON from the Planning Agent. Could you please provide it so I can see the ordered list of subtopics and the depth guidance?'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='a46e4573-01dd-419b-af61-fc8cf6bdf6bc' timestamp=1788760305.0549898
+DEBUG    | 2026-09-07 11:21:50 | course_creator:run_adk_course_generation:113 | Event from ContentWriterAgent: model_version='openai/gpt-oss-20b' content=Content(
+  parts=[
+    Part(
+      text='I’m ready to write the lesson content, but I need the **curriculum_result** JSON that lists the modules for this course. Could you provide that so I can create the lessons for each module?'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=217,
+  prompt_token_count=2042,
+  thoughts_token_count=167,
+  total_token_count=2259
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-f642e6e1-e11f-40a8-ad0a-8990b967755c' author='ContentWriterAgent' actions=EventActions(skip_summarization=None, state_delta={'content_result': 'I’m ready to write the lesson content, but I need the **curriculum_result** JSON that lists the modules for this course. Could you provide that so I can create the lessons for each module?'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='f3d94d87-d17d-48b9-9b86-fbf9a9dc984d' timestamp=1788760305.666399
+DEBUG    | 2026-09-07 11:22:09 | course_creator:run_adk_course_generation:113 | Event from ReviewerAgent: model_version='openai/gpt-oss-20b' content=Content(
+  parts=[
+    Part(
+      text="""I’m ready to review the lesson content, but I need the following information first:
+
+1. **content_result** – the full lesson text that the Content Writer Agent produced.
+2. **curriculum_result** – the list of module titles and descriptions that the lesson is supposed to cover.
+
+Once I have those, I can evaluate the lesson for clarity, correctness, alignment, and completeness."""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=369,
+  prompt_token_count=2185,
+  thoughts_token_count=282,
+  total_token_count=2554
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-f642e6e1-e11f-40a8-ad0a-8990b967755c' author='ReviewerAgent' actions=EventActions(skip_summarization=None, state_delta={'review_result': 'I’m ready to review the lesson content, but I need the following information first:\n\n1. **content_result** – the full lesson text that the Content Writer Agent produced.\n2. **curriculum_result** – the list of module titles and descriptions that the lesson is supposed to cover.\n\nOnce I have those, I can evaluate the lesson for clarity, correctness, alignment, and completeness.'}, artifact_delta={}, transfer_to_agent=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='0e7de06f-a02b-4450-9b87-d0893f983d85' timestamp=1788760310.644975

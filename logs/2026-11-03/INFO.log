@@ -1,0 +1,2 @@
+INFO     | 2026-11-03 01:55:06 | course_creator:run_adk_curriculum_for_document:135 | Starting curriculum generation for document='introduction-to-data-science-using-python.pdf'
+INFO     | 2026-11-03 01:55:35 | course_creator:run_adk_curriculum_for_document:179 | Curriculum generation complete for document='introduction-to-data-science-using-python.pdf'

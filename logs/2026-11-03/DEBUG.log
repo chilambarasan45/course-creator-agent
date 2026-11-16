@@ -1,0 +1,999 @@
+DEBUG    | 2026-11-03 01:55:18 | course_creator:run_adk_curriculum_for_document:170 | Event from PlanningAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "subtopics": [
+        "Introduction and Installing Python",
+        "Introduction to Programming and Variables",
+        "Decision Structures",
+        "Repetitions and Loops",
+        "Functions and Recursion",
+        "File Access"
+    ],
+    "notes": "Tone should be introductory and pedagogical, following the provided textbook excerpt. Focus strictly on the core Python programming fundamentals covered in chapters 1 through 7 (installation, syntax, variables, decision structures, loops, functions, recursion, and file access). Avoid jumping into advanced topics like OOP, machine learning, or graph theory which appear later in the text, as this course level is strictly focused on the beginner programming track."
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=148,
+  prompt_token_count=4840,
+  total_token_count=4988
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='PlanningAgent' actions=EventActions(skip_summarization=None, state_delta={'plan_result': '{\n    "subtopics": [\n        "Introduction and Installing Python",\n        "Introduction to Programming and Variables",\n        "Decision Structures",\n        "Repetitions and Loops",\n        "Functions and Recursion",\n        "File Access"\n    ],\n    "notes": "Tone should be introductory and pedagogical, following the provided textbook excerpt. Focus strictly on the core Python programming fundamentals covered in chapters 1 through 7 (installation, syntax, variables, decision structures, loops, functions, recursion, and file access). Avoid jumping into advanced topics like OOP, machine learning, or graph theory which appear later in the text, as this course level is strictly focused on the beginner programming track."\n}'}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='6b033c67-2056-462f-85df-96a7e3916c8b' timestamp=1793651112.1407735
+DEBUG    | 2026-11-03 01:55:19 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_title': 'Introduction and Installing Python'
+        },
+        id='call_1504060__thought__EmAKXgFpFH0Tt9ohL0hpnmsxy9mnoCOJbIneBGLp+9go1txzllFxA67BiM57vZnI0gkbBhXLl5w371PLA6lWZdYcvyD7605O20Bw8gl0SmZbo1nSRmARgIlcBUjAxoaw0o8=',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12`\n^\x01i\x14}\x13\xb7\xda!/Hi\x9ek1\xcb\xd9\xa7\xa0#\x89l\x89\xde\x04b\xe9\xfb\xd8(\xd6\xdcs\x96Qq\x03\xae\xc1\x88\xce{\xbd\x99\xc8\xd2\t\x1b\x06\x15\xcb\x97\x9c7\xefS\xcb\x03\xa9Ve\xd6\x1c\xbf \xfb\xebNN\xdb@p\xf2\ttJf[\xa3Y\xd2F`\x11\x80\x89\\\x05H\xc0\xc6\x86\xb0\xd2\x8f'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=23,
+  prompt_token_count=4652,
+  total_token_count=4675
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='68407812-9ac9-4a26-8554-412191e656d1' timestamp=1793651118.594747
+DEBUG    | 2026-11-03 01:55:19 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_1504060__thought__EmAKXgFpFH0Tt9ohL0hpnmsxy9mnoCOJbIneBGLp+9go1txzllFxA67BiM57vZnI0gkbBhXLl5w371PLA6lWZdYcvyD7605O20Bw8gl0SmZbo1nSRmARgIlcBUjAxoaw0o8=',
+        name='search_reference_material',
+        response={
+          'error': """Invoking `search_reference_material()` failed as the following mandatory input parameters are not present:
+module_titles
+You could retry calling this tool, but it is IMPORTANT for you to provide all the mandatory parameters."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='8ebf94ee-8e23-425b-a076-ba7e99b34ff9' timestamp=1793651119.732108
+DEBUG    | 2026-11-03 01:55:20 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Introduction and Installing Python',
+          ]
+        },
+        id='call_843476__thought__EmAKXgFpFH0TPXJJPmiucYpGcQrPw9MZDvgROBBjAlRjwqdgknIerEb6M5hGEqSYEui6zzZUuIH0rOul0m6MA/KkFjvUpTthw+Gsj0f158D/DSQReIZfzV/BiPLvJ5IpFjU=',
+        name='search_reference_material'
+      ),
+      thought_signature=b"\x12`\n^\x01i\x14}\x13=rI>h\xaeq\x8aFq\n\xcf\xc3\xd3\x19\x0e\xf8\x118\x10c\x02Tc\xc2\xa7`\x92r\x1e\xacF\xfa3\x98F\x12\xa4\x98\x12\xe8\xba\xcf6T\xb8\x81\xf4\xac\xeb\xa5\xd2n\x8c\x03\xf2\xa4\x16;\xd4\xa5;a\xc3\xe1\xac\x8fG\xf5\xe7\xc0\xff\r$\x11x\x86_\xcd_\xc1\x88\xf2\xef'\x92)\x165"
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=2026,
+  candidates_token_count=23,
+  prompt_token_count=4735,
+  total_token_count=4758
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='9cec4ee0-f04f-43f5-9a41-17fef8bd2e0d' timestamp=1793651119.7396584
+DEBUG    | 2026-11-03 01:55:20 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_843476__thought__EmAKXgFpFH0TPXJJPmiucYpGcQrPw9MZDvgROBBjAlRjwqdgknIerEb6M5hGEqSYEui6zzZUuIH0rOul0m6MA/KkFjvUpTthw+Gsj0f158D/DSQReIZfzV/BiPLvJ5IpFjU=',
+        name='search_reference_material',
+        response={
+          'result': """[Introduction and Installing Python]
+A practical 
+introduction to Python 3, ISBN: 9781775093336 (electronic). 2. Brian Heinold and John Prexy. A Practical Introduction to Python Programming, 
+ISBN: 979-8848271577. 3. https://docs.python.org/3/ Python 3.12 documentation 
+4. https://www.python.org 
+5. https://en.wikipedia.org/wiki/Python_Software_Foundation 
+6. Tony Gaddis. Starting out with Python, 5th edition. Pearson, ISBN: 
+978-0-13-592903-2. 7.
+
+predict future output based on past observations of inputs. In data science, one 
+collects information and interprets it to make decisions. A data scientist must have programming skills and an understanding of 
+mathematics and statistical concepts. The first part of this book is an introduction 
+to Python programming, which is a highly used language by data scientists, and 
+the second part is an introduction to machine learning and statistical knowledge 
+required for data science. Python is a popular programming language because of 
+its scalability, readability, and strong community support.
+
+Python is available for Windows, Mac, and other platforms. When you install the 
+Python interpreter, IDLE will also automatically be installed. IDLE is an integrated 
+development environment for Python—a Python shell is depicted in Figure 1-2. 8
+Figure 1-1 Python Interpreter
+Figure 1-2 Screenshot of Python shell
+Using a Python shell, you can test your Python program in an interactive mode. Or you can use the text editor to type in your Python program; this is called 
+script mode. Python keywords are displayed in orange, comments are shown in 
+red, string literals are indicated in green, and built-in functions are displayed in 
+purple. The syntax of Python is easy so beginners can learn Python with no 
+difficulty. (Python is named after a comedy show, Monty Python.) Python has
+
+and remixes with others. Table of Contents 
+About PA-ADOPT	
+ 
+3
+Preface	
+ 
+4
+About OER	
+ 
+5
+Table of Contents	
+ 
+6
+1. Installing Python	
+ 
+8
+2.
+
+106
+Solutions for Practice Questions (7.4)	
+ 
+110
+Solutions for Practice Questions (8.1)	
+ 
+114
+Solutions for Practice Questions (9.1)	
+115
+1. Installing Python 
+A computer program is a list of step-by-step instructions to solve a given 
+problem. Imagine you need to have a typewritten essay. The first issue is in what 
+language the essay should be written: English, French, German, etc. Then, you 
+need to use software to type in your essay. Programming languages recognize 
+only plain text files that use a character encoding American Standard Code for 
+Information Interchange (ASCII) to represent numbers, letters, and symbols. Here, we will use Python as our programming language, so you will need to 
+install Python 3.12 (the latest version of this writing) or a later version, as
+
+on the web, such as: 
+• Python Software Foundation 
+• Python Documentation 
+Running Python programs: Mistakes in programs are called errors. IDLE catches 
+syntax errors; run time errors only occur while a program runs. When an error 
+occurs, Python stops executing and instead displays several lines of text 
+containing helpful information about the error. 9
+2. Introduction to Programming 
+Programming is the process of writing computer programs. Python is a 
+straightforward but powerful object-oriented programming language. A built-in 
+function in Python is called a function, which is a prewritten program. Let us 
+begin with print(argument), which is a widely used function. Consider the Python 
+statement of print(“west”); the argument is the message you write inside"""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='d5be3dba-ed2d-44a2-8b4a-379417b02781' timestamp=1793651120.8916264
+DEBUG    | 2026-11-03 01:55:21 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Introduction to Programming and Variables',
+          ]
+        },
+        id='call_1381261__thought__EmAKXgFpFH0TewLl/ylN0SIRjPy1xkyFUe0rZjicu2Q9AFFSCmUVGlUKXh1zj4gRSlCQXZEafAwYeP3to1wcu72efTnPyqMb3nxnRpfm+612P/N6Ja7u39oqJbIItVWYoUE=',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12`\n^\x01i\x14}\x13{\x02\xe5\xff)M\xd1"\x11\x8c\xfc\xb5\xc6L\x85Q\xed+f8\x9c\xbbd=\x00QR\ne\x15\x1aU\n^\x1ds\x8f\x88\x11JP\x90]\x91\x1a|\x0c\x18x\xfd\xed\xa3\\\x1c\xbb\xbd\x9e}9\xcf\xca\xa3\x1b\xde|gF\x97\xe6\xfb\xadv?\xf3z%\xae\xee\xdf\xda*%\xb2\x08\xb5U\x98\xa1A'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=2026,
+  candidates_token_count=24,
+  prompt_token_count=5664,
+  total_token_count=5688
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='d0e6035e-f634-4420-a199-0880841272d1' timestamp=1793651120.8981965
+DEBUG    | 2026-11-03 01:55:21 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_1381261__thought__EmAKXgFpFH0TewLl/ylN0SIRjPy1xkyFUe0rZjicu2Q9AFFSCmUVGlUKXh1zj4gRSlCQXZEafAwYeP3to1wcu72efTnPyqMb3nxnRpfm+612P/N6Ja7u39oqJbIItVWYoUE=',
+        name='search_reference_material',
+        response={
+          'result': """[Introduction to Programming and Variables]
+Introduction to Programming	
+ 
+10
+2.1.
+
+Variables	
+ 
+11
+2.1.1. Boolean Variables	
+ 
+13
+2.1.2. Random Variables	
+ 
+15
+2.2. Strings	
+ 
+15
+2.3. ASCII Code	
+ 
+16
+2.4. Practice Questions	
+ 
+21
+3. Decision Structures	
+ 
+22
+3.1. Nested Decision Structures	
+ 
+23
+3.2. Practice Questions	
+ 
+25
+4.
+
+A practical 
+introduction to Python 3, ISBN: 9781775093336 (electronic). 2. Brian Heinold and John Prexy. A Practical Introduction to Python Programming, 
+ISBN: 979-8848271577. 3. https://docs.python.org/3/ Python 3.12 documentation 
+4. https://www.python.org 
+5. https://en.wikipedia.org/wiki/Python_Software_Foundation 
+6. Tony Gaddis. Starting out with Python, 5th edition. Pearson, ISBN: 
+978-0-13-592903-2. 7.
+
+predict future output based on past observations of inputs. In data science, one 
+collects information and interprets it to make decisions. A data scientist must have programming skills and an understanding of 
+mathematics and statistical concepts. The first part of this book is an introduction 
+to Python programming, which is a highly used language by data scientists, and 
+the second part is an introduction to machine learning and statistical knowledge 
+required for data science. Python is a popular programming language because of 
+its scalability, readability, and strong community support.
+
+on the web, such as: 
+• Python Software Foundation 
+• Python Documentation 
+Running Python programs: Mistakes in programs are called errors. IDLE catches 
+syntax errors; run time errors only occur while a program runs. When an error 
+occurs, Python stops executing and instead displays several lines of text 
+containing helpful information about the error. 9
+2. Introduction to Programming 
+Programming is the process of writing computer programs. Python is a 
+straightforward but powerful object-oriented programming language. A built-in 
+function in Python is called a function, which is a prewritten program. Let us 
+begin with print(argument), which is a widely used function. Consider the Python 
+statement of print(“west”); the argument is the message you write inside
+
+West. Introduction to Graph Theory, 2nd edition. Pearson, 
+ISBN:978-0-13-1437371."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='46cb909d-596b-41b4-940e-a847f5b44ce4' timestamp=1793651121.859748
+DEBUG    | 2026-11-03 01:55:22 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Decision Structures',
+          ]
+        },
+        id='call_1384650__thought__EmAKXgFpFH0TrrfrEC7H0wNykCBC6C0UUpfjRizbfweIgYKdtjfVqSPQskQDiidanCy2WjPUGkh31drejXkG3cZaX/rKacm5QFBK5rfceS5bdyRhz5JG4VYKJBsXODbh604=',
+        name='search_reference_material'
+      ),
+      thought_signature=b"\x12`\n^\x01i\x14}\x13\xae\xb7\xeb\x10.\xc7\xd3\x03r\x90 B\xe8-\x14R\x97\xe3F,\xdb\x7f\x07\x88\x81\x82\x9d\xb67\xd5\xa9#\xd0\xb2D\x03\x8a'Z\x9c,\xb6Z3\xd4\x1aHw\xd5\xda\xde\x8dy\x06\xdd\xc6Z_\xfa\xcai\xc9\xb9@PJ\xe6\xb7\xdcy.[w$a\xcf\x92F\xe1V\n$\x1b\x1786\xe1\xebN"
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=4051,
+  candidates_token_count=21,
+  prompt_token_count=6324,
+  total_token_count=6345
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='5d7a3c3c-aa34-4fa3-a9d4-4f108c48be39' timestamp=1793651121.866261
+DEBUG    | 2026-11-03 01:55:23 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_1384650__thought__EmAKXgFpFH0TrrfrEC7H0wNykCBC6C0UUpfjRizbfweIgYKdtjfVqSPQskQDiidanCy2WjPUGkh31drejXkG3cZaX/rKacm5QFBK5rfceS5bdyRhz5JG4VYKJBsXODbh604=',
+        name='search_reference_material',
+        response={
+          'result': """[Decision Structures]
+nn
+21
+3. Decision Structures 
+Decision is the process of deciding something. This decision is always based on a 
+logical question or condition in programming languages. Decision structures, also 
+known as if-then-else or conditional statements, change the path of executing a 
+program. A program is a sequence of several lines of code. Anytime we have a 
+decision structure in a program, the program flow could go to different paths, 
+and it is all based on the given logical condition. Many times, a computer 
+problem can not be solved by executing sequential lines of codes, and alternative 
+paths of executions are needed, where based on a condition, the program could 
+take alternative paths. We use decision structures to handle these alternative
+
+Variables	
+ 
+11
+2.1.1. Boolean Variables	
+ 
+13
+2.1.2. Random Variables	
+ 
+15
+2.2. Strings	
+ 
+15
+2.3. ASCII Code	
+ 
+16
+2.4. Practice Questions	
+ 
+21
+3. Decision Structures	
+ 
+22
+3.1. Nested Decision Structures	
+ 
+23
+3.2. Practice Questions	
+ 
+25
+4.
+
+If (question/condition): 
+	
+Action 1 
+else: 
+	
+Action 2 
+The indentation is required, and control of the program goes either to Action 1 or 
+Action 2. After both if and else statements, you need to include a colon. The if 
+and else statements must be aligned together. Spaces matter at the beginning of 
+lines but not elsewhere. 22
+Comparison operations: A logical condition that uses numerical values can 
+incorporate operations such as less, less or equal, more, more and equal, equal, 
+and not equal to compare several operands, as depicted in Table 3-1. Conditional statements can be combined by use of relational operators, as 
+discussed in Table 2-1. 3.1. Nested Decision Structures 
+Conditional statements can be nested, as it is possible to have a program with a
+
+that if an email contains certain words, then with a high probability, it is a spam 
+message. We can use linear classifiers to create a linear decision; this 
+classification is based on a linear combination of characteristics of the data. 14.1.2 Regression 
+Prediction is like classification; you predict a numerical value of a variable. Data 
+mining is examining data where the classification will occur in the future. One 
+approach for supervised learning is regression. Regression is predicting the 
+behavior of one variable based on the behavior of another variable.
+
+take alternative paths. We use decision structures to handle these alternative 
+paths of programs. For example, whether an integer is even or odd, we would like to display a 
+message; accordingly, we must have two separate printing messages in this 
+case, only one will execute based on the given input. Therefore, the control of 
+the program goes to different paths. Let us consider the following program: 
+Num=12 
+if (Num %2 ==0): 
+	
+print (“Even”) 
+else: 
+	
+print (“Odd”) 
+If the condition in front of the if statement is true, the program displays “Even”; 
+otherwise, it shows “Odd.” It would be impossible to show both messages. In 
+Python, the structure of a conditional statement is as follows: 
+If (question/condition): 
+	
+Action 1 
+else: 
+	
+Action 2
+
+spam categories, each with a different probability of being spam. Then, 
+each category uses supervised learning to learn how many of those emails 
+were a spam message. • In reinforcement learning, an agent must interact with the environment 
+dynamically; interactions come in the form of rewards and punishments. The goal is to maximize the rewards. 77
+14.1 Supervised Learning 
+Classification is one type of classification, where a program is trained on a 
+dataset to predict the category of new data. Classification is either binary or 
+multi-class. For example, consider if an incoming message is either a text or a 
+picture. An incoming email may be spam or not. We can train the email system 
+that if an email contains certain words, then with a high probability, it is a spam"""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='095656d5-6fdc-45dc-bf8c-b908fb3f63da' timestamp=1793651123.00747
+DEBUG    | 2026-11-03 01:55:24 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Repetitions and Loops',
+          ]
+        },
+        id='call_1544422__thought__EmAKXgFpFH0Tz9gkOafxK0rL2PemBmNf54jBzn1m8Irs3ncOSF9QqOrI1OJqwO00MfgQ8RKjea0/oT33QUCTKPyCROgjPS4mnoDYBKqSIwQ6jZhV0h7a6QwDUgGyMjFTkpk=',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12`\n^\x01i\x14}\x13\xcf\xd8$9\xa7\xf1+J\xcb\xd8\xf7\xa6\x06c_\xe7\x88\xc1\xce}f\xf0\x8a\xec\xdew\x0eH_P\xa8\xea\xc8\xd4\xe2j\xc0\xed41\xf8\x10\xf1\x12\xa3y\xad?\xa1=\xf7A@\x93(\xfc\x82D\xe8#=.&\x9e\x80\xd8\x04\xaa\x92#\x04:\x8d\x98U\xd2\x1e\xda\xe9\x0c\x03R\x01\xb221S\x92\x99'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=4051,
+  candidates_token_count=24,
+  prompt_token_count=7326,
+  total_token_count=7350
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='6aa66462-49f6-47cc-a07f-d6af271c991f' timestamp=1793651123.0167336
+DEBUG    | 2026-11-03 01:55:24 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_1544422__thought__EmAKXgFpFH0Tz9gkOafxK0rL2PemBmNf54jBzn1m8Irs3ncOSF9QqOrI1OJqwO00MfgQ8RKjea0/oT33QUCTKPyCROgjPS4mnoDYBKqSIwQ6jZhV0h7a6QwDUgGyMjFTkpk=',
+        name='search_reference_material',
+        response={
+          'result': """[Repetitions and Loops]
+n, which go by increments of ten at each iteration. n=0 
+total=0 
+while (n<=100): 
+	
+total=total+ n 
+	
+n=n+10 
+print (total) 
+4.2. For Loops 
+There are several ways that you can utilize loops. The second approach is called 
+a for loop. Generally, the structure of the for loop is as follows: 
+for (condition): 
+	
+Here is the body of the loop 
+The condition can be written as a variable name in range (number of times to 
+repeat). As we saw in the while loop, the body of the loop is the part of the 
+program that will be repeated; this part should be indented. The total time of the 
+repetition depends on the given condition at the beginning of the for loop. This 
+condition is always a Boolean variable.
+
+starts with ‘a’, replace ‘a’ with ‘A’ and redisplay the name; otherwise, display 
+the last two elements of the name. 13.Write a Python program to get a word, and if the length of the word is even, 
+extract the first element and display it; otherwise, display the last element of 
+the string. 2 × 12 = 24
+25
+14.Write a Python program to get a word with a length of four as input and count 
+the total number of times it contains ‘e’ or ‘E.’ 
+15.Write a Python program to get a word with a length of four as input and then 
+replace every ‘e’ with ‘X.’ 
+Go to 3.2 Practice Question Solutions. 26
+4. Repetitions 
+Repetition is the recurrence of an action. In programming, it means repeating 
+something that has already been written. Imagine you need to write a program
+
+something that has already been written. Imagine you need to write a program 
+to get a student’s name, last name, and ID and then display these on the screen. A Python program to do so would be like the following example: 
+Name=input(“Please enter a name”) 
+Last=input(“Please enter a last name”) 
+Number=input(“Please enter an ID#”) 
+print(Name,Last,Number) 
+4.1. While Loops 
+Now imagine that you must write the above program for five hundred students. One way is to copy the above program five hundred times, which is impractical. And what if we had an even more significant number of students? A feasible way 
+is incorporating repetitions, and that means utilizing loops. There are several ways that you can use loops. The first approach is called a
+
+Repetitions	
+ 
+27
+4.1. While Loops	
+ 
+27
+4.2. For Loops	
+ 
+29
+4.3. Practice Questions	
+ 
+32
+4.4. Nested Loops	
+ 
+33
+4.5. Practice Questions	
+ 
+34
+5. Functions	
+ 
+37
+5.1. Void and Value Returning Functions	
+ 
+38
+5.2. Passing Data to and From Functions	
+ 
+39
+5.3. Mathematical Built-in Functions	
+ 
+40
+5.4. Practice Questions	
+ 
+42
+6. Recursion	
+ 
+43
+7. File Access	
+ 
+45
+7.1. Read From a File	
+ 
+46
+7.2. Write to a File	
+ 
+46
+7.2.1. New File	
+ 
+47
+7.2.2. An Existing File	
+ 
+47
+7.3. Notable Built-in Functions	
+ 
+47
+7.4. Practice Questions	
+ 
+49
+8. Lists	
+ 
+50
+8.1. Practice Questions	
+ 
+55
+9. Arrays	
+ 
+56
+9.1 Practice Questions	
+ 
+57
+10. Plotting Graphs	
+ 
+58
+11. Object Oriented Programming	
+ 
+65
+11.1 Constructor	
+ 
+66
+11.2 Inheritance	
+ 
+66
+11.3 Polymorphism	
+ 
+67
+12. Using Python Packages	
+ 
+69
+
+while loop. Let us have a closer look at a while loop. Generally, the structure of 
+the while loop is as follows: 
+while (condition): 
+	
+Here is the body of the loop 
+The loop's body is the part of the program that will be repeated; this part should 
+be indented. The total time of the repetition depends on the given condition at 
+the beginning of the while loop. This condition is either true or false. • If the condition is true, the body of the while loop will be repeated. • As soon as the condition is not valid anymore, the program's control goes 
+out of the loop and directly to the first line right after the while loop, and 
+repetition stops. • If the condition is not valid, the while loop never begins. 27
+• If the condition is always true, the program goes into an infinite loop, and
+
+1 + 2 + 3 + ... + 10
+1
+1 + 1
+2 + 1
+3 + ... + 1
+10
+32
+4.4. Nested Loops 
+A nested loop means a loop inside another loop, and these are typically used for 
+working with two dimensions. When a loop is nested inside another loop, the 
+inner loop runs many times inside the outer loop. The inner loop will be re-
+started in each iteration of the outer loop. The inner loop must finish all its 
+iterations before the outer loop can continue to its next iteration. Consider the 
+following program: 
+for i in range (1,4): 
+	 for j in range (1,7): 
+	 	
+print ("*", end=" ") 
+	 print ("\n") 
+Here, for every iteration of the outer loop, the program must finish all iterations 
+of the inner loop. The outer loop iterates three times, and the inner loop iterates"""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='66c6be0e-14b6-4336-9e39-a3a7bee7fb10' timestamp=1793651124.2747114
+DEBUG    | 2026-11-03 01:55:25 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'Functions and Recursion',
+          ]
+        },
+        id='call_1422888__thought__EmAKXgFpFH0TBwEWLNF1mQlpvZ++oOfVaSUwK1GlNbgrNNI3mJRSU1s29oSrY2kaCaIexkc5Zp2OvvuCum85FjHHyNt/lYFRvsEFaJLnismXgNIsjEI3LJYcmUJjPBOYnRY=',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12`\n^\x01i\x14}\x13\x07\x01\x16,\xd1u\x99\ti\xbd\x9f\xbe\xa0\xe7\xd5i%0+Q\xa55\xb8+4\xd27\x98\x94RS[6\xf6\x84\xabci\x1a\t\xa2\x1e\xc6G9f\x9d\x8e\xbe\xfb\x82\xbao9\x161\xc7\xc8\xdb\x7f\x95\x81Q\xbe\xc1\x05h\x92\xe7\x8a\xc9\x97\x80\xd2,\x8cB7,\x96\x1c\x99Bc<\x13\x98\x9d\x16'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=6081,
+  candidates_token_count=23,
+  prompt_token_count=8762,
+  total_token_count=8785
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='5802dfed-1c58-440a-a86c-30881d4ef21a' timestamp=1793651124.2818468
+DEBUG    | 2026-11-03 01:55:25 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_1422888__thought__EmAKXgFpFH0TBwEWLNF1mQlpvZ++oOfVaSUwK1GlNbgrNNI3mJRSU1s29oSrY2kaCaIexkc5Zp2OvvuCum85FjHHyNt/lYFRvsEFaJLnismXgNIsjEI3LJYcmUJjPBOYnRY=',
+        name='search_reference_material',
+        response={
+          'result': """[Functions and Recursion]
+5! = 5 × 4 × 3 × 2 × 1
+1, 1, 2, 3, 5, 8, ... 42
+6. Recursion 
+When a function calls itself, it is called a recursive function. Making a function call 
+itself is a way to break down complicated problems into more straightforward 
+problems that are identical in structure to the original problem. In recursive 
+programming, there is always one base case, which does not require recursion 
+and stops the chain of recursive calls. Any problem that can be solved recursively can be solved by using loops. Repetitive problems are more easily solved using recursion. Example 1: a recursive program to calculate the summation of the first ten 
+positive integers. n=10 
+def Sum (n): 
+	
+if (n==0): 
+	
+	
+return 0 
+	
+else: 
+	
+	
+return Sum(n-1)+n 
+print (Sum(n))
+
+Repetitions	
+ 
+27
+4.1. While Loops	
+ 
+27
+4.2. For Loops	
+ 
+29
+4.3. Practice Questions	
+ 
+32
+4.4. Nested Loops	
+ 
+33
+4.5. Practice Questions	
+ 
+34
+5. Functions	
+ 
+37
+5.1. Void and Value Returning Functions	
+ 
+38
+5.2. Passing Data to and From Functions	
+ 
+39
+5.3. Mathematical Built-in Functions	
+ 
+40
+5.4. Practice Questions	
+ 
+42
+6. Recursion	
+ 
+43
+7. File Access	
+ 
+45
+7.1. Read From a File	
+ 
+46
+7.2. Write to a File	
+ 
+46
+7.2.1. New File	
+ 
+47
+7.2.2. An Existing File	
+ 
+47
+7.3. Notable Built-in Functions	
+ 
+47
+7.4. Practice Questions	
+ 
+49
+8. Lists	
+ 
+50
+8.1. Practice Questions	
+ 
+55
+9. Arrays	
+ 
+56
+9.1 Practice Questions	
+ 
+57
+10. Plotting Graphs	
+ 
+58
+11. Object Oriented Programming	
+ 
+65
+11.1 Constructor	
+ 
+66
+11.2 Inheritance	
+ 
+66
+11.3 Polymorphism	
+ 
+67
+12. Using Python Packages	
+ 
+69
+
+36
+Figure 4-9
+Figure 4-10
+Figure 4-11
+5. Functions 
+A function is a block of code that only runs when called. You can pass data into a 
+function. Therefore, you can write a code block, call it a function, and then use it 
+many times. A large Python program can be broken into several functions by 
+isolating each task into one function. To call a function, write the function’s name followed by two parentheses (). The 
+same set of restrictions for a variable’s name is applied while naming a function. The structure of a function in Python is as follows: 
+def function’s name(): 
+	
+Body of the function 
+The first line of a function is its definition and is called the function header; it 
+begins with the keyword def. Every line of code that is part of a block of codes is
+
+Now let’s consider the following program: 
+m=20 
+def func1(): 
+	
+m=100 
+func1() 
+print (m) 
+variable m is initialized with a value of twenty; in function func1(), there is also a 
+variable m, two different variables with the same name. Variable m in func1() is 
+a local variable, and any changes that happen to m in func1() do not affect 
+variable m that is outside of fucn1(). A local variable is any variable that is created inside of a function and is only 
+accessible from inside of the function. Several functions can have variables with 
+the same name, and they do not affect each other, as they cannot access each 
+other’s variables. 5.1. Void and Value Returning Functions 
+One way to categorize functions is based on the value that they return. A void
+
+begins with the keyword def. Every line of code that is part of a block of codes is 
+indented. To run a function, it must be called. To call a function, write its name 
+followed by a set of parentheses. Let us consider the following program: 
+def func1(): 
+	
+print("you just called function1") 
+def func2 (): 
+	
+print("you just called function2") 
+for m in range(0,3): 
+	
+func1() 
+	
+func2() 
+Here func1 and func2 are two functions we defined; each prints a literal string. In 
+the for loop, each function is called three times. When you define a function, it is 
+created, but you still need to call it. When a function is called, the program's 
+control is transferred to that function. 37
+Now let’s consider the following program: 
+m=20 
+def func1(): 
+	
+m=100 
+func1() 
+print (m)
+
+One way to categorize functions is based on the value that they return. A void 
+function is a function that does not return any value; it executes its block of code 
+and then terminates. On the other hand, a value-returning function executes its 
+block of code and then returns a value to the program that called it. In the 
+following example, func1() is the function that prints a variable and terminates; 
+it is a void function. def func1(): 
+	
+print(m) 
+A value-returning function must have a return statement as the last line in the 
+function. In the following example, func1() is the function that returns a value 
+stored in variable m; since it is returning a variable, func1() is a value-returning 
+function. A function may return more than one value; in Python, if you have"""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='85b079d6-5c05-4778-ad4b-c6dbfb586b93' timestamp=1793651125.1302235
+DEBUG    | 2026-11-03 01:55:26 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      function_call=FunctionCall(
+        args={
+          'module_titles': [
+            'File Access',
+          ]
+        },
+        id='call_1615250__thought__EmAKXgFpFH0Ts3Brla6YPLY1U3Hur61eS8T9uUVKdpeIdz13eYpNlD6fiiM4WZNBZnxefms+DtoNmvR4Fv4Mlac+ZeIXd3a61h2FpLqhA0MUa6HNBSA2s1/BXKh3rXfOll4=',
+        name='search_reference_material'
+      ),
+      thought_signature=b'\x12`\n^\x01i\x14}\x13\xb3pk\x95\xae\x98<\xb65Sq\xee\xaf\xad^K\xc4\xfd\xb9EJv\x97\x88w=wy\x8aM\x94>\x9f\x8a#8Y\x93Af|^~k>\x0e\xda\r\x9a\xf4x\x16\xfe\x0c\x95\xa7>e\xe2\x17wv\xba\xd6\x1d\x85\xa4\xba\xa1\x03C\x14k\xa1\xcd\x05 6\xb3_\xc1\\\xa8w\xadw\xce\x96^'
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=8112,
+  candidates_token_count=21,
+  prompt_token_count=10237,
+  total_token_count=10258
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=set() branch=None isolation_scope=None id='9d35d906-ec49-453c-8870-24b5e7be9514' timestamp=1793651125.1419666
+DEBUG    | 2026-11-03 01:55:26 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version=None content=Content(
+  parts=[
+    Part(
+      function_response=FunctionResponse(
+        id='call_1615250__thought__EmAKXgFpFH0Ts3Brla6YPLY1U3Hur61eS8T9uUVKdpeIdz13eYpNlD6fiiM4WZNBZnxefms+DtoNmvR4Fv4Mlac+ZeIXd3a61h2FpLqhA0MUa6HNBSA2s1/BXKh3rXfOll4=',
+        name='search_reference_material',
+        response={
+          'result': """[File Access]
+files. In a text file, data is encoded as a text using ASCII or Unicode formatting, 
+therefore even numerical values are stored as a series of characters. A text file 
+can be opened and viewed by any text editor. There are two different ways to access data in a file, sequential access and 
+random access. In sequential access, you must access data from the beginning of the file to the 
+end of the file; you can not skip any piece of data; you have to read all the data 
+that comes before the desired data. On the other hand, in random access, direct 
+access to any piece of data in the file is possible. This is like accessing different 
+tracks on a CD or DVD. In a text file, each line of the text is ended with the new line character (‘\n’). You
+
+can open a file, read from it, or write on it; if the file does not exist, it will be 
+created; you can also append data to a file if it already exists. Remember that at the end of a Python program, you should permanently close 
+every open file, freeing up the memory space used by the opened files. When a 
+file is closed, the connection between the file and the program is removed, and 
+should you need to access the same file, you need to reopen the file. 45
+7.1. Read From a File 
+Retrieving data from a file is known as reading from a file. Suppose you need to 
+access a text file to read it; the following statement reads the first line of the file 
+and copies it into a string line. line=open('filefortest.txt',‘r’)
+
+characters, which appear after the filename followed by a dot. The .txt indicates 
+that the file is a text file. To write on a file in Python, first, you need to open the file for writing. To write on 
+a file, you can use the same print () function we used previously. When you are 
+done accessing a file, you must close the file. To convert a numerical value to a string, use the str () function. 46
+7.2.1. New File 
+To create a new file, you can use the following statements: 
+file=open('filefortest.txt','w' ) 
+file.write( “WCU \n” ) 
+file.write(f‘{“abc”}\n’) 
+file.close() 
+Here ‘w’ indicates that the file is being accessed for writing, and a new file will be 
+created. If the file already exists, it will be overwritten, and the data on the
+
+created. If the file already exists, it will be overwritten, and the data on the 
+original file is not retrievable anymore. The statement open(), opens the file for 
+writing, and write(), writes data on the file; every time that you write on a file, it 
+is in the form of a string; you can either use string literals or use F-formatting to 
+write the data. 7.2.2. An Existing File 
+If the file already exists and you wish to append data to the end of the existing 
+file, then use the following statements: 
+file=open(‘filefortest.txt','a' ) 
+file.write( “WCU \n” ) 
+file.write(f‘{“abc”}\n’) 
+file.close() 
+Here, ‘a’ indicates that the data will be appended to the end of the existing file. 7.3. Notable Built-in Functions
+
+and copies it into a string line. line=open('filefortest.txt',‘r’) 
+If the text file is not in the current subdirectory, then you must specify the entire 
+path to your file. line=open('c:/users/Agah/desktop/filefortest.txt',‘r’) 
+• You can use readline(), which reads a line from a file and returns it as a 
+string. • You can use read(), which reads the entire file. • You can use read(n), which reads n bytes of a file. • ‘\n’ is considered two bytes. It marks the location where a new line begins 
+in a file. • When strings are printed, ‘\n’ causes an extra blank line to appear. 7.2. Write to a File 
+Every file has a name and a type; the type of a file is a series of three 
+characters, which appear after the filename followed by a dot. The .txt indicates
+
+word. 8. Write a program in Python to read a file and count the total number of e’s in 
+the file. 9. Write a program in Python to write five numbers on a file and then display 
+their summation. Go to 7.4 Practice Question Solutions."""
+        }
+      )
+    ),
+  ],
+  role='user'
+) grounding_metadata=None partial=None turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=None error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=None live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='65ec6ad3-9701-4cce-a26b-6d653f2310cf' timestamp=1793651126.4296064
+DEBUG    | 2026-11-03 01:55:30 | course_creator:run_adk_curriculum_for_document:170 | Event from ResearchAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""{
+    "Introduction and Installing Python": "Computers execute step-by-step instructions. Programming languages recognize plain text files utilizing American Standard Code for Information Interchange (ASCII) character encoding for numbers, letters, and symbols. Python 3.12 or later can be downloaded and installed across Windows, Mac, and other platforms. Installing the Python interpreter automatically installs IDLE, an integrated development environment providing a Python shell for interactive mode testing, alongside text editor script mode. In IDLE syntax highlighting, keywords appear in orange, comments in red, string literals in green, and built-in functions in purple. Python is a high-level language utilizing an interpreter (which translates and runs high-level code) rather than a compiler, allowing developers to build programs without needing to understand underlying computer hardware. Program errors include syntax errors (caught by IDLE) and runtime errors (which occur while the program is running, causing Python to halt execution and display informative error traceback text). Helpful official web resources include the Python Software Foundation and Python Documentation.",
+    "Introduction to Programming and Variables": "Programming is writing computer programs using a straightforward, object-oriented language like Python. Prewritten programs are called built-in functions, such as print(argument), which outputs string literals enclosed in single ('') or double (\"\") quotes (delimiters). Multiple print arguments are separated by spaces, and formatting features include sep, \\n for new lines, escape characters \\' and \\\", and end to prevent advancing lines. Long strings can span multiple lines using a trailing backslash. Comments use the # symbol for single lines or triple quotes for multi-line comments. Variables are symbolic names storing changeable values assigned using the = assignment operator. Variable naming rules dictate they are case-sensitive, cannot contain spaces, must begin with a letter or underscore (followed by letters, digits, or underscores), should be descriptive, limited to 3 or 4 words as a rule of thumb, and must not use Python keywords (e.g., and, def, else, for, if, in, not, or, return, while). Python supports numerical types like integers and floats, created via int() and float() constructors, and permits mixed arithmetic operations.",
+    "Decision Structures": "Decision structures (conditional statements or if-then-else statements) alter program execution paths based on logical conditions or questions. A colon is required after both if and else statements, and strict indentation is mandatory for code blocks inside branches. Comparison operators evaluate numerical relationships such as less than, less than or equal to, greater than, greater than or equal to, equal to, and not equal to. Conditional statements can also incorporate logical relational operators and can be nested to handle complex multi-branched decision scenarios.",
+    "Repetitions and Loops": "Repetition structures (loops) execute blocks of code repeatedly, avoiding the need to duplicate code sequences. A while loop repeats its indented body as long as its Boolean condition remains true; once false, control exits immediately to the following statement. If a condition remains perpetually true, the program enters an infinite loop. A for loop iterates a specified number of times, commonly utilizing a variable name inside range(number of times to repeat). Nested loops place one loop inside another (commonly used for two-dimensional structures), requiring the inner loop to complete all iterations fully for every single iteration of the outer loop.",
+    "Functions and Recursion": "Functions are named, reusable code blocks that run only when explicitly called using their name followed by parentheses (). Function definitions begin with the def keyword header, require indented body blocks, and can receive arguments. Variables created inside a function are local variables, inaccessible outside that specific function scope. Functions are categorized as void functions (which execute and terminate without returning a value) or value-returning functions (which conclude with a return statement to pass a value back to the caller, and can return multiple values). Recursion occurs when a function calls itself to break down complex problems into simpler, structurally identical sub-problems, requiring a base case to stop the chain of recursive calls and prevent infinite recursion.",
+    "File Access": "Files store persistent data, with text files encoding characters using ASCII or Unicode formatting. Files can be accessed sequentially (reading from start to end without skipping) or randomly. To use a file in Python, it must first be opened using open(), read from or written to, and permanently closed at the end of the program to free system memory. Reading operations include open(filename, 'r'), readline() for a single line, read() for the entire file, or read(n) for n bytes. Writing operations utilize open(filename, 'w') to create a new file (overwriting existing ones) or open(filename, 'a') to append data to an existing file, with data written as strings or via f-formatting, and files finalized using the write() and close() methods. The str() function converts numerical values to strings."
+}"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=8113,
+  candidates_token_count=1014,
+  prompt_token_count=11341,
+  total_token_count=12355
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='ResearchAgent' actions=EventActions(skip_summarization=None, state_delta={'research_result': '{\n    "Introduction and Installing Python": "Computers execute step-by-step instructions. Programming languages recognize plain text files utilizing American Standard Code for Information Interchange (ASCII) character encoding for numbers, letters, and symbols. Python 3.12 or later can be downloaded and installed across Windows, Mac, and other platforms. Installing the Python interpreter automatically installs IDLE, an integrated development environment providing a Python shell for interactive mode testing, alongside text editor script mode. In IDLE syntax highlighting, keywords appear in orange, comments in red, string literals in green, and built-in functions in purple. Python is a high-level language utilizing an interpreter (which translates and runs high-level code) rather than a compiler, allowing developers to build programs without needing to understand underlying computer hardware. Program errors include syntax errors (caught by IDLE) and runtime errors (which occur while the program is running, causing Python to halt execution and display informative error traceback text). Helpful official web resources include the Python Software Foundation and Python Documentation.",\n    "Introduction to Programming and Variables": "Programming is writing computer programs using a straightforward, object-oriented language like Python. Prewritten programs are called built-in functions, such as print(argument), which outputs string literals enclosed in single (\'\') or double (\\"\\") quotes (delimiters). Multiple print arguments are separated by spaces, and formatting features include sep, \\\\n for new lines, escape characters \\\\\' and \\\\\\", and end to prevent advancing lines. Long strings can span multiple lines using a trailing backslash. Comments use the # symbol for single lines or triple quotes for multi-line comments. Variables are symbolic names storing changeable values assigned using the = assignment operator. Variable naming rules dictate they are case-sensitive, cannot contain spaces, must begin with a letter or underscore (followed by letters, digits, or underscores), should be descriptive, limited to 3 or 4 words as a rule of thumb, and must not use Python keywords (e.g., and, def, else, for, if, in, not, or, return, while). Python supports numerical types like integers and floats, created via int() and float() constructors, and permits mixed arithmetic operations.",\n    "Decision Structures": "Decision structures (conditional statements or if-then-else statements) alter program execution paths based on logical conditions or questions. A colon is required after both if and else statements, and strict indentation is mandatory for code blocks inside branches. Comparison operators evaluate numerical relationships such as less than, less than or equal to, greater than, greater than or equal to, equal to, and not equal to. Conditional statements can also incorporate logical relational operators and can be nested to handle complex multi-branched decision scenarios.",\n    "Repetitions and Loops": "Repetition structures (loops) execute blocks of code repeatedly, avoiding the need to duplicate code sequences. A while loop repeats its indented body as long as its Boolean condition remains true; once false, control exits immediately to the following statement. If a condition remains perpetually true, the program enters an infinite loop. A for loop iterates a specified number of times, commonly utilizing a variable name inside range(number of times to repeat). Nested loops place one loop inside another (commonly used for two-dimensional structures), requiring the inner loop to complete all iterations fully for every single iteration of the outer loop.",\n    "Functions and Recursion": "Functions are named, reusable code blocks that run only when explicitly called using their name followed by parentheses (). Function definitions begin with the def keyword header, require indented body blocks, and can receive arguments. Variables created inside a function are local variables, inaccessible outside that specific function scope. Functions are categorized as void functions (which execute and terminate without returning a value) or value-returning functions (which conclude with a return statement to pass a value back to the caller, and can return multiple values). Recursion occurs when a function calls itself to break down complex problems into simpler, structurally identical sub-problems, requiring a base case to stop the chain of recursive calls and prevent infinite recursion.",\n    "File Access": "Files store persistent data, with text files encoding characters using ASCII or Unicode formatting. Files can be accessed sequentially (reading from start to end without skipping) or randomly. To use a file in Python, it must first be opened using open(), read from or written to, and permanently closed at the end of the program to free system memory. Reading operations include open(filename, \'r\'), readline() for a single line, read() for the entire file, or read(n) for n bytes. Writing operations utilize open(filename, \'w\') to create a new file (overwriting existing ones) or open(filename, \'a\') to append data to an existing file, with data written as strings or via f-formatting, and files finalized using the write() and close() methods. The str() function converts numerical values to strings."\n}'}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='7df2552e-23a4-44f4-be8d-822fddf4e615' timestamp=1793651126.4367332
+DEBUG    | 2026-11-03 01:55:35 | course_creator:run_adk_curriculum_for_document:170 | Event from CurriculumAgent: model_version='gemini-3.5-flash-lite' content=Content(
+  parts=[
+    Part(
+      text="""[
+    {
+        "title": "Introduction and Installing Python",
+        "subtopics": [
+            "Python Interpreter and IDLE Environment",
+            "High-Level Language and Syntax Basics",
+            "Running Programs and Handling Errors"
+        ]
+    },
+    {
+        "title": "Introduction to Programming and Variables",
+        "subtopics": [
+            "Print Function and String Literals",
+            "Variable Assignment and Naming Rules",
+            "Numerical Types and Mixed Arithmetic"
+        ]
+    },
+    {
+        "title": "Decision Structures",
+        "subtopics": [
+            "Conditional Statements and Syntax",
+            "Comparison and Relational Operators",
+            "Nested Decision Structures"
+        ]
+    },
+    {
+        "title": "Repetitions and Loops",
+        "subtopics": [
+            "While Loops and Boolean Conditions",
+            "For Loops and Range Iteration",
+            "Nested Loops and Multidimensional Logic"
+        ]
+    },
+    {
+        "title": "Functions and Recursion",
+        "subtopics": [
+            "Defining and Calling Functions",
+            "Void and Value-Returning Functions",
+            "Recursive Functions and Base Cases"
+        ]
+    },
+    {
+        "title": "File Access",
+        "subtopics": [
+            "Sequential and Random File Access",
+            "Reading Lines and Files",
+            "Writing and Appending to Files"
+        ]
+    }
+]"""
+    ),
+  ],
+  role='model'
+) grounding_metadata=None partial=False turn_complete=None turn_complete_reason=None interaction_status=None finish_reason=<FinishReason.STOP: 'STOP'> error_code=None error_message=None interrupted=None custom_metadata=None usage_metadata=GenerateContentResponseUsageMetadata(
+  cached_content_token_count=0,
+  candidates_token_count=329,
+  prompt_token_count=14201,
+  total_token_count=14530
+) live_session_resumption_update=None live_session_id=None go_away=None voice_activity=None input_transcription=None output_transcription=None avg_logprobs=None logprobs_result=None cache_metadata=None citation_metadata=None interaction_id=None environment_id=None invocation_id='e-7228770d-9989-4eec-8b2a-bafb49ffe961' author='CurriculumAgent' actions=EventActions(skip_summarization=None, state_delta={'curriculum_result': '[\n    {\n        "title": "Introduction and Installing Python",\n        "subtopics": [\n            "Python Interpreter and IDLE Environment",\n            "High-Level Language and Syntax Basics",\n            "Running Programs and Handling Errors"\n        ]\n    },\n    {\n        "title": "Introduction to Programming and Variables",\n        "subtopics": [\n            "Print Function and String Literals",\n            "Variable Assignment and Naming Rules",\n            "Numerical Types and Mixed Arithmetic"\n        ]\n    },\n    {\n        "title": "Decision Structures",\n        "subtopics": [\n            "Conditional Statements and Syntax",\n            "Comparison and Relational Operators",\n            "Nested Decision Structures"\n        ]\n    },\n    {\n        "title": "Repetitions and Loops",\n        "subtopics": [\n            "While Loops and Boolean Conditions",\n            "For Loops and Range Iteration",\n            "Nested Loops and Multidimensional Logic"\n        ]\n    },\n    {\n        "title": "Functions and Recursion",\n        "subtopics": [\n            "Defining and Calling Functions",\n            "Void and Value-Returning Functions",\n            "Recursive Functions and Base Cases"\n        ]\n    },\n    {\n        "title": "File Access",\n        "subtopics": [\n            "Sequential and Random File Access",\n            "Reading Lines and Files",\n            "Writing and Appending to Files"\n        ]\n    }\n]'}, artifact_delta={}, transfer_to_agent=None, transfer_reason=None, escalate=None, requested_auth_configs={}, requested_tool_confirmations={}, compaction=None, end_of_agent=None, agent_state=None, rewind_before_invocation_id=None, route=None, render_ui_widgets=None, set_model_response=None) output=None node_info=NodeInfo(path='', output_for=None, message_as_output=None) long_running_tool_ids=None branch=None isolation_scope=None id='9cb1f4cf-eaa5-415c-8c03-d2ca953c66e1' timestamp=1793651130.609953
